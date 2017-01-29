@@ -1,0 +1,1216 @@
+@media (min-width: 1200px) {
+
+}
+@media (min-width: 992px) and (max-width: 1199px){
+    .header-top-menu-box, .header-top-lang-box, .header-top-social-box, .header-top-search-box, .header-top-phone-box {
+        margin-left: 10px;
+    }
+    .header-top-menu-box {
+        padding-right: 10px;
+    }
+    .header-top-menu-item {
+        margin-left: 20px;
+    }
+    .header-top-menu-item:first-child, .header-top-lang-item:first-child {
+        margin-left: 0;
+    }
+    .header-top-lang-box,
+    .header-top-social-box{
+        padding-right: 10px;
+    }
+    .header-top-social-item{
+        margin-left: 15px;
+    }
+    .header-top-social-item-vk{
+        margin-left: 0;
+    }
+    .header-top-search-open-icon{
+        margin-right: 10px;
+    }
+    .header-top-search-input-btn{
+        right: 10px;
+    }
+    .header-top-search-input {
+        width: 260px;
+    }
+    .header-top-basket-box{
+        padding-left: 20px;
+    }
+    .header-top-user-icon,
+    .header-top-like-icon{
+        margin-right: 20px;
+    }
+    .poster-calendar {
+        padding-left: 30px;
+    }
+    .poster-item-info{
+        margin-right: -30px;
+    }
+    .poster-item-info-image,
+    .poster-item-info-text-box{
+        width: 290px;
+    }
+    .poster-item-info-text{
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .btn-poster-item-info:nth-child(1) {
+        margin-right: 15px;
+        width: 145px;
+    }
+    .btn-poster-item-info:nth-child(2) {
+        margin-right: 0;
+        width: 130px;
+    }
+    .news-list-item-image{
+        width: 210px;
+    }
+    .news-list-item-text-box {
+        margin-left: 240px;
+    }
+    .guide-text-box-center{
+        padding-left: 80px;
+    }
+    .footer-img{
+        right: 250px;
+    }
+    .custom-select{
+        width: 130px;
+    }
+    .custom-select-current{
+        background-position: 105px 18px;
+    }
+    #catalog-filter-month-select-md{
+        margin-left: 160px;
+    }
+    .month-select-item{
+        text-align: center;
+    }
+    .month-select-item-month, .month-select-item-year {
+        display: inline-block;
+        float: none;
+        line-height: 40px;
+        margin: 0 9px;
+        vertical-align: top;
+    }
+    .catalog-filter-btn{
+        padding: 0 10px;
+    }
+    .catalog-filter-radio-name{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .catalog-filter-radio-item{
+        margin-left: 5px;
+        padding: 0 6px;
+    }
+    .poster-catalog-item-buy-items{
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    .news-detail-more-photo-box{
+        height: 125px;
+    }
+    .card-item-image{
+        margin-left: 0;
+        margin-right: 30px;
+        width: 160px;
+    }
+    .card-item-place-box{
+        width: 140px;
+    }
+    .card-item-name-box{
+        width: 240px;
+    }
+    .popup-box-bay-ticket{
+        width: 960px;
+        margin-left: -480px;
+    }
+    .bay-ticket-hall-seats-row-item {
+        font-size: 13px;
+        height: 21px;
+        line-height: 19px;
+        width: 21px;
+    }
+    .bay-ticket-hall {
+        width: 720px;
+    }
+    .bay-ticket-col {
+        float: right;
+        width: 182px;
+    }
+    .bay-ticket-box {
+        float: left;
+        width: 720px;
+    }
+}
+@media (max-width: 991px) {
+    .news-detail-image-box {
+        margin-bottom: 30px;
+    }
+    .news-detail-section-title{
+        cursor: pointer;
+    }
+    .news-detail-date,
+    .news-detail-more-photo-col{
+        margin-top: 30px;
+    }
+    .news-detail-section-title-arrow{
+        float: right;
+        background: url('../images/news-detail-section-title-arrow.png') 0 0 no-repeat;
+        width: 13px;
+        height: 6px;
+        margin-top: 6px;
+        margin-bottom: 6px;
+    }
+    .news-detail-section-title-up .news-detail-section-title-arrow{
+        transform: rotate(180deg);
+    }
+    .news-detail-section-info {
+        margin-bottom: 40px;
+    }
+    .spectacle-buy-items{
+        margin-bottom: 20px;
+    }
+    .contact-section-info{
+        margin-bottom: 45px;
+        padding-bottom: 0;
+        margin-top: 0;
+        border: none;
+    }
+    .contact-section-title{
+        line-height: 22px;
+        margin-top: 0;
+        margin-bottom: 18px;
+    }
+    .contact-image-box{
+        margin-bottom: 40px;
+    }
+    .header-top-phone-box{
+        margin-right: 0;
+    }
+    .left-menu-item-box{
+        display: none;
+        background: #fcfcfd;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+    }
+    .left-menu-item{
+        border-bottom: 0;
+        font-size: 16px;
+    }
+    .left-menu-item:hover{
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        background: #355fac;
+        color: #fff;
+    }
+    .popup-box-title {
+        color: #2a313a;
+        font-size: 18px;
+        font-weight: normal;
+        line-height: 1;
+        margin-bottom: 25px;
+        text-transform: none;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .header-logo{
+        width: 70px;
+        height: 61px;
+        background-size: contain;
+        margin-top: 20px;
+        margin-bottom: 23px;
+        margin-right: 33px;
+        float: left;
+    }
+    .header-mobile-description{
+        float: left;
+    }
+    .header-bottom-name-big{
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .header-bottom-name-small{
+        margin-top: 16px;
+    }
+    .header-mobile-info{
+        float: right;
+        text-align: right;
+        margin-top: 15px;
+    }
+    .header-top-phone-box{
+        color: #285bae;
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+    .header-top-social-box{
+        padding-right: 0;
+    }
+    .header-top-phone-box,
+    .header-top-social-box{
+        float: right;
+        text-align: right;
+        width: auto;
+        border: none;
+    }
+    .header-top-user-icon,
+    .header-top-search-open-icon{
+        margin: 15px auto 0 auto;
+        float: none;
+    }
+    .header-top-user-icon{
+        background: url('../images/mobile-menu-user-icon.png') 0 0 no-repeat;
+        width: 17px;
+        height: 20px;
+    }
+    .header-top-user-icon,
+    .header-top-search-open-icon{
+        margin: 15px auto 0 auto;
+        float: none;
+    }
+    .header-top-search-input-box{
+        width: 100%;
+        top: -50px;
+        height: 50px;
+        padding-left: 4px;
+        padding-right: 80px;
+    }
+    .header-mobile-search-box{
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 720px;
+        position: relative;
+    }
+    .header-top-search-input{
+        width: 100%;
+        height: 42px;
+        background: #698dc6;
+    }
+    .header-top-search-open-icon{
+        background-position: -140px -50px;
+    }
+    .header-top-search-input-btn {
+        background-position: -116px -44px;
+        height: 30px;
+        width: 60px;
+        right: 11px;
+    }
+    .header-top-basket{
+        display: block;
+        float: none;
+        height: 100%;
+        padding-top: 15px;
+        text-align: center;
+    }
+    .header-top-basket-icon{
+        background: url('../images/mobile-menu-basket-icon.png') 0 0 no-repeat;
+        width: 17px;
+        height: 18px;
+    }
+    .header-mobile-menu-box > .container{
+        padding: 0;
+    }
+    .poster-item-info-image{
+        width: 100%;
+        max-width: 340px;
+        max-height: 220px;
+        overflow: hidden;
+    }
+    .poster-item-info-text-box{
+        width: 100%;
+        margin-left: 0;
+        margin-top: 15px;
+    }
+    .poster-item-info {
+        border-right: none;
+        margin-right: 0;
+    }
+    .poster-calendar {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .poster-item-info-date{
+        float: left;
+        font-size: 18px;
+        margin-right: 25px;
+    }
+    .poster-item-info-date-num{
+        font-size: 18px;
+    }
+    .poster-item-info-name{
+        margin: 0;
+        float: left;
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .poster-item-info-btn-box{
+        margin-top: 20px;
+    }
+    .poster{
+        margin-bottom: 45px;
+    }
+    .news-list-title{
+        text-align: center;
+    }
+    .news-list-item-image{
+        width: 228px;
+    }
+    .news-list-item-image img{
+        max-width: 100%;
+    }
+    .news-list-item-text-box {
+        margin-left: 248px;
+    }
+    .news-col{
+        margin-bottom: 45px;
+    }
+    .aside-widget{
+        width: 50%;
+        float: left;
+    }
+    .guide-text-box-center{
+        padding-left: 0;
+        height: 286px;
+    }
+    .guide{
+        min-height: 286px;
+        margin-bottom: 45px;
+    }
+    .guide-slider-item,
+    #guide-slider .carousel-nav{
+        height: 211px;
+    }
+    #guide-slider{
+        margin-top: 38px;
+    }
+    #guide-slider .carousel-nav{
+        background-position: 14px 98px;
+    }
+    #guide-slider .carousel-next {
+        background-position: -24px 98px;
+    }
+    .guide-title {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .partner-list{
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+    .partner-list-item{
+        background-position: center center;
+    }
+    .partner-title{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .footer-logo{
+        margin-right: 20px;
+        margin-top: -57px;
+        float: left;
+    }
+    #vk_groups{
+        margin-top: 0;
+    }
+    .aside-widget-inst{
+        margin-top: -87px;
+    }
+    .custom-select,
+    .custom-select-box,
+    #catalog-filter-month-select-mobile{
+        width: 346px;
+    }
+    #catalog-filter-month-select-mobile{
+        float: right;
+    }
+    .custom-select-current{
+        background-position: 315px 18px;
+    }
+    .custom-select-current:hover{
+        background-position: 315px -45px;
+    }
+    .custom-select-current-active,
+    .custom-select-current-active:hover{
+        background-position: 315px -108px;
+    }
+    #catalog-filter-month-select-mobile .carousel-inner {
+        margin-left: 15px;
+        margin-right: 15px;
+        width: auto;
+        text-align: center;
+    }
+    .month-select-item-month, .month-select-item-year {
+        font-size: 18px;
+        margin: 0 14px;
+        display: inline-block;
+        float: none;
+    }
+    .custom-select-box{
+        margin-top: 35px;
+        float: left;
+    }
+    .custom-select-green{
+        width: 243px;
+        float: right;
+        margin-right: 0;
+        font-size: 16px;
+    }
+    .custom-select-green .custom-select-current{
+        background: #35ac7b url('../images/select-arrow-w.png') 212px 18px no-repeat;
+        color: #ffffff;
+    }
+    .custom-select-label{
+        width: 100px;
+        font-size: 16px;
+        float: left;
+        line-height: 40px;
+    }
+    .custom-select-green .custom-select-options{
+        background: #9ad5bd;
+        padding: 0;
+    }
+    .custom-select-green .custom-select-option{
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 16px;
+        font-size: 16px;
+        color: #ffffff;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+    }
+    .custom-select-green .custom-select-option:hover{
+        background: #67c09c;
+    }
+    .custom-select-box-r{
+        float: right;
+    }
+    .catalog-filter-check-box{
+        float: left;
+    }
+    .poster-catalog-item-desc-box{
+        margin-right: -20px;
+    }
+    .poster-catalog-item-buy-items{
+        margin-left: 20px;
+        padding: 26px 15px 20px;
+    }
+    .poster-catalog-item-property{
+        min-width: inherit;
+        margin-left: 10px;
+    }
+    .poster-catalog-item-property:first-child{
+        margin-left: 0;
+    }
+    .poster-catalog-item-preview-text{
+        height: 80px;
+        overflow: hidden;
+        position: relative;
+    }
+    .poster-catalog-item-preview-text-open{
+        height: auto;
+    }
+    .poster-catalog-item-preview-text-cover{
+        background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,0.54) 18%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.54) 18%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.54) 18%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+        height: 45px;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    .poster-catalog-item-preview-text-open .poster-catalog-item-preview-text-cover{
+        display: none;
+    }
+    .news-detail-nav-box {
+        margin-bottom: 35px;
+        margin-top: 35px;
+    }
+    .news-detail-nav-link{
+        border: 1px solid #c6c6c6;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        font-size: 14px;
+        line-height: 15px;
+    }
+    .news-detail-back{
+        padding: 12px;
+    }
+    .news-detail-nav-link-arrow{
+        height: 15px;
+    }
+    .news-detail-prev,
+    .news-detail-next{
+        text-indent: -9999px;
+        width: 40px;
+        height: 40px;
+        overflow: hidden;
+        margin-left: 20px;
+    }
+    .news-detail-prev{
+        padding: 12px 15px;
+    }
+    .news-detail-next{
+        padding: 12px 8px;
+    }
+    .news-detail-prev .news-detail-nav-link-arrow,
+    .news-detail-next .news-detail-nav-link-arrow{
+        display: block;
+        float: left;
+    }
+    .feedback-sub-text{
+        margin-top: 0;
+    }
+    .feedback-btn{
+        float: right;
+        margin-top: 0;
+    }
+    .news-detail-more-photo-box{
+        height: 215px;
+    }
+    .card-item-image{
+        margin-left: 0;
+        margin-right: 20px;
+        width: 180px;
+    }
+    .card-item-place-box{
+        width: 150px;
+    }
+    .card-item-name-box{
+        width: 130px;
+    }
+    .card-item-name{
+        margin-top: 0;
+        line-height: 1;
+    }
+    .card-item-num{
+        width: 32px;
+    }
+    .card-item-price-total{
+        text-align: left;
+    }
+    .card-item-prop-time,
+    .card-item-prop-price{
+        width: 100%;
+    }
+    .popup-box-bay-ticket{
+        width: 640px;
+        margin-left: -320px;
+        height: auto;
+    }
+
+    .bay-ticket-col {
+        float: right;
+        width: 100%;
+    }
+    .bay-ticket-box {
+        float: left;
+        width: 100%;
+    }
+    .bay-ticket-hall-small{
+        width: 600px;
+    }
+    .bay-ticket-hall-box{
+        margin-bottom: 30px;
+    }
+    .popup-bay-ticket{
+        overflow: auto;
+    }
+    .color-guide {
+        margin: 0 -8px;
+        width: 100%;
+    }
+    .color-guide-item {
+        margin: 0 8px 20px;
+    }
+    .color-guide-item-label {
+        font-size: 14px;
+        line-height: 24px;
+        margin-left: 8px;
+    }
+    .bay-ticket-items {
+        float: left;
+        margin-bottom: 0;
+        margin-left: 20px;
+        margin-top: 15px;
+        width: 270px;
+    }
+    .popup-bay-ticket-btn-box {
+        float: right;
+        margin-right: 20px;
+        width: 270px;
+    }
+    .bay-ticket-hall{
+        margin-bottom: 15px;
+    }
+}
+@media (max-width: 767px) {
+    .header-logo{
+        width: 70px;
+        height: 61px;
+        background-size: contain;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        margin-right: 33px;
+        float: left;
+    }
+    .header-mobile-description{
+        margin-left: 103px;
+    }
+    .header-bottom-name-big{
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .header-bottom-name-small{
+        margin-top: 11px;
+    }
+    .header-mobile-info{
+        height: 50px;
+        text-align: center;
+        border-top: 1px solid #cccccc;
+        margin-top: 10px;
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+    .header-top-phone-box{
+        color: #285bae;
+        font-size: 18px;
+        line-height: 50px;
+        width: 100%;
+        border-right: none;
+    }
+    .header-top-user-icon{
+        background: url('../images/mobile-menu-user-icon.png') 0 0 no-repeat;
+        width: 17px;
+        height: 20px;
+    }
+    .header-top-user-icon,
+    .header-top-search-open-icon{
+        margin: 15px auto 0 auto;
+        float: none;
+    }
+    .header-top-search-input-box{
+        width: 100%;
+        top: 0;
+        height: 50px;
+        padding-left: 4px;
+        padding-right: 80px;
+    }
+    .header-top-search-input{
+        width: 100%;
+        height: 42px;
+        background: #698dc6;
+    }
+    .header-top-search-open-icon{
+        background-position: -140px -50px;
+    }
+    .header-top-search-input-btn {
+        background-position: -116px -44px;
+        height: 30px;
+        width: 60px;
+        right: 11px;
+    }
+    .header-top-basket{
+        display: block;
+        float: none;
+        height: 100%;
+        padding-top: 15px;
+        text-align: center;
+    }
+    .header-top-basket-icon{
+        background: url('../images/mobile-menu-basket-icon.png') 0 0 no-repeat;
+        width: 17px;
+        height: 18px;
+    }
+    .header-mobile-menu-box > .container{
+        padding: 0;
+    }
+    .poster-item-info-image{
+        float: none;
+        margin-left: -10px;
+        margin-right: -10px;
+        text-align: center;
+        width: auto;
+    }
+    .poster-item-info-text-box{
+        width: 100%;
+        margin-left: 0;
+        margin-top: 15px;
+    }
+    .poster-item-info {
+        border-right: none;
+        margin-right: 0;
+    }
+    .poster-calendar {
+        margin: 0 auto;
+        width: 300px;
+    }
+    .poster-calendar-title{
+        margin-bottom: 25px;
+    }
+    .poster-item-info-date{
+        float: right;
+        font-size: 18px;
+        width: 100%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .poster-item-info-date-num{
+        font-size: 18px;
+    }
+    .poster-item-info-name{
+        margin: 0;
+        float: left;
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .poster-item-info-btn-box{
+        margin-top: 20px;
+    }
+    .poster{
+        margin-bottom: 25px;
+        margin-top: 25px;
+    }
+    .poster-item-info{
+        margin-bottom: 28px;
+    }
+    .poster-calendar-month-box {
+        margin-bottom: 28px;
+    }
+    .poster-calendar-month-name{
+        font-size: 20px;
+    }
+    .poster-calendar-week-item{
+        width: 42px;
+        font-size: 19px;
+    }
+    .poster-calendar-day-item{
+        width: 42px;
+        height: 41px;
+        line-height: 41px;
+        font-size: 19px;
+    }
+    .poster-item-info-btn-box {
+        margin-top: 30px;
+    }
+    .btn-poster-item-info {
+        float: none;
+        width: 300px;
+        margin: 0 auto 15px auto;
+        height: 50px;
+        line-height: 50px;
+        font-size: 16px;
+    }
+    .news-list-title{
+        text-align: center;
+        margin-top: 30px;
+    }
+    .news-list-item-image{
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+    }
+    .news-list-item-text-box {
+        margin-left: 0;
+    }
+    .news-list-item-date{
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+    .news-list-item-name{
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 10px;
+    }
+    .news-list-item-text{
+        line-height: 20px;
+    }
+    .news-list-item{
+        margin-bottom: 65px;
+    }
+    .news-col{
+        margin-bottom: 45px;
+    }
+    .aside-widget-work-time,
+    .aside-widget-important-info{
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+    .aside-widget-work-time,
+    .aside-widget-important-info-bg{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .aside-widget-important-info-bg{
+        background: none;
+    }
+    .aside-widget-title{
+        font-size: 24px;
+        text-align: center;
+    }
+    .btn{
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        height: 50px;
+        line-height: 50px;
+        font-size: 16px;
+    }
+    .guide{
+        margin-bottom: 40px;
+    }
+    .guide-text-box-center {
+        height: auto;
+        margin-top: 30px;
+        padding-left: 0;
+    }
+    .guide-title{
+        text-align: center;
+    }
+    .guide-text{
+        line-height: 20px;
+        margin-bottom: 45px;
+    }
+    #guide-slider {
+        margin-top: 44px;
+        margin-bottom: 40px;
+    }
+    .guide-slider-item,
+    #guide-slider .carousel-nav{
+        height: 211px;
+    }
+    #guide-slider .carousel-nav{
+        background-position: 14px 98px;
+    }
+    #guide-slider .carousel-next {
+        background-position: -24px 98px;
+    }
+    .partner-list-item {
+        background-position: center center;
+        width: 50%;
+    }
+    .partner-list{
+        padding-right: 0;
+    }
+    .partner-title{
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    footer {
+        background-size: auto 36px;
+        padding-top: 50px;
+    }
+    .footer-menu-contact {
+        text-align: left;
+    }
+    .footer-menu{
+        margin-bottom: 20px;
+    }
+    .footer-how-go{
+        margin-top: 15px;
+    }
+    .footer-logo{
+        margin-bottom: 20px;
+    }
+    .copy-box {
+        margin-top: 45px;
+    }
+    .developer{
+        top: 0;
+        margin-top: 18px;
+        margin-bottom: 30px;
+        width: 100%;
+    }
+    .aside-widget-inst{
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    .custom-select,
+    .custom-select-box,
+    #catalog-filter-month-select-mobile{
+        width: 100%;
+    }
+    #catalog-filter-month-select-mobile{
+        float: right;
+        margin-top: 25px;
+    }
+    .custom-select-current{
+        background-position: 97% 18px;
+    }
+    .custom-select-current:hover{
+        background-position: 97% -45px;
+    }
+    .custom-select-current-active,
+    .custom-select-current-active:hover{
+        background-position: 97% -108px;
+    }
+    #catalog-filter-month-select-mobile .carousel-inner {
+        margin-left: 15px;
+        margin-right: 15px;
+        width: auto;
+        text-align: center;
+    }
+    .month-select-item-month, .month-select-item-year {
+        font-size: 18px;
+        margin: 0 11px;
+        display: inline-block;
+        float: none;
+    }
+    .custom-select-box{
+        margin-top: 35px;
+        float: left;
+    }
+    .custom-select-green{
+        width: 216px;
+        float: right;
+        margin-right: 0;
+        font-size: 16px;
+    }
+    .custom-select-green .custom-select-current{
+        background: #35ac7b url('../images/select-arrow-w.png') 95% 18px no-repeat;
+        color: #ffffff;
+    }
+    .custom-select-label{
+        font-size: 16px;
+        float: left;
+        line-height: 40px;
+    }
+    .custom-select-green .custom-select-options{
+        background: #9ad5bd;
+        padding: 0;
+    }
+    .custom-select-green .custom-select-option{
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 16px;
+        font-size: 16px;
+        color: #ffffff;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+    }
+    .custom-select-green .custom-select-option:hover{
+        background: #67c09c;
+    }
+    .custom-select-box-r{
+        float: right;
+    }
+    .catalog-filter-check-box{
+        float: left;
+    }
+    .poster-catalog-item-desc-box{
+        margin-top: 20px;
+    }
+    .poster-catalog-item-buy-items{
+        padding: 26px 10px 20px;
+        margin: 20px -10px 0 -10px;
+    }
+    .poster-catalog-item-property{
+        min-width: inherit;
+        margin-left: 30px;
+    }
+    .poster-catalog-item-property:first-child{
+        margin-left: 0;
+    }
+    .poster-catalog-item-preview-text{
+        height: 80px;
+        overflow: hidden;
+        position: relative;
+    }
+    .poster-catalog-item-preview-text-open{
+        height: auto;
+    }
+    .poster-catalog-item-preview-text-cover{
+        background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,0.54) 18%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.54) 18%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.54) 18%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+        height: 45px;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    .poster-catalog-item-preview-text-open .poster-catalog-item-preview-text-cover{
+        display: none;
+    }
+    .btn-poster-catalog-item-buy {
+        height: 40px;
+        line-height: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 26px;
+        font-size: 14px;
+        width: 100%;
+    }
+    .poster-catalog-item-price {
+        margin-right: 45px;
+    }
+    .poster-catalog-item-time{
+        margin-left: 45px;
+    }
+    .poster-catalog-item {
+        margin-bottom: 35px;
+    }
+    .poster-catalog-item-date{
+        font-size: 20px;
+    }
+    .btn-more{
+        height: 40px;
+        line-height: 40px;
+        font-size: 14px;
+        width: 190px;
+    }
+    .paging-prev{
+        margin-right: 20px;
+    }
+    .paging-next{
+        margin-left: 20px;
+    }
+    .news-detail-more-photo-box,
+    .news-detail-more-photo{
+        width: 100%;
+    }
+    .btn-show-map{
+        height: 40px;
+        line-height: 40px;
+    }
+    .h1-inner{
+        text-align: center;
+    }
+    .news-detail-more-photo-box{
+        height: auto;
+    }
+    .text-more-photo-box{
+        height: 400px;
+    }
+    .card-item-tbc{
+        display: block;
+        float: left;
+    }
+    .card-item-tbc.hidden-xs{
+        display: none;
+    }
+    .card-item-image{
+        margin: 0;
+        width: 100%;
+    }
+    .card-item-num{
+        height: 140px;
+        padding-top: 50px;
+        width: 20%;
+    }
+    .card-item-delete{
+        height: 140px;
+        padding-top: 55px;
+        width: 20%;
+    }
+    .card-item-image-box{
+        width: 60%;
+    }
+    .card-item-prop-box{
+        position: relative;
+    }
+    .card-item-name-box{
+        width: 100%;
+    }
+    .card-item-prop-time{
+        margin-top: 10px;
+    }
+    .card-item-prop-time-icon{
+        margin-top: 0;
+    }
+    .card-item-name{
+        margin-bottom: 5px;
+    }
+    .card-item-name-box{
+        margin-bottom: 20px;
+    }
+    .card-item-place-box,
+    .card-item-price-total{
+        width: 50%;
+    }
+    .card-item-price-total{
+        font-size: 20px;
+        padding-top: 10%;
+    }
+    .popup-box-bay-ticket{
+        width: 320px;
+        margin-left: -160px;
+        height: auto;
+        padding: 20px 24px;
+        top: 15px;
+        margin-top: 0;
+    }
+
+    .bay-ticket-col {
+        float: right;
+        width: 100%;
+    }
+    .bay-ticket-box {
+        float: left;
+        width: 100%;
+    }
+    .bay-ticket-hall{
+        margin-bottom: 15px;
+    }
+    .bay-ticket-hall-small{
+        width: 600px;
+    }
+    .bay-ticket-hall-box{
+        margin-bottom: 30px;
+    }
+    .popup-bay-ticket{
+        overflow: auto;
+    }
+    .color-guide {
+        margin: 0 -8px;
+        width: 100%;
+    }
+    .color-guide-item {
+        margin: 0 8px 20px;
+    }
+    .color-guide-item-label {
+        font-size: 14px;
+        line-height: 24px;
+        margin-left: 8px;
+    }
+    .popup-bay-ticket-btn{
+        width: 100%;
+    }
+    .bay-ticket-items{
+        margin-top: 15px;
+    }
+    .popup-box-reg-col-1,.popup-box-reg-col-2{
+        width: 100%;
+    }
+    .popup-box-reg{
+        width: 320px;
+        margin-left: -160px;
+    }
+    .popup-box-auth-btn{
+        width: 100%;
+        font-size: 14px;
+        height: 40px;
+        line-height: 40px;
+    }
+    #popup-auth .popup-box-reg,
+    .popup-box-reg{
+        margin-top: 15px;
+        top: 0;
+    }
+    .popup-box-auth-btn{
+        margin-bottom: 25px;
+    }
+    .popup-box-reg-col-1{
+        border-bottom: 1px solid #cccccc;
+        margin-bottom: 20px;
+        border-right: 0;
+    }
+}
