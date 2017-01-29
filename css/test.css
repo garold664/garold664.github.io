@@ -1,0 +1,22 @@
+
+  @media (min-width: 600px) {
+    .block {
+      background-color: #f0f;
+    }
+  }
+  @media (min-width: 800px) {
+    .block {
+      background-color: #0f0;
+    }
+  }
+  @media (min-width: 1200px) {
+    .block {
+      background-color: #f00;
+    }
+  }
+  
+  .block {
+    margin: 0 auto;
+    width: 400px;
+  
+  }
