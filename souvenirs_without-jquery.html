@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Сувениры</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Roboto:700&amp;subset=cyrillic" type="text/css" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+  <link rel="stylesheet" href="css/style-new.css">
+
+  <!-- <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.fancybox.pack.js"></script>
+  <script src="js/bootstrap.min.js"></script> -->
+
+
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  <style type="text/css">.fancybox-margin{margin-right:17px;}</style>
+</head>
+<body>
+  <header>
+    <div class="header-top hidden-sm hidden-xs">
+      <div class="container">
+        <div class="header-top-menu-box">
+          <a class="header-top-link header-top-menu-item" href="/o-teatre/">О театре</a>
+          <a class="header-top-link header-top-menu-item" href="/proekty/">Проекты</a>
+          <a class="header-top-link header-top-menu-item" href="/muzey/">Музей</a>
+          <a class="header-top-link header-top-menu-item" href="/festival-shombay-fest/">Шомбай-fest</a>
+        </div>
+        <div class="header-top-lang-box">
+          <a href="/" class="header-top-link header-top-lang-item  header-top-link-active">Рус</a>
+          <a href="/en/" class="header-top-link header-top-lang-item ">Eng</a>
+          <a href="/tt/" class="header-top-link header-top-lang-item ">Тат</a>
+        </div>
+        <div class="header-top-social-box">
+          <a class="header-top-social-item header-top-social-item-vk" href="#"></a>
+          <a class="header-top-social-item header-top-social-item-yt" href="#"></a>
+          <a class="header-top-social-item header-top-social-item-in" href="#"></a>
+          <div class="clear"></div>
+        </div>
+        <div class="header-top-search-box relative">
+          <div class="header-top-search-open-icon"></div>
+          <div class="header-top-search-input-box">
+            <form action="/search/">
+              <input name="q" class="header-top-search-input" type="text" placeholder="Хочу найти что-либо">
+              <input class="header-top-search-input-btn" type="submit" value="" name="s">
+            </form>
+          </div>
+        </div>
+        <div class="header-top-basket-box">
+            <div class="header-top-like-icon pointer"></div>
+            <div class="header-top-user-icon pointer"></div>
+            <a href="/" class="header-top-basket">
+                <span class="header-top-basket-icon"></span><span class="header-top-basket-count">1</span>
+            </a>
+        </div>
+        <div class="header-top-phone-box">Касса  (843) 237-30-09</div>
+      </div>
+    </div>
+    <div class="header-bottom hidden-sm hidden-xs">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 col-md-5">
+            <div class="header-bottom-name-small">Татарстан Республикасы мәдәният министрлыгы<br>
+                А.Алиш исемендәге премия лауреаты
+            </div>
+            <div class="header-bottom-name-big roboto">Татар ДәҮләт <br> Курчак <br> Театры</div>
+          </div>
+          <div class="col-lg-2 col-md-2">
+            <span class="header-logo"></span>
+          </div>
+          <div class="col-lg-5 col-md-5">
+            <div class="header-bottom-name-small">Министерство культуры Респулбики Татарстан<br>Лауреат премии им. А. Алиша</div>
+            <div class="header-bottom-name-big roboto">Татарский <br> ГосударственныЙ <br> Театр Кукол</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-main-menu hidden-sm hidden-xs">
+      <div class="container">
+        <div class="header-main-menu-box">
+          <a class="header-main-menu-item" href="/">Главная</a>
+          <a class="header-main-menu-item" href="/afisha/">Афиша</a>
+          <a class="header-main-menu-item" href="/repertuar/">Репертуар</a>
+          <a class="header-main-menu-item" href="/novosti/">Новости</a>
+          <a class="header-main-menu-item" href="/kontakty/">Контакты</a>
+          <a class="header-main-menu-item" href="/magazin/">Магазин</a>
+        </div>
+        <a href="javascript:void(0);" class="btn btn-orange btn-header-pay-ticket" onclick="$('.popup-bay-ticket').fadeIn();">Купить билеты</a>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <div class="header-mobile hidden-md hidden-lg">
+      <div class="container">
+        <a href="/" class="header-logo"></a>
+        <div class="header-mobile-description">
+          <div class="header-bottom-name-small">Министерство культуры Респулбики Татарстан<br>Лауреат премии им. А. Алиша</div>
+          <div class="header-bottom-name-big roboto">Татарский Гос.  Театр Кукол</div>
+        </div>
+        <div class="clear visible-xs"></div>
+        <div class="header-mobile-info">
+          <div class="header-top-phone-box">Касса  (843) 237-30-09</div>
+          <div class="clear"></div>
+          <div class="header-top-social-box hidden-xs">
+            <a class="header-top-social-item header-top-social-item-vk" href="#"></a>
+            <a class="header-top-social-item header-top-social-item-yt" href="#"></a>
+            <a class="header-top-social-item header-top-social-item-in" href="#"></a>
+            <div class="clear"></div>
+          </div>
+        </div>
+        <div class="clear"></div>
+      </div>
+        <div class="header-mobile-menu-box">
+            <div class="container">
+                <div class="header-mobile-menu-item header-mobile-menu-item-menu">
+                    <div class="header-mobile-menu-open-btn"></div>
+                </div>
+                <div class="header-mobile-menu-item pointer">
+                    <div class="header-top-user-icon"></div>
+                </div>
+                <div class="header-mobile-menu-item header-mobile-menu-item-search pointer">
+                    <div class="header-top-search-open-icon"></div>
+                </div>
+                <div class="header-mobile-menu-item">
+                  <a href="/" class="header-top-basket">
+                    <span class="header-top-basket-icon"></span>
+                    <span class="header-top-basket-count">1</span>
+                  </a>
+                </div>
+                <div class="header-mobile-menu-item header-mobile-menu-item-lang relative pointer">
+                <div class="header-select-lang-current">Рус</div>
+                <div class="header-select-lang">
+                  <a href="/" class="header-mobile-lang-item">Русский</a>
+                  <a href="/en/" class="header-mobile-lang-item">English</a>
+                  <a href="/tt/" class="header-mobile-lang-item">Татарча</a>
+                </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="header-mobile-menu-top">
+              <a class="header-mobile-menu-top-item" href="/"><div class="container">Главная</div></a>
+              <a class="header-mobile-menu-top-item" href="/afisha/"><div class="container">Афиша</div></a>
+              <a class="header-mobile-menu-top-item" href="/repertuar/"><div class="container">Репертуар</div></a>
+              <a class="header-mobile-menu-top-item" href="/novosti/"><div class="container">Новости</div></a>
+              <a class="header-mobile-menu-top-item" href="/kontakty/"><div class="container">Контакты</div></a>
+              <a class="header-mobile-menu-top-item header-mobile-menu-top-item-sub" href="/o-teatre/"><div class="container">О театре</div></a>
+              <a class="header-mobile-menu-top-item header-mobile-menu-top-item-sub" href="/proekty/"><div class="container">Проекты</div></a>
+              <a class="header-mobile-menu-top-item header-mobile-menu-top-item-sub" href="/muzey/"><div class="container">Музей</div></a>
+              <a class="header-mobile-menu-top-item header-mobile-menu-top-item-sub" href="/festival-shombay-fest/"><div class="container">Шомбай-fest</div></a>
+            </div>
+            <div class="header-mobile-search-box">
+              <div class="header-top-search-input-box">
+                <form action="/search/">
+                  <input name="q" class="header-top-search-input" type="text" placeholder="Хочу найти что-либо">
+                  <input class="header-top-search-input-btn" type="submit" value="" name="s">
+                </form>
+              </div>
+            </div>
+        </div>
+    </div>
+  </header>
+
+  <main class="page-main souvenirs">
+    <div class="categories">
+      <ul class="categories-desktop visible-lg-block  visible-md-block">
+        <li class="categories__item">
+          <a href="#" class="categories__link">Сувениры</a>
+        </li>
+        <li class="categories__item">
+          <a href="#" class="categories__link">Сертификаты</a>
+        </li>
+        <li class="categories__item">
+          <a href="#" class="categories__link">Книги</a>
+        </li>
+      </ul>
+      <div class="categories-mobile visible-xs-block  visible-sm-block">
+        <div class="categories__dropdown dropdown">
+          <a href="#" class="categories__link">Сувениры</a>
+          <button class="categories__dropdown-btn" id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           <span class="visuallyhidden">Раскрыть список</span>
+          </button>
+          <div class="categories__mobile-menu dropdown-menu" aria-labelledby="dLabel">
+            <a href="#" class="categories__link">Сертификаты</a>
+            <a href="#" class="categories__link">Книги</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+       <ul class="breadcrumbs">
+        <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Главная</a></li>
+        <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Магазин</a></li>
+        <li class="breadcrumbs__item breadcrumbs__item--last-child"><a href="" class="breadcrumbs__link">Сувениры</a></li>
+      </ul>
+
+      <section class="shop__items">
+        <h2 class="shop__items-title title">Сувениры</h2>
+        <ul class="shop__items-list row">
+
+          <li class="shop__items-item col-xs-6 col-sm-3 col-md-3">
+            <div class="shop__items-inner shop-item clearfix">
+              <div class="shop-item__pic">
+                <img src="images/souvenir-pic.jpg" alt="Кукла-сувенир">
+              </div>
+              <div class="shop-item__info">
+                <h3 class="shop-item__name">Кукла-сувенир</h3>
+                <span class="shop-item__price">1 999 руб.</span>
+                <a href="javascript:void(0);" class="shop-item__btn btn btn-orange">В корзину</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="shop__items-item col-xs-6 col-sm-3 col-md-3">
+            <div class="shop__items-inner shop-item clearfix">
+              <div class="shop-item__pic">
+                <img src="images/souvenir-pic.jpg" alt="Кукла-сувенир">
+              </div>
+              <div class="shop-item__info">
+                <h3 class="shop-item__name">Кукла-сувенир</h3>
+                <span class="shop-item__price">1 999 руб.</span>
+                <a href="javascript:void(0);" class="shop-item__btn btn btn-orange">В корзину</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="shop__items-item col-xs-6 col-sm-3 col-md-3">
+            <div class="shop__items-inner shop-item clearfix">
+              <div class="shop-item__pic">
+                <img src="images/souvenir-pic.jpg" alt="Кукла-сувенир">
+              </div>
+              <div class="shop-item__info">
+                <h3 class="shop-item__name">Кукла-сувенир</h3>
+                <span class="shop-item__price">1 999 руб.</span>
+                <a href="javascript:void(0);" class="shop-item__btn btn btn-orange">В корзину</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="shop__items-item col-xs-6 col-sm-3 col-md-3">
+            <div class="shop__items-inner shop-item clearfix">
+              <div class="shop-item__pic">
+                <img src="images/souvenir-pic.jpg" alt="Кукла-сувенир">
+              </div>
+              <div class="shop-item__info">
+                <h3 class="shop-item__name">Кукла-сувенир</h3>
+                <span class="shop-item__price">1 999 руб.</span>
+                <a href="javascript:void(0);" class="shop-item__btn btn btn-orange">В корзину</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="shop__items-item col-xs-6 col-sm-3 col-md-3">
+            <div class="shop__items-inner shop-item clearfix">
+              <div class="shop-item__pic">
+                <img src="images/souvenir-pic.jpg" alt="Кукла-сувенир">
+              </div>
+              <div class="shop-item__info">
+                <h3 class="shop-item__name">Кукла-сувенир</h3>
+                <span class="shop-item__price">1 999 руб.</span>
+                <a href="javascript:void(0);" class="shop-item__btn btn btn-orange">В корзину</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="shop__items-item col-xs-6 col-sm-3 col-md-3">
+            <div class="shop__items-inner shop-item clearfix">
+              <div class="shop-item__pic">
+                <img src="images/souvenir-pic.jpg" alt="Кукла-сувенир">
+              </div>
+              <div class="shop-item__info">
+                <h3 class="shop-item__name">Кукла-сувенир</h3>
+                <span class="shop-item__price">1 999 руб.</span>
+                <a href="javascript:void(0);" class="shop-item__btn btn btn-orange">В корзину</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="shop__items-item col-xs-6 col-sm-3 col-md-3">
+            <div class="shop__items-inner shop-item clearfix">
+              <div class="shop-item__pic">
+                <img src="images/souvenir-pic.jpg" alt="Кукла-сувенир">
+              </div>
+              <div class="shop-item__info">
+                <h3 class="shop-item__name">Кукла-сувенир</h3>
+                <span class="shop-item__price">1 999 руб.</span>
+                <a href="javascript:void(0);" class="shop-item__btn btn btn-orange">В корзину</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="shop__items-item col-xs-6 col-sm-3 col-md-3">
+            <div class="shop__items-inner shop-item clearfix">
+              <div class="shop-item__pic">
+                <img src="images/souvenir-pic.jpg" alt="Кукла-сувенир">
+              </div>
+              <div class="shop-item__info">
+                <h3 class="shop-item__name">Кукла-сувенир</h3>
+                <span class="shop-item__price">1 999 руб.</span>
+                <a href="javascript:void(0);" class="shop-item__btn btn btn-orange">В корзину</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="shop__items-item hidden-xs col-sm-3 col-md-3">
+            <div class="shop__items-inner shop-item clearfix">
+              <div class="shop-item__pic">
+                <img src="images/souvenir-pic.jpg" alt="Кукла-сувенир">
+              </div>
+              <div class="shop-item__info">
+                <h3 class="shop-item__name">Кукла-сувенир</h3>
+                <span class="shop-item__price">1 999 руб.</span>
+                <a href="javascript:void(0);" class="shop-item__btn btn btn-orange">В корзину</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="shop__items-item hidden-xs col-sm-3 col-md-3">
+            <div class="shop__items-inner shop-item clearfix">
+              <div class="shop-item__pic">
+                <img src="images/souvenir-pic.jpg" alt="Кукла-сувенир">
+              </div>
+              <div class="shop-item__info">
+                <h3 class="shop-item__name">Кукла-сувенир</h3>
+                <span class="shop-item__price">1 999 руб.</span>
+                <a href="javascript:void(0);" class="shop-item__btn btn btn-orange">В корзину</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="shop__items-item hidden-xs col-sm-3 col-md-3">
+            <div class="shop__items-inner shop-item clearfix">
+              <div class="shop-item__pic">
+                <img src="images/souvenir-pic.jpg" alt="Кукла-сувенир">
+              </div>
+              <div class="shop-item__info">
+                <h3 class="shop-item__name">Кукла-сувенир</h3>
+                <span class="shop-item__price">1 999 руб.</span>
+                <a href="javascript:void(0);" class="shop-item__btn btn btn-orange">В корзину</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="shop__items-item hidden-xs col-sm-3 col-md-3">
+            <div class="shop__items-inner shop-item clearfix">
+              <div class="shop-item__pic">
+                <img src="images/souvenir-pic.jpg" alt="Кукла-сувенир">
+              </div>
+              <div class="shop-item__info">
+                <h3 class="shop-item__name">Кукла-сувенир</h3>
+                <span class="shop-item__price">1 999 руб.</span>
+                <a href="javascript:void(0);" class="shop-item__btn btn btn-orange">В корзину</a>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+        <div class="shop__pagination">
+          <a href="#" class="shop__pagination-link shop__pagination-link--prev"><span class="visuallyhidden">Предыдущая</span></a>
+          <a href="#" class="shop__pagination-link shop__pagination-link--active">1</a>
+          <a href="#" class="shop__pagination-link">2</a>
+          <a href="#" class="shop__pagination-link">3</a>
+          <a href="#" class="shop__pagination-link">4</a>
+          <a href="#" class="shop__pagination-link">5</a>
+          <a href="#" class="shop__pagination-link">6</a>
+          <a href="#" class="shop__pagination-link shop__pagination-link--next"><span class="visuallyhidden">Следующая</span></a>
+        </div>
+      </section>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-img hidden-sm hidden-xs"></div>
+      <div class="row">
+          <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12 hidden-sm hidden-xs">
+            <div class="footer-logo"></div>
+          </div>
+          <div class="col-lg-2 col-md-2 col-xs-6 col-sm-3 col-xs-12">
+            <div class="footer-menu-title">О театре</div>
+            <ul class="footer-menu">
+              <li>
+                <a href="/o-teatre/istoriya/">История</a>
+              </li>
+              <li>
+                <a href="/o-teatre/nagrady/">Награды</a>
+              </li>
+              <li>
+                <a href="/o-teatre/personalii/">Персоналии</a>
+              </li>
+              <li>
+                <a href="/o-teatre/dokumenty/">Документы</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-5 col-xs-12">
+          <div class="footer-menu-title">Для зрителей</div>
+          <ul class="footer-menu">
+            <li>
+              <a href="/afisha/">Афиша</a>
+            </li>
+            <li>
+              <a href="/">Правила покупки билетов</a>
+            </li>
+            <li>
+              <a href="/">Правила возврата билетов</a>
+            </li>
+            <li>
+              <a href="/">Райдер</a>
+            </li>
+            <li>
+              <a href="/">Купить билет</a>
+            </li>
+            <li>
+              <a href="/">Кассы</a>
+            </li>
+            <li>
+              <a href="/karta-sayta/">Отзывы</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+          <div class="footer-menu-contact">
+            <div class="footer-menu-title">(843) 237-30-09</div>
+            <div class="footer-menu-address">Адрес: Казань, ул. Петербургская, 57</div>
+            <a class="footer-how-go" href="/">Как проехать</a>
+          </div>
+        </div>
+      </div>
+      <div class="copy-box">
+        <div class="copy"><div class="footer-logo hidden-md hidden-lg"></div> 2017 г. Все права защищены. ©</div>
+        <div class="developer">Сделано в <a class="grotesk-logo" href="/"></a></div>
+        <div class="clear"></div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
