@@ -6,6 +6,10 @@
   padding-left: 3px;
 }
 
+footer {
+  display: block;
+}
+
 
 @media (min-width: 992px) {
   footer .container {
@@ -75,7 +79,8 @@
   background-image: url(../images/breadcrumbs-arrow.png);
   background-repeat: no-repeat;
 }
-.breadcrumbs__item:last-child:after {
+.breadcrumbs__item:last-child:after,
+.breadcrumbs__item--last-child:after {
   content: none;
 }
 .breadcrumbs__link {
@@ -546,6 +551,10 @@
 }
 .product__links {
   margin-top: 30px;
+}
+.catalog-filter-btn:hover {
+  background: #35ac7b;
+  color: #ffffff;
 }
 .product__btn {
   display: inline-block;
