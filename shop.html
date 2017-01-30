@@ -18,9 +18,6 @@
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery.fancybox.pack.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script>
-    alert('hello');
-  </script>
 
 
 
@@ -176,17 +173,32 @@
   </header>
 
   <main class="page-main shop">
-    <ul class="categories">
-      <li class="categories__item">
-        <a href="#" class="categories__link">Сувениры</a>
-      </li>
-      <li class="categories__item">
-        <a href="#" class="categories__link">Сертификаты</a>
-      </li>
-      <li class="categories__item">
-        <a href="#" class="categories__link">Книги</a>
-      </li>
-    </ul>
+    <div class="categories">
+      <ul class="categories-desktop visible-lg-block  visible-md-block">
+        <li class="categories__item">
+          <a href="#" class="categories__link">Сувениры</a>
+        </li>
+        <li class="categories__item">
+          <a href="#" class="categories__link">Сертификаты</a>
+        </li>
+        <li class="categories__item">
+          <a href="#" class="categories__link">Книги</a>
+        </li>
+      </ul>
+      <div class="categories-mobile visible-xs-block  visible-sm-block">
+        <div class="categories__dropdown dropdown">
+          <a href="#" class="categories__link">Категории товаров</a>
+          <button class="categories__dropdown-btn" id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           <span class="visuallyhidden">Раскрыть список</span>
+          </button>
+          <div class="categories__mobile-menu dropdown-menu" aria-labelledby="dLabel">
+            <a href="#" class="categories__link">Сувениры</a>
+            <a href="#" class="categories__link">Сертификаты</a>
+            <a href="#" class="categories__link">Книги</a>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="container">
        <ul class="breadcrumbs">
         <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Главная</a></li>
@@ -266,10 +278,10 @@
       <section class="shop__items">
         <h2 class="shop__items-title title">Сувениры</h2>
         <ul class="shop__items-list row">
-          <li class="shop__items-item col-md-3">
+          <li class="shop__items-item col-xs-6 col-sm-3">
             <div class="shop__items-inner shop-item clearfix">
               <div class="shop-item__pic">
-                <img src="images/souvenir-pic.jpg" alt="Кукла-сувенир" width="200" height="200">
+                <img src="images/souvenir-pic.jpg" alt="Кукла-сувенир">
               </div>
               <div class="shop-item__info">
                 <h3 class="shop-item__name">Кукла-сувенир</h3>
@@ -279,10 +291,10 @@
             </div>
           </li>
 
-          <li class="shop__items-item col-md-3">
+          <li class="shop__items-item col-xs-6 col-sm-3">
             <div class="shop__items-inner shop-item clearfix">
               <div class="shop-item__pic">
-                <img src="images/souvenir-pic.jpg" alt="Кукла-сувенир" width="200" height="200">
+                <img src="images/souvenir-pic.jpg" alt="Кукла-сувенир">
               </div>
               <div class="shop-item__info">
                 <h3 class="shop-item__name">Кукла-сувенир</h3>
@@ -292,10 +304,10 @@
             </div>
           </li>
 
-          <li class="shop__items-item col-md-3">
+          <li class="shop__items-item hidden-xs col-sm-3">
             <div class="shop__items-inner shop-item clearfix">
               <div class="shop-item__pic">
-                <img src="images/souvenir-pic.jpg" alt="Кукла-сувенир" width="200" height="200">
+                <img src="images/souvenir-pic.jpg" alt="Кукла-сувенир">
               </div>
               <div class="shop-item__info">
                 <h3 class="shop-item__name">Кукла-сувенир</h3>
@@ -305,10 +317,10 @@
             </div>
           </li>
 
-          <li class="shop__items-item col-md-3">
+          <li class="shop__items-item hidden-xs col-sm-3">
             <div class="shop__items-inner shop-item clearfix">
               <div class="shop-item__pic">
-                <img src="images/souvenir-pic.jpg" alt="Кукла-сувенир" width="200" height="200">
+                <img src="images/souvenir-pic.jpg" alt="Кукла-сувенир">
               </div>
               <div class="shop-item__info">
                 <h3 class="shop-item__name">Кукла-сувенир</h3>
@@ -324,10 +336,10 @@
       <section class="shop__items">
         <h2 class="shop__items-title title">Сертификаты</h2>
         <ul class="shop__items-list row">
-          <li class="shop__items-item col-md-3">
+          <li class="shop__items-item col-xs-6 col-sm-3">
             <div class="shop__items-inner shop-item shop-item--certificate clearfix">
               <div class="shop-item__pic">
-                <img src="images/certificate-pic.jpg" alt="Кукла-сувенир" width="200" height="94">
+                <img src="images/certificate-pic.jpg" alt="Кукла-сувенир">
               </div>
               <div class="shop-item__info">
                 <h3 class="shop-item__name">Подарочный сертификат номиналом "2000 руб."</h3>
@@ -337,10 +349,10 @@
             </div>
           </li>
 
-          <li class="shop__items-item col-md-3">
+          <li class="shop__items-item col-xs-6 col-sm-3">
             <div class="shop__items-inner shop-item shop-item--certificate clearfix">
               <div class="shop-item__pic">
-                <img src="images/certificate-pic.jpg" alt="Кукла-сувенир" width="200" height="94">
+                <img src="images/certificate-pic.jpg" alt="Кукла-сувенир">
               </div>
               <div class="shop-item__info">
                 <h3 class="shop-item__name">Подарочный сертификат номиналом "1000 руб."</h3>
@@ -356,10 +368,10 @@
       <section class="shop__items">
         <h2 class="shop__items-title title">Книги</h2>
         <ul class="shop__items-list row">
-          <li class="shop__items-item col-md-3">
+          <li class="shop__items-item col-xs-6 col-sm-3">
             <div class="shop__items-inner shop-item shop-item--book clearfix">
               <div class="shop-item__pic">
-                <img src="images/book-pic.jpg" alt="Кукла-сувенир" width="146" height="200">
+                <img src="images/book-pic.jpg" alt="Кукла-сувенир">
               </div>
               <div class="shop-item__info">
                 <h3 class="shop-item__name">Татар халык экияте, "Камыр Батыр"</h3>
@@ -368,10 +380,10 @@
               </div>
             </div>
           </li>
-          <li class="shop__items-item col-md-3">
+          <li class="shop__items-item col-xs-6 col-sm-3">
             <div class="shop__items-inner shop-item shop-item--book clearfix">
               <div class="shop-item__pic">
-                <img src="images/book-pic.jpg" alt="Кукла-сувенир" width="146" height="200">
+                <img src="images/book-pic.jpg" alt="Кукла-сувенир">
               </div>
               <div class="shop-item__info">
                 <h3 class="shop-item__name">Татар халык экияте, "Камыр Батыр"</h3>
@@ -380,10 +392,10 @@
               </div>
             </div>
           </li>
-          <li class="shop__items-item col-md-3">
+          <li class="shop__items-item hidden-xs col-sm-3">
             <div class="shop__items-inner shop-item shop-item--book clearfix">
               <div class="shop-item__pic">
-                <img src="images/book-pic.jpg" alt="Кукла-сувенир" width="146" height="200">
+                <img src="images/book-pic.jpg" alt="Кукла-сувенир">
               </div>
               <div class="shop-item__info">
                 <h3 class="shop-item__name">Татар халык экияте, "Камыр Батыр"</h3>
@@ -392,10 +404,10 @@
               </div>
             </div>
           </li>
-          <li class="shop__items-item col-md-3">
+          <li class="shop__items-item hidden-xs col-sm-3">
             <div class="shop__items-inner shop-item shop-item--book clearfix">
               <div class="shop-item__pic">
-                <img src="images/book-pic.jpg" alt="Кукла-сувенир" width="146" height="200">
+                <img src="images/book-pic.jpg" alt="Кукла-сувенир">
               </div>
               <div class="shop-item__info">
                 <h3 class="shop-item__name">Татар халык экияте, "Камыр Батыр"</h3>

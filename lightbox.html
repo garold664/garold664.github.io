@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Сувениры</title>
+  <title>Мой кабинет</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,24 +9,20 @@
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Roboto:700&amp;subset=cyrillic" type="text/css" rel="stylesheet">
 
   <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/jquery.fancybox.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/media.css">
   <link rel="stylesheet" href="css/style-new.css">
 
+
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery.fancybox.pack.js"></script>
   <script src="js/bootstrap.min.js"></script>
-
-
-
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
-  <script src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
-  <style type="text/css">.fancybox-margin{margin-right:17px;}</style>
 </head>
 <body>
   <header>
@@ -171,213 +167,96 @@
     </div>
   </header>
 
-  <main class="page-main souvenirs">
-    <div class="categories">
-      <ul class="categories-desktop visible-lg-block  visible-md-block">
-        <li class="categories__item">
-          <a href="#" class="categories__link">Сувениры</a>
-        </li>
-        <li class="categories__item">
-          <a href="#" class="categories__link">Сертификаты</a>
-        </li>
-        <li class="categories__item">
-          <a href="#" class="categories__link">Книги</a>
-        </li>
-      </ul>
-      <div class="categories-mobile visible-xs-block  visible-sm-block">
-        <div class="categories__dropdown dropdown">
-          <a href="#" class="categories__link">Сувениры</a>
-          <button class="categories__dropdown-btn" id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-           <span class="visuallyhidden">Раскрыть список</span>
-          </button>
-          <div class="categories__mobile-menu dropdown-menu" aria-labelledby="dLabel">
-            <a href="#" class="categories__link">Сертификаты</a>
-            <a href="#" class="categories__link">Книги</a>
+  <main class="page-main container">
+    <ul class="breadcrumbs">
+      <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Главная</a></li>
+      <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Мой кабинет</a></li>
+    </ul>
+
+    <section class="cabinet">
+      <h1 class="cabinet__title title">
+        Мой кабинет
+      </h1>
+      <div class="row">
+        <div class="cabinet__menu-wrapper col-md-3">
+          <button class="cabinet__toggle hidden-md hidden-lg"><span class="visuallyhidden">Раскрыть меню</span></button>
+          <div class="cabinet__links cabinet__links--closed">
+            <ul class="cabinet__menu">
+              <li class="cabinet__menu-item"><a href="#" class="cabinet__menu-link">Личные данные</a></li>
+              <li class="cabinet__menu-item"><a href="#" class="cabinet__menu-link">Купленные билеты</a></li>
+              <li class="cabinet__menu-item cabinet__menu-item--active"><a href="#" class="cabinet__menu-link cabinet__menu-link--active">Купленные товары</a></li>
+              <li class="cabinet__menu-item"><a href="#" class="cabinet__menu-link">Список желаний</a></li>
+            </ul>
+
+            <ul class="cabinet__faq">
+              <li class="cabinet__faq-item">
+                <a href="#" class="cabinet__faq-link">Как воспользоваться электронным билетом?</a>
+              </li>
+              <li class="cabinet__faq-item">
+                <a href="#" class="cabinet__faq-link">Правила покупки билетов</a>
+              </li>
+              <li class="cabinet__faq-item">
+                <a href="#" class="cabinet__faq-link">Правила возврата билетов</a>
+              </li>
+            </ul>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="container">
-       <ul class="breadcrumbs">
-        <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Главная</a></li>
-        <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Магазин</a></li>
-        <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Сувениры</a></li>
-      </ul>
-
-      <section class="shop__items">
-        <h2 class="shop__items-title title">Сувениры</h2>
-        <ul class="shop__items-list row">
-
-          <li class="shop__items-item col-xs-6 col-sm-3 col-md-3">
-            <div class="shop__items-inner shop-item clearfix">
-              <div class="shop-item__pic">
-                <img src="images/souvenir-pic.jpg" alt="Кукла-сувенир">
-              </div>
-              <div class="shop-item__info">
-                <h3 class="shop-item__name">Кукла-сувенир</h3>
-                <span class="shop-item__price">1 999 руб.</span>
-                <a href="javascript:void(0);" class="shop-item__btn btn btn-orange">В корзину</a>
-              </div>
+        <ul class="cabinet__orders col-md-9">
+          <li class="cabinet__orders-item row item clearfix">
+            <div class="item__pic col-xs-4 col-sm-2 col-md-3">
+              <img class="visible-lg-inline" src="images/order-pic.jpg" alt="Кукла-сувенир" width="164" height="134">
+              <img class="visible-md-inline" src="images/order-pic960.jpg" alt="Кукла-сувенир" width="130" height="134">
+              <img class="visible-sm-inline visible-xs-inline" src="images/order-pic768.jpg" alt="Кукла-сувенир">
+            </div>
+            <div class="item__info col-xs-8 col-sm-10 col-md-9">
+              <h3 class="item__name">Кукла-сувенир</h3>
+              <a href="#" class="category-link">Сувениры</a>
+              <span class="item__price">1 999 руб.</span>
+              <a href="javascript:void(0);" class="item__btn btn btn-orange">Подробнее</a>
             </div>
           </li>
-
-          <li class="shop__items-item col-xs-6 col-sm-3 col-md-3">
-            <div class="shop__items-inner shop-item clearfix">
-              <div class="shop-item__pic">
-                <img src="images/souvenir-pic.jpg" alt="Кукла-сувенир">
-              </div>
-              <div class="shop-item__info">
-                <h3 class="shop-item__name">Кукла-сувенир</h3>
-                <span class="shop-item__price">1 999 руб.</span>
-                <a href="javascript:void(0);" class="shop-item__btn btn btn-orange">В корзину</a>
-              </div>
+          <li class="cabinet__orders-item row item clearfix">
+            <div class="item__pic col-xs-4 col-sm-2 col-md-3">
+              <img class="visible-lg-inline" src="images/order-pic.jpg" alt="Кукла-сувенир" width="164" height="134">
+              <img class="visible-md-inline" src="images/order-pic960.jpg" alt="Кукла-сувенир" width="130" height="134">
+              <img class="visible-sm-inline visible-xs-inline" src="images/order-pic768.jpg" alt="Кукла-сувенир">
+            </div>
+            <div class="item__info col-xs-8 col-sm-10 col-md-9">
+              <h3 class="item__name">Кукла-сувенир</h3>
+              <a href="#" class="category-link">Сувениры</a>
+              <span class="item__price">1 999 руб.</span>
+              <a href="javascript:void(0);" class="item__btn btn btn-orange">Подробнее</a>
             </div>
           </li>
-
-          <li class="shop__items-item col-xs-6 col-sm-3 col-md-3">
-            <div class="shop__items-inner shop-item clearfix">
-              <div class="shop-item__pic">
-                <img src="images/souvenir-pic.jpg" alt="Кукла-сувенир">
-              </div>
-              <div class="shop-item__info">
-                <h3 class="shop-item__name">Кукла-сувенир</h3>
-                <span class="shop-item__price">1 999 руб.</span>
-                <a href="javascript:void(0);" class="shop-item__btn btn btn-orange">В корзину</a>
-              </div>
+          <li class="cabinet__orders-item row item clearfix">
+            <div class="item__pic col-xs-4 col-sm-2 col-md-3">
+              <img class="visible-lg-inline" src="images/order-pic.jpg" alt="Кукла-сувенир" width="164" height="134">
+              <img class="visible-md-inline" src="images/order-pic960.jpg" alt="Кукла-сувенир" width="130" height="134">
+              <img class="visible-sm-inline visible-xs-inline" src="images/order-pic768.jpg" alt="Кукла-сувенир">
+            </div>
+            <div class="item__info col-xs-8 col-sm-10 col-md-9">
+              <h3 class="item__name">Кукла-сувенир</h3>
+              <a href="#" class="category-link">Сувениры</a>
+              <span class="item__price">1 999 руб.</span>
+              <a href="javascript:void(0);" class="item__btn btn btn-orange">Подробнее</a>
             </div>
           </li>
-
-          <li class="shop__items-item col-xs-6 col-sm-3 col-md-3">
-            <div class="shop__items-inner shop-item clearfix">
-              <div class="shop-item__pic">
-                <img src="images/souvenir-pic.jpg" alt="Кукла-сувенир">
-              </div>
-              <div class="shop-item__info">
-                <h3 class="shop-item__name">Кукла-сувенир</h3>
-                <span class="shop-item__price">1 999 руб.</span>
-                <a href="javascript:void(0);" class="shop-item__btn btn btn-orange">В корзину</a>
-              </div>
+          <li class="cabinet__orders-item row item clearfix">
+            <div class="item__pic col-xs-4 col-sm-2 col-md-3">
+              <img class="visible-lg-inline" src="images/order-pic.jpg" alt="Кукла-сувенир" width="164" height="134">
+              <img class="visible-md-inline" src="images/order-pic960.jpg" alt="Кукла-сувенир" width="130" height="134">
+              <img class="visible-sm-inline visible-xs-inline" src="images/order-pic768.jpg" alt="Кукла-сувенир">
+            </div>
+            <div class="item__info col-xs-8 col-sm-10 col-md-9">
+              <h3 class="item__name">Кукла-сувенир</h3>
+              <a href="#" class="category-link">Сувениры</a>
+              <span class="item__price">1 999 руб.</span>
+              <a href="javascript:void(0);" class="item__btn btn btn-orange">Подробнее</a>
             </div>
           </li>
-
-          <li class="shop__items-item col-xs-6 col-sm-3 col-md-3">
-            <div class="shop__items-inner shop-item clearfix">
-              <div class="shop-item__pic">
-                <img src="images/souvenir-pic.jpg" alt="Кукла-сувенир">
-              </div>
-              <div class="shop-item__info">
-                <h3 class="shop-item__name">Кукла-сувенир</h3>
-                <span class="shop-item__price">1 999 руб.</span>
-                <a href="javascript:void(0);" class="shop-item__btn btn btn-orange">В корзину</a>
-              </div>
-            </div>
-          </li>
-
-          <li class="shop__items-item col-xs-6 col-sm-3 col-md-3">
-            <div class="shop__items-inner shop-item clearfix">
-              <div class="shop-item__pic">
-                <img src="images/souvenir-pic.jpg" alt="Кукла-сувенир">
-              </div>
-              <div class="shop-item__info">
-                <h3 class="shop-item__name">Кукла-сувенир</h3>
-                <span class="shop-item__price">1 999 руб.</span>
-                <a href="javascript:void(0);" class="shop-item__btn btn btn-orange">В корзину</a>
-              </div>
-            </div>
-          </li>
-
-          <li class="shop__items-item col-xs-6 col-sm-3 col-md-3">
-            <div class="shop__items-inner shop-item clearfix">
-              <div class="shop-item__pic">
-                <img src="images/souvenir-pic.jpg" alt="Кукла-сувенир">
-              </div>
-              <div class="shop-item__info">
-                <h3 class="shop-item__name">Кукла-сувенир</h3>
-                <span class="shop-item__price">1 999 руб.</span>
-                <a href="javascript:void(0);" class="shop-item__btn btn btn-orange">В корзину</a>
-              </div>
-            </div>
-          </li>
-
-          <li class="shop__items-item col-xs-6 col-sm-3 col-md-3">
-            <div class="shop__items-inner shop-item clearfix">
-              <div class="shop-item__pic">
-                <img src="images/souvenir-pic.jpg" alt="Кукла-сувенир">
-              </div>
-              <div class="shop-item__info">
-                <h3 class="shop-item__name">Кукла-сувенир</h3>
-                <span class="shop-item__price">1 999 руб.</span>
-                <a href="javascript:void(0);" class="shop-item__btn btn btn-orange">В корзину</a>
-              </div>
-            </div>
-          </li>
-
-          <li class="shop__items-item hidden-xs col-sm-3 col-md-3">
-            <div class="shop__items-inner shop-item clearfix">
-              <div class="shop-item__pic">
-                <img src="images/souvenir-pic.jpg" alt="Кукла-сувенир">
-              </div>
-              <div class="shop-item__info">
-                <h3 class="shop-item__name">Кукла-сувенир</h3>
-                <span class="shop-item__price">1 999 руб.</span>
-                <a href="javascript:void(0);" class="shop-item__btn btn btn-orange">В корзину</a>
-              </div>
-            </div>
-          </li>
-
-          <li class="shop__items-item hidden-xs col-sm-3 col-md-3">
-            <div class="shop__items-inner shop-item clearfix">
-              <div class="shop-item__pic">
-                <img src="images/souvenir-pic.jpg" alt="Кукла-сувенир">
-              </div>
-              <div class="shop-item__info">
-                <h3 class="shop-item__name">Кукла-сувенир</h3>
-                <span class="shop-item__price">1 999 руб.</span>
-                <a href="javascript:void(0);" class="shop-item__btn btn btn-orange">В корзину</a>
-              </div>
-            </div>
-          </li>
-
-          <li class="shop__items-item hidden-xs col-sm-3 col-md-3">
-            <div class="shop__items-inner shop-item clearfix">
-              <div class="shop-item__pic">
-                <img src="images/souvenir-pic.jpg" alt="Кукла-сувенир">
-              </div>
-              <div class="shop-item__info">
-                <h3 class="shop-item__name">Кукла-сувенир</h3>
-                <span class="shop-item__price">1 999 руб.</span>
-                <a href="javascript:void(0);" class="shop-item__btn btn btn-orange">В корзину</a>
-              </div>
-            </div>
-          </li>
-
-          <li class="shop__items-item hidden-xs col-sm-3 col-md-3">
-            <div class="shop__items-inner shop-item clearfix">
-              <div class="shop-item__pic">
-                <img src="images/souvenir-pic.jpg" alt="Кукла-сувенир">
-              </div>
-              <div class="shop-item__info">
-                <h3 class="shop-item__name">Кукла-сувенир</h3>
-                <span class="shop-item__price">1 999 руб.</span>
-                <a href="javascript:void(0);" class="shop-item__btn btn btn-orange">В корзину</a>
-              </div>
-            </div>
-          </li>
-
         </ul>
-        <div class="shop__pagination">
-          <a href="#" class="shop__pagination-link shop__pagination-link--prev"><span class="visuallyhidden">Предыдущая</span></a>
-          <a href="#" class="shop__pagination-link shop__pagination-link--active">1</a>
-          <a href="#" class="shop__pagination-link">2</a>
-          <a href="#" class="shop__pagination-link">3</a>
-          <a href="#" class="shop__pagination-link">4</a>
-          <a href="#" class="shop__pagination-link">5</a>
-          <a href="#" class="shop__pagination-link">6</a>
-          <a href="#" class="shop__pagination-link shop__pagination-link--next"><span class="visuallyhidden">Следующая</span></a>
-        </div>
-      </section>
-    </div>
-
+      </div>
+    </section>
   </main>
 
   <footer>
@@ -387,7 +266,7 @@
           <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12 hidden-sm hidden-xs">
             <div class="footer-logo"></div>
           </div>
-          <div class="col-lg-2 col-md-2 col-xs-6 col-sm-3 col-xs-12">
+          <div class="col-lg-2 col-md-2 col-sm-3 col-xs-12">
             <div class="footer-menu-title">О театре</div>
             <ul class="footer-menu">
               <li>
@@ -446,5 +325,15 @@
     </div>
   </footer>
 
+  <div class="lightbox">
+    <div class="lightbox__wrapper">
+      <a href="#" class="lightbox__close"><span class="visuallyhidden">Закрыть модальное окно</span></a>
+      <p class="lightbox__text">
+        Товар успешно добавлен в корзину! Вы можете <a href="#" class="lightbox__link">продолжить покупку</a> или же <a href="#" class="lightbox__link">перейти к оформлению</a> заказа.
+      </p>
+    </div>
+  </div>
+
+  <script src="js/common.js"></script>
 </body>
 </html>

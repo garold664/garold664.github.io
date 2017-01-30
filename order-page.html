@@ -172,17 +172,31 @@
   </header>
 
   <main class="page-main order-page">
-    <ul class="categories">
-      <li class="categories__item">
-        <a href="#" class="categories__link">Сувениры</a>
-      </li>
-      <li class="categories__item">
-        <a href="#" class="categories__link">Сертификаты</a>
-      </li>
-      <li class="categories__item">
-        <a href="#" class="categories__link">Книги</a>
-      </li>
-    </ul>
+    <div class="categories">
+      <ul class="categories-desktop visible-lg-block  visible-md-block">
+        <li class="categories__item">
+          <a href="#" class="categories__link">Сувениры</a>
+        </li>
+        <li class="categories__item">
+          <a href="#" class="categories__link">Сертификаты</a>
+        </li>
+        <li class="categories__item">
+          <a href="#" class="categories__link">Книги</a>
+        </li>
+      </ul>
+      <div class="categories-mobile visible-xs-block  visible-sm-block">
+        <div class="categories__dropdown dropdown">
+          <a href="#" class="categories__link">Сувениры</a>
+          <button class="categories__dropdown-btn" id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           <span class="visuallyhidden">Раскрыть список</span>
+          </button>
+          <div class="categories__mobile-menu dropdown-menu" aria-labelledby="dLabel">
+            <a href="#" class="categories__link">Сертификаты</a>
+            <a href="#" class="categories__link">Книги</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
 
@@ -198,30 +212,36 @@
 
       <div class="product">
         <div class="product__main row">
-          <div class="product__pic col-md-5 col-md-offset-1">
-            <img src="images/shamkai-pic.jpg" alt="" width="455" height="445">
+          <div class="product__pic col-sm-6 col-md-5 col-md-offset-1">
+            <img class="visible-lg-inline" src="images/shamkai-pic.jpg" alt="" width="455" height="445">
+            <img class="visible-md-inline" src="images/shamkai-pic960.jpg" alt="" width="370" height="363">
+            <img class="visible-sm-inline" src="images/shamkai-pic768.jpg" alt="" width="351" height="343">
+            <img class="visible-xs-inline" src="images/shamkai-pic320.jpg" alt="" width="268" height="261">
           </div>
-          <div class="product__info col-md-5">
+          <div class="product__info col-sm-6 col-md-5">
             <h2 class="product__title">Кукла-сувенир "Шамкай"</h2>
             <a href="#" class="category-link">Сувениры</a>
-            <div class="product__links">
+            <div class="product__links hidden-xs">
               <a href="#description" class="product__btn btn catalog-filter-btn">Описание</a>
               <a href="#photos" class="product__btn btn catalog-filter-btn">Фотографии</a>
               <a href="#responses" class="product__btn btn catalog-filter-btn">Отзывы</a>
             </div>
             <span class="product__price">1 999 руб.</span>
-            <a href="#" class="btn btn-orange">В корзину</a>
-            <a href="/" class="btn btn-orange-inversion">Быстрая покупка</a>
-            <label class="product__add-fav">
-              <button class="product__add-fav-btn"></button>
-              Добавить в избранное
-            </label>
+            <div class="product__info-footer">
+              <a href="#" class="product__btn-orange  btn btn-orange">В корзину</a>
+              <a href="/" class="btn btn-orange-inversion">Быстрая покупка</a>
+              <label class="product__add-fav">
+                <button class="product__add-fav-btn"></button>
+                Добавить в избранное
+              </label>
+            </div>
           </div>
         </div>
 
         <div class="product__section row" id="description">
-          <div class="col-md-3">
+          <div class="product__termin-wrapper col-md-3">
             <span class="product__termin">Описание</span>
+            <a href="#" class="link-up"><span class="visuallyhidden">Наверх</span></a>
           </div>
           <div class="col-md-9">
             <p class="product__text">
@@ -232,92 +252,122 @@
         </div>
 
         <div class="product__section row" id="photos">
-          <div class="col-md-3">
+          <div class="product__termin-wrapper col-md-3">
             <span class="product__termin">Фотографии</span>
+            <a href="#" class="link-up"><span class="visuallyhidden">Наверх</span></a>
           </div>
           <div class="col-md-9">
             <div class="product__photos row">
-              <div class="product__photo col-md-4">
-                <a href="#" class="overlay"><img src="images/photo-1.jpg" alt="" width="260" height="194"></a>
+              <div class="product__photo col-md-4 col-sm-6">
+                <a href="#" class="overlay">
+                  <img class="visible-lg-inline" src="images/photo-1.jpg" alt="" width="260" height="194">
+                  <img class="visible-md-inline" src="images/photo-1_960.jpg" alt="" width="209" height="155">
+                  <img class="visible-sm-inline" src="images/photo-1_768.jpg" alt="" width="345" height="257">
+                  <img class="visible-xs-inline" src="images/photo-1_320.jpg" alt="" width="319" height="238">
+                </a>
               </div>
-              <div class="product__photo col-md-4">
-                <a href="#" class="overlay"><img src="images/photo-2.jpg" alt="" width="260" height="194"></a>
+              <div class="product__photo col-md-4 col-sm-6">
+                <a href="#" class="overlay">
+                  <img class="visible-lg-inline" src="images/photo-2.jpg" alt="" width="260" height="194">
+                  <img class="visible-md-inline" src="images/photo-1_960.jpg" alt="" width="209" height="155">
+                  <img class="visible-sm-inline" src="images/photo-1_768.jpg" alt="" width="345" height="257">
+                  <img class="visible-xs-inline" src="images/photo-1_320.jpg" alt="" width="319" height="238">
+                </a>
               </div>
-              <div class="product__photo col-md-4">
-                <a href="#" class="overlay"><img src="images/photo-3.jpg" alt="" width="260" height="194"></a>
+              <div class="product__photo col-md-4 col-sm-6">
+                <a href="#" class="overlay">
+                  <img class="visible-lg-inline" src="images/photo-3.jpg" alt="" width="260" height="194">
+                  <img class="visible-md-inline" src="images/photo-1_960.jpg" alt="" width="209" height="155">
+                  <img class="visible-sm-inline" src="images/photo-1_768.jpg" alt="" width="345" height="257">
+                  <img class="visible-xs-inline" src="images/photo-1_320.jpg" alt="" width="319" height="238">
+                </a>
               </div>
-              <div class="product__photo col-md-4">
-                <a href="#" class="overlay"><img src="images/photo-4.jpg" alt="" width="260" height="194"></a>
+              <div class="product__photo col-md-4 col-sm-6 hidden-xs">
+                <a href="#" class="overlay">
+                  <img class="visible-lg-inline" src="images/photo-4.jpg" alt="" width="260" height="194">
+                  <img class="visible-md-inline" src="images/photo-1_960.jpg" alt="" width="209" height="155">
+                  <img class="visible-sm-inline" src="images/photo-1_768.jpg" alt="" width="345" height="257">
+                  <img class="visible-xs-inline" src="images/photo-1_320.jpg" alt="" width="319" height="238">
+                </a>
               </div>
-              <div class="product__photo col-md-4">
-                <a href="#" class="overlay"><img src="images/photo-5.jpg" alt="" width="260" height="194"></a>
+              <div class="product__photo col-md-4 col-sm-6 hidden-xs">
+                <a href="#" class="overlay">
+                  <img class="visible-lg-inline" src="images/photo-5.jpg" alt="" width="260" height="194">
+                  <img class="visible-md-inline" src="images/photo-1_960.jpg" alt="" width="209" height="155">
+                  <img class="visible-sm-inline" src="images/photo-1_768.jpg" alt="" width="345" height="257">
+                  <img class="visible-xs-inline" src="images/photo-1_320.jpg" alt="" width="319" height="238">
+                </a>
               </div>
-              <div class="product__photo col-md-4">
-                <a href="#" class="overlay"><img src="images/photo-6.jpg" alt="" width="260" height="194"></a>
+              <div class="product__photo col-md-4 col-sm-6 hidden-xs">
+                <a href="#" class="overlay">
+                  <img class="visible-lg-inline" src="images/photo-6.jpg" alt="" width="260" height="194">
+                  <img class="visible-md-inline" src="images/photo-1_960.jpg" alt="" width="209" height="155">
+                  <img class="visible-sm-inline" src="images/photo-1_768.jpg" alt="" width="345" height="257">
+                  <img class="visible-xs-inline" src="images/photo-1_320.jpg" alt="" width="319" height="238">
+                </a>
               </div>
             </div>
           </div>
         </div>
 
         <div class="product__section row" id="responses">
-          <div class="col-md-3">
+          <div class="product__termin-wrapper col-md-3">
             <span class="product__termin">Отзывы</span>
+            <a href="#" class="link-up"><span class="visuallyhidden">Наверх</span></a>
           </div>
           <div class="product__reviews col-md-9">
-            <div class="product__review review row">
 
-              <div class="review__wrapper clearfix">
-                <div class="review__pic">
-                  <img src="images/reviewer-pic.jpg" alt="" width="164" height="164">
+            <div class="product__review review">
+              <div class="review__wrapper row clearfix">
+                <div class="review__pic col-sm-3">
+                  <img class="visible-lg-inline" src="images/reviewer-pic.jpg" alt="" width="164" height="164">
+                  <img class="visible-md-inline" src="images/reviewer-pic960.jpg" alt="" width="129" height="130">
+                  <img class="visible-sm-inline" src="images/reviewer-pic768.jpg" alt="" width="164" height="164">
+                  <img class="visible-xs-inline" src="images/reviewer-pic320.jpg" alt="" width="76" height="77">
                 </div>
-                <div class="review__info">
+                <div class="review__info col-sm-9">
                   <h4 class="review__name">Олина Оля</h4>
                   <span class="review__date">13 апреля 2016</span>
                   <p class="review__text">
-                    Пожалуй это самый красивый детский театр, который удалось повидать. Сложно описать те эмоции, которые испытываешь при виде этого замечательного здания. Настоятельно рекомендую посетить его и днем и поздним вечером, когда включается подсветка. Площадь перед театром используется для проведения
+                    Пожалуй это самый красивый детский театр, который удалось повидать. Сложно описать те эмоции, которые испытываешь при виде этого замечательного здания. Настоятельно рекомендую посетить его и днем и поздним вечером, когда включается подсветка. Площадь перед театром используется для проведения различных мероприятий. Нам довелось посмотреть замечательную выставку цветочных композиций...
                   </p>
                 </div>
               </div>
-
               <div class="review__footer">
                 <a href="#" class="review__social-link">Ссылка на профиль соц.сети</a>
                 <a href="#" class="review__btn-more">Раскрыть отзыв</a>
               </div>
-
             </div>
 
-            <div class="product__review review row">
-
-              <div class="review__wrapper clearfix">
-                <div class="review__pic">
-                  <img src="images/reviewer-pic.jpg" alt="" width="164" height="164">
+            <div class="product__review review">
+              <div class="review__wrapper row clearfix">
+                <div class="review__pic col-sm-3">
+                  <img class="visible-lg-inline" src="images/reviewer-pic.jpg" alt="" width="164" height="164">
+                  <img class="visible-md-inline" src="images/reviewer-pic960.jpg" alt="" width="129" height="130">
+                  <img class="visible-sm-inline" src="images/reviewer-pic768.jpg" alt="" width="164" height="164">
+                  <img class="visible-xs-inline" src="images/reviewer-pic320.jpg" alt="" width="76" height="77">
                 </div>
-                <div class="review__info">
+                <div class="review__info col-sm-9">
                   <h4 class="review__name">Олина Оля</h4>
                   <span class="review__date">13 апреля 2016</span>
                   <p class="review__text">
-                    Пожалуй это самый красивый детский театр, который удалось повидать. Сложно описать те эмоции, которые испытываешь при виде этого замечательного здания. Настоятельно рекомендую посетить его и днем и поздним вечером, когда включается подсветка. Площадь перед театром используется для проведения
+                    Пожалуй это самый красивый детский театр, который удалось повидать. Сложно описать те эмоции, которые испытываешь при виде этого замечательного здания. Настоятельно рекомендую посетить его и днем и поздним вечером, когда включается подсветка. Площадь перед театром используется для проведения различных мероприятий. Нам довелось посмотреть замечательную выставку цветочных композиций...
                   </p>
                 </div>
               </div>
-
               <div class="review__footer">
                 <a href="#" class="review__social-link">Ссылка на профиль соц.сети</a>
                 <a href="#" class="review__btn-more">Раскрыть отзыв</a>
               </div>
-
             </div>
-             <a href="#" class="btn btn-orange-inversion btn-more">Написать отзыв</a>
+            <div class="product__reviews-footer">
+              <a href="#" class="product__reviews-btn btn btn-orange-inversion hidden-lg">Больше отзывов</a>
+              <a href="#" class="product__reviews-btn btn btn-orange">Написать отзыв</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-
-
-
-
-
-
 
   </main>
 

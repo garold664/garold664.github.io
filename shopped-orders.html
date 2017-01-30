@@ -14,14 +14,15 @@
   <link rel="stylesheet" href="css/style-new.css">
 
 
-
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.fancybox.pack.js"></script>
+  <script src="js/bootstrap.min.js"></script>
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
-  <script src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
-  <style type="text/css">.fancybox-margin{margin-right:17px;}</style>
 </head>
 <body>
   <header>
@@ -173,38 +174,41 @@
     </ul>
 
     <section class="cabinet">
-      <h1 class="title">
+      <h1 class="cabinet__title title">
         Мой кабинет
       </h1>
       <div class="row">
-        <div class="col-md-3">
-          <ul class="cabinet__menu">
-            <li class="cabinet__menu-item"><a href="#" class="cabinet__menu-link">Личные данные</a></li>
-            <li class="cabinet__menu-item"><a href="#" class="cabinet__menu-link">Купленные билеты</a></li>
-            <li class="cabinet__menu-item"><a href="#" class="cabinet__menu-link cabinet__menu-link--active">Купленные товары</a></li>
-            <li class="cabinet__menu-item"><a href="#" class="cabinet__menu-link">Список желаний</a></li>
-          </ul>
+        <div class="cabinet__menu-wrapper col-md-3">
+          <button class="cabinet__toggle hidden-md hidden-lg"><span class="visuallyhidden">Раскрыть меню</span></button>
+          <div class="cabinet__links cabinet__links--closed">
+            <ul class="cabinet__menu">
+              <li class="cabinet__menu-item"><a href="#" class="cabinet__menu-link">Личные данные</a></li>
+              <li class="cabinet__menu-item"><a href="#" class="cabinet__menu-link">Купленные билеты</a></li>
+              <li class="cabinet__menu-item cabinet__menu-item--active"><a href="#" class="cabinet__menu-link cabinet__menu-link--active">Купленные товары</a></li>
+              <li class="cabinet__menu-item"><a href="#" class="cabinet__menu-link">Список желаний</a></li>
+            </ul>
 
-          <ul class="cabinet__faq">
-            <li class="cabinet__faq-item">
-              <a href="#" class="cabinet__faq-link">Как воспользоваться электронным билетом?</a>
-            </li>
-            <li class="cabinet__faq-item">
-              <a href="#" class="cabinet__faq-link">Правила покупки билетов</a>
-            </li>
-            <li class="cabinet__faq-item">
-              <a href="#" class="cabinet__faq-link">Правила возврата билетов</a>
-            </li>
-          </ul>
+            <ul class="cabinet__faq">
+              <li class="cabinet__faq-item">
+                <a href="#" class="cabinet__faq-link">Как воспользоваться электронным билетом?</a>
+              </li>
+              <li class="cabinet__faq-item">
+                <a href="#" class="cabinet__faq-link">Правила покупки билетов</a>
+              </li>
+              <li class="cabinet__faq-item">
+                <a href="#" class="cabinet__faq-link">Правила возврата билетов</a>
+              </li>
+            </ul>
+          </div>
         </div>
         <ul class="cabinet__orders col-md-9">
           <li class="cabinet__orders-item row item clearfix">
-            <div class="item__pic col-md-3">
+            <div class="item__pic col-xs-4 col-sm-2 col-md-3">
               <img class="visible-lg-inline" src="images/order-pic.jpg" alt="Кукла-сувенир" width="164" height="134">
               <img class="visible-md-inline" src="images/order-pic960.jpg" alt="Кукла-сувенир" width="130" height="134">
-              <img class="visible-sm-inline visible-xs-inline" src="images/order-pic768.jpg" alt="Кукла-сувенир" width="104" height="134">
+              <img class="visible-sm-inline visible-xs-inline" src="images/order-pic768.jpg" alt="Кукла-сувенир">
             </div>
-            <div class="item__info col-md-9">
+            <div class="item__info col-xs-8 col-sm-10 col-md-9">
               <h3 class="item__name">Кукла-сувенир</h3>
               <a href="#" class="category-link">Сувениры</a>
               <span class="item__price">1 999 руб.</span>
@@ -212,10 +216,12 @@
             </div>
           </li>
           <li class="cabinet__orders-item row item clearfix">
-            <div class="item__pic col-md-3">
-              <img src="images/order-pic.jpg" alt="Кукла-сувенир" width="164" height="134">
+            <div class="item__pic col-xs-4 col-sm-2 col-md-3">
+              <img class="visible-lg-inline" src="images/order-pic.jpg" alt="Кукла-сувенир" width="164" height="134">
+              <img class="visible-md-inline" src="images/order-pic960.jpg" alt="Кукла-сувенир" width="130" height="134">
+              <img class="visible-sm-inline visible-xs-inline" src="images/order-pic768.jpg" alt="Кукла-сувенир">
             </div>
-            <div class="item__info col-md-9">
+            <div class="item__info col-xs-8 col-sm-10 col-md-9">
               <h3 class="item__name">Кукла-сувенир</h3>
               <a href="#" class="category-link">Сувениры</a>
               <span class="item__price">1 999 руб.</span>
@@ -223,10 +229,12 @@
             </div>
           </li>
           <li class="cabinet__orders-item row item clearfix">
-            <div class="item__pic col-md-3">
-              <img src="images/order-pic.jpg" alt="Кукла-сувенир" width="164" height="134">
+            <div class="item__pic col-xs-4 col-sm-2 col-md-3">
+              <img class="visible-lg-inline" src="images/order-pic.jpg" alt="Кукла-сувенир" width="164" height="134">
+              <img class="visible-md-inline" src="images/order-pic960.jpg" alt="Кукла-сувенир" width="130" height="134">
+              <img class="visible-sm-inline visible-xs-inline" src="images/order-pic768.jpg" alt="Кукла-сувенир">
             </div>
-            <div class="item__info col-md-9">
+            <div class="item__info col-xs-8 col-sm-10 col-md-9">
               <h3 class="item__name">Кукла-сувенир</h3>
               <a href="#" class="category-link">Сувениры</a>
               <span class="item__price">1 999 руб.</span>
@@ -234,10 +242,12 @@
             </div>
           </li>
           <li class="cabinet__orders-item row item clearfix">
-            <div class="item__pic col-md-3">
-              <img src="images/order-pic.jpg" alt="Кукла-сувенир" width="164" height="134">
+            <div class="item__pic col-xs-4 col-sm-2 col-md-3">
+              <img class="visible-lg-inline" src="images/order-pic.jpg" alt="Кукла-сувенир" width="164" height="134">
+              <img class="visible-md-inline" src="images/order-pic960.jpg" alt="Кукла-сувенир" width="130" height="134">
+              <img class="visible-sm-inline visible-xs-inline" src="images/order-pic768.jpg" alt="Кукла-сувенир">
             </div>
-            <div class="item__info col-md-9">
+            <div class="item__info col-xs-8 col-sm-10 col-md-9">
               <h3 class="item__name">Кукла-сувенир</h3>
               <a href="#" class="category-link">Сувениры</a>
               <span class="item__price">1 999 руб.</span>
@@ -314,6 +324,6 @@
       </div>
     </div>
   </footer>
-
+  <script src="js/common.js"></script>
 </body>
 </html>
