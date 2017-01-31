@@ -79,7 +79,7 @@ footer {
   background-image: url(../images/breadcrumbs-arrow.png);
   background-repeat: no-repeat;
 }
-.breadcrumbs__item:last-child:after,
+
 .breadcrumbs__item--last-child:after {
   content: none;
 }
