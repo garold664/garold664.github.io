@@ -645,7 +645,7 @@ footer {
 }
 
 
-.overlay:hover:after {
+.overlay:hover .overlay__block {
   content: "";
 
   position: absolute;
@@ -658,8 +658,9 @@ footer {
 
   opacity: .5;
   background-color: #000;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
 }
-.overlay:hover:before {
+.overlay:hover .overlay__zoom {
   content: "";
 
   position: absolute;
@@ -1141,6 +1142,7 @@ footer {
   right: 0;
   bottom: 0;
   top: 0;
+  background-image: url(../images/alpha-pixel.png);
   background-color: rgba(0, 0, 0, 0.7);
   font-size: 18px;
   line-height: 24px;
