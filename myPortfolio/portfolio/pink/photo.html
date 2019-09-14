@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Academy: Пинк. Фотографии</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body class="photo-page">
+  <header class="page-header">
+    <div class="page-header__nav-wrapper">
+      <div class="page-header__inner">
+        <div class="page-header__head-line">
+          <div class="page-header__head-line-wrapper">
+            <a href="#" class="logo">
+              <picture>
+                <source media="(min-width:940px)" srcset="img/logo-pink-white-desktop.svg">
+                <source media="(min-width:620px)" srcset="img/logo-pink-white-tablet.svg">
+                <img src="img/logo-pink-white-mobile.svg"  alt="Pink">
+              </picture>
+            </a>
+            <a href="#" class="page-header__nav-button page-header__nav-button_closed">Отрыть меню/Закрыть меню</a>
+          </div>
+        </div>
+        <ul class="page-nav page-nav_closed  page-nav_nojs">
+          <li class="page-nav__item item">
+            <a class="page-nav__link link" href="index.html">Главная</a>
+          </li>
+          <li class="page-nav__item page-nav__item_active item">
+            <a class="page-nav__link link">Фотографии</a>
+          </li>
+          <li class="page-nav__item item">
+            <a class="page-nav__link link" href="form.html">Конкурс</a>
+          </li>
+          <li class="page-nav__item item">
+            <a class="page-nav__link link" href="https://htmlacademy.ru/">HTML Academy</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="page-header__slogan">
+      <div class="page-header__slogan-wrapper">
+        Фотографии пользователей
+      </div>
+    </div>
+  </header>
+
+  <main class="main main_photo">
+    <div class="announce">
+      <p>Взгляните на фотографии, которые выкладывают пользователи!
+      Видите, как не хватает ваших?</p>
+    </div>
+    <article class="post post_panorama">
+      <picture>
+        <source media="(min-width: 940px)" srcset="img/panorama-desktop.jpg 1x,
+                                                    img/panorama-desktop@2x.jpg 2x">
+        <source media="(min-width: 620px)" srcset="img/panorama-tablet.jpg 1x,
+                                                    img/panorama-tablet@2x.jpg 2x">
+        <img class="post__img-panorama" src="img/panorama-mobile.jpg" srcset="img/panorama-mobile.jpg 1x,
+                                            img/panorama-mobile@2x.jpg 2x" alt="Панорама дня" width="322" height="137">
+      </picture>
+      <div class="post__wrapper">
+        <div class="post__content">
+            <div class="post__header">
+              <h3 class="post__author">Анна</h3>
+              <span class="post__time">(5 минут назад)</span>
+            </div>
+            <p class="post__text">
+                Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!
+            </p>
+            <footer class="post__footer">
+              Нравится: <span class="likes-counter">215</span>
+            </footer>
+        </div>
+      </div>
+    </article>
+
+     <div class="photos">
+      <article class="post">
+        <picture>
+          <source media="(min-width: 940px)" srcset="img/photo-1-desktop.jpg 1x,
+                                                      img/photo-1-desktop@2x.jpg 2x">
+          <source media="(min-width: 620px)" srcset="img/photo-1-tablet.jpg 1x,
+                                                      img/photo-1-tablet@2x.jpg 2x">
+          <img class="post__img" src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile.jpg 1x,
+                                                                      img/photo-1-mobile@2x.jpg 2x" alt="Панорама дня" width="322" height="137">
+        </picture>
+        <div class="post__content">
+          <div class="post__header">
+            <h3 class="post__author">Левон</h3>
+            <span class="post__time">(5 часов назад)</span>
+          </div>
+          <div class="post__text">
+            <p>Вчера он на луну летал, сегодня в руки к нам попал.</p>
+          </div>
+          <footer class="post__footer">
+            Нравится: <span class="likes-counter">356</span>
+          </footer>
+        </div>
+      </article>
+      <article class="post">
+        <picture>
+          <source media="(min-width: 940px)" srcset="img/photo-2-desktop.jpg 1x,
+                                                      img/photo-2-desktop@2x.jpg 2x">
+          <source media="(min-width: 620px)" srcset="img/photo-2-tablet.jpg 1x,
+                                                      img/photo-2-tablet@2x.jpg 2x">
+          <img class="post__img" src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile.jpg 1x,
+                                                                      img/photo-2-mobile@2x.jpg 2x" alt="Панорама дня" width="322" height="137">
+        </picture>
+        <div class="post__content">
+          <header class="post__header">
+            <h3 class="post__author">Антон</h3>
+            <span class="post__time">(12 часов назад)</span>
+          </header>
+          <div class="post__text">
+            <p>Соседи будут рады!</p>
+          </div>
+          <footer class="post__footer">
+            <span class="icon icon_likes"></span> Нравится: <span class="likes-counter">666</span>
+          </footer>
+        </div>
+      </article>
+      <article class="post">
+        <picture>
+          <source media="(min-width: 940px)" srcset="img/photo-3-desktop.jpg 1x,
+                                                      img/photo-3-desktop@2x.jpg 2x">
+          <source media="(min-width: 620px)" srcset="img/photo-3-tablet.jpg 1x,
+                                                      img/photo-3-tablet@2x.jpg 2x">
+          <img class="post__img" src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile.jpg 1x,
+                                                                      img/photo-3-mobile@2x.jpg 2x" alt="Панорама дня" width="322" height="137">
+        </picture>
+        <div class="post__content">
+          <header class="post__header">
+            <h3 class="post__author">Борис</h3>
+            <span class="post__time">(20 часов назад)</span>
+          </header>
+          <div class="post__text">
+            <p>Здесь могла быть ваша цитата о высоком и вечном.</p>
+          </div>
+          <footer class="post__footer">
+            <span class="icon icon_likes"></span> Нравится: <span class="likes-counter">215</span>
+          </footer>
+        </div>
+      </article>
+      <article class="post">
+        <picture>
+          <source media="(min-width: 940px)" srcset="img/photo-4-desktop.jpg 1x,
+                                                      img/photo-4-desktop@2x.jpg 2x">
+          <source media="(min-width: 620px)" srcset="img/photo-4-tablet.jpg 1x,
+                                                      img/photo-4-tablet@2x.jpg 2x">
+          <img class="post__img" src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile.jpg 1x,
+                                                                      img/photo-4-mobile@2x.jpg 2x" alt="Панорама дня" width="322" height="137">
+        </picture>
+        <div class="post__content">
+          <header class="post__header">
+            <h3 class="post__author">Сергей</h3>
+            <span class="post__time">(25 часов назад)</span>
+          </header>
+          <div class="post__text">
+            <p>Самая кубанская в мире!</p>
+          </div>
+          <footer class="post__footer">
+            <span class="icon icon_likes"></span> Нравится: <span class="likes-counter">4</span>
+          </footer>
+        </div>
+      </article>
+      <article class="post">
+        <picture>
+          <source media="(min-width: 940px)" srcset="img/photo-5-desktop.jpg 1x,
+                                                      img/photo-5-desktop@2x.jpg 2x">
+          <source media="(min-width: 620px)" srcset="img/photo-5-tablet.jpg 1x,
+                                                      img/photo-5-tablet@2x.jpg 2x">
+          <img class="post__img" src="img/photo-5-mobile.jpg" srcset="img/photo-5-mobile.jpg 1x,
+                                                                      img/photo-5-mobile@2x.jpg 2x" alt="Панорама дня" width="322" height="137">
+        </picture>
+        <div class="post__content">
+          <header class="post__header">
+            <h3 class="post__author">Максим</h3>
+            <span class="post__time">(40 часов назад)</span>
+          </header>
+          <div class="post__text">
+            <p>Где снег-то?</p>
+          </div>
+          <footer class="post__footer">
+            <span class="icon icon_likes"></span> Нравится: <span class="likes-counter">150</span>
+          </footer>
+        </div>
+      </article>
+      <article class="post">
+        <picture>
+          <source media="(min-width: 940px)" srcset="img/photo-6-desktop.jpg 1x,
+                                                      img/photo-6-desktop@2x.jpg 2x">
+          <source media="(min-width: 620px)" srcset="img/photo-6-tablet.jpg 1x,
+                                                      img/photo-6-tablet@2x.jpg 2x">
+          <img class="post__img" src="img/photo-6-mobile.jpg" srcset="img/photo-6-mobile.jpg 1x,
+                                                                      img/photo-6-mobile@2x.jpg 2x" alt="Панорама дня" width="322" height="137">
+        </picture>
+        <div class="post__content">
+          <header class="post__header">
+            <h3 class="post__author">Надежда</h3>
+            <span class="post__time">(45 часов назад)</span>
+          </header>
+          <div class="post__text">
+            <p>Всем GM и взаимныые лайки!</p>
+          </div>
+          <footer class="post__footer">
+            <span class="icon icon_likes"></span> Нравится: <span class="likes-counter">2560</span>
+          </footer>
+        </div>
+      </article>
+    </div>
+
+    <div class="announce">
+      <p>Затмите их всех!</p>
+      <p>Выкладывайте все, что накопилось в телефоне!</p>
+    </div>
+
+    <div class="add-photo">
+      <div class="add-photo__wrapper">
+        <picture>
+          <source media="(min-width: 940px)" srcset="img/photo-7-desktop.jpg 1x,
+                                                      img/photo-7-desktop@2x.jpg 2x">
+          <source media="(min-width: 620px)" srcset="img/photo-7-tablet.jpg 1x,
+                                                      img/photo-7-tablet@2x.jpg 2x">
+          <img class="add-photo__img" src="img/photo-6-mobile.jpg" srcset="img/photo-7-mobile.jpg 1x,
+                                                                      img/photo-7-mobile@2x.jpg 2x" alt="Панорама дня" width="280" height="374">
+        </picture>
+        <div class="add-photo__tools">
+          <input class="add-photo__tool-chooser" type="radio"  id="tool-chooser-1" name="tool-chooser" checked="checked">
+          <input class="add-photo__tool-chooser" type="radio"  id="tool-chooser-2" name="tool-chooser">
+          <input class="add-photo__tool-chooser" type="radio"  id="tool-chooser-3" name="tool-chooser">
+          <div class="add-photo__tools-row">
+            <label class="add-photo__tool-btn add-photo__tool-btn_crop" for="tool-chooser-1" >Кадрирование</label>
+            <label class="add-photo__tool-btn add-photo__tool-btn_fill" for="tool-chooser-2" >Заливка</label>
+            <label class="add-photo__tool-btn add-photo__tool-btn_contrast" for="tool-chooser-3" >Контраст</label>
+          </div>
+          <div class="add-photo__range add-photo__range_crop">
+            <div class="add-photo__range-line">
+              <div class="add-photo__range-btn"></div>
+            </div>
+          </div>
+          <div class="add-photo__range add-photo__range_fill">
+            <div class="add-photo__range-line">
+              <div class="add-photo__range-btn"></div>
+            </div>
+          </div>
+          <div class="add-photo__range add-photo__range_contrast">
+            <div class="add-photo__range-line">
+              <div class="add-photo__range-btn"></div>
+            </div>
+          </div>
+          <div class="add-photo__btns">
+            <a href="#" class="add-photo__btn add-photo__btn_send">Запостить</a>
+            <a href="#" class="add-photo__btn add-photo__btn_reset">Отмена</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="page-footer page-footer_photo">
+    <div class="page-footer__logo">
+      <a class="logo" href="#">
+        <picture>
+          <source media="(min-width:940px)" srcset="img/logo-pink-blue-desktop.svg">
+          <img src="img/logo-pink-blue-mobile.svg"  alt="Pink">
+        </picture>
+      </a>
+    </div>
+    <div class="page-footer__social">
+      <a href="#" class="social-link social-link_tw">Twitter</a>
+      <a href="#" class="social-link social-link_fb">Facebook</a>
+      <a href="#" class="social-link social-link_yt">Youtube</a>
+    </div>
+    <div class="page-footer__made-in">
+      Разработано
+      <a class="page-footer__made-in-link link" href="#">
+        <img src="img/logo-htmlacademy.svg" alt="htmlacademy.ru" width="27" height="34">
+      </a>
+    </div>
+  </footer>
+
+  <script src="js/picturefill.min.js"></script>
+  <script src="js/common.js"></script>
+
+</body>
+</html>

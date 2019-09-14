@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Nerds</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,500&amp;subset=cyrillic-ext" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="favicon.ico">
+</head>
+<body class="page-catalog">
+  <header class="page-header">
+    <div class="page-header__wrapper container">
+      <div class="page-header__headline clearfix">
+        <div class="page-header__logo-wrapper">
+          <img class="logo" src="img/icon-logo.png" alt="Nerds" width="140" height="58">  
+        </div>
+      
+        <nav class="page-header__nav">
+          <ul class="page-header__nav-list">
+            <li class="page-header__nav-item">
+              <a href="index.html" class="page-header__nav-link ">
+                Студия
+              </a>
+            </li>
+            <li class="page-header__nav-item">
+              <a href="#" class="page-header__nav-link">
+                Клиенты
+              </a>
+            </li>
+            <li class="page-header__nav-item">
+              <a class="page-header__nav-link page-header__nav-link--active">
+                Магазин
+              </a>
+            </li>
+            <li class="page-header__nav-item">
+              <a href="#" class="page-header__nav-link">
+                Контакты
+              </a>
+            </li>
+            <li class="page-header__nav-item">
+              <a href="#" class="page-header__nav-link page-header__nav-link--cart icon">
+                Корзина
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <h2 class="page-header__title">
+        Добро пожаловать в магазин готовых макетов
+      </h2>
+    </div>
+  </header>
+  <main class="page-main">
+    <div class="catalog container clearfix">
+      <form class="catalog__filter form">
+        <fieldset class="form__section">
+          <legend class="form__section-title">
+            Стоимость:
+          </legend>
+          <div class="form__range"> 
+            <div id="slider-range"></div>
+          </div>
+          <div class="form__controls">
+            <label class="form__controls-label" for="#min-price">от</label>
+            <input class="form__controls-input" id="min-price" type="number" value="0" min="0" max="60000" step="100">
+
+            <label class="form__controls-label" for="#max-price">до</label>
+            <input class="form__controls-input" id="max-price" type="number" value="15000" min="0" max="60000" step="100">
+          </div>
+        </fieldset>
+
+        <fieldset class="form__section">
+          <legend class="form__section-title">
+            Сетка:
+          </legend>
+          <input class="form__radio" type="radio" id="layout-adaptive" name="layout" checked>
+          <label class="form__label-radio icon" for="layout-adaptive">Адаптивная</label>
+          
+          <input class="form__radio" type="radio" id="layout-fixed" name="layout">
+          <label class="form__label-radio icon" for="layout-fixed">Фиксированная</label>
+          
+          <input class="form__radio" type="radio" id="layout-elastic" name="layout">
+          <label class="form__label-radio icon" for="layout-elastic">Резиновая</label>
+        </fieldset>
+
+        <fieldset class="form__section">
+          <legend class="form__section-title">
+            Особенности:
+          </legend>
+          <input class="form__radio form__radio--checkbox" type="checkbox" id="feature-slider" name="feature" checked>
+          <label class="form__label-radio form__label-radio--checkbox icon icon" for="feature-slider">Слайдер</label>
+          
+          <input class="form__radio form__radio--checkbox" type="checkbox" id="feature-block-advantages" name="feature">
+          <label class="form__label-radio form__label-radio--checkbox icon icon" for="feature-block-advantages">Блок преимуществ</label>
+          
+          <input class="form__radio form__radio--checkbox" type="checkbox" id="feature-news" name="feature" checked>
+          <label class="form__label-radio form__label-radio--checkbox icon" for="feature-news">Новости</label>
+
+          <input class="form__radio form__radio--checkbox" type="checkbox" id="feature-gallery" name="feature">
+          <label class="form__label-radio form__label-radio--checkbox icon icon" for="feature-gallery">Галерея</label>
+
+          <input class="form__radio form__radio--checkbox" type="checkbox" id="feature-cart" name="feature">
+          <label class="form__label-radio form__label-radio--checkbox icon icon" for="feature-cart">Корзина</label>
+        </fieldset>
+      </form>
+      <div class="catalog__container">
+        <div class="catalog__sorting sorting">
+          <b class="sorting__title">Сортировать:</b>
+          <div class="sorting__container">
+            <input class="sorting__radio" type="radio" id="sort-price" name="sorting">
+            <label for="sort-price" class="sorting__label-radio">По цене</label>
+            
+            <input class="sorting__radio" type="radio" id="sort-type" name="sorting">
+            <label for="sort-type" class="sorting__label-radio">По типу</label>
+            
+            <input class="sorting__radio" type="radio" id="sort-function" name="sorting">
+            <label for="sort-function" class="sorting__label-radio">По функционалу</label>
+          </div>
+          <div class="sorting__direction">
+            <input class="sorting__radio" type="radio" id="sort-direction-down" name="sorting-direction" checked>
+            <label for="sort-direction-down" class="sorting__label-radio-direction icon">По убыванию</label>
+
+            <input class="sorting__radio" type="radio" id="sort-direction-up" name="sorting-direction">
+            <label for="sort-direction-up" class="sorting__label-radio-direction sorting__label-radio-direction--up icon">По возврастанию</label>
+          </div>
+        </div>
+        <ul class="catalog__list clearfix">
+          <li class="catalog__item">
+            <div class="catalog__item-head"></div>
+            <img class="catalog__item-img" src="img/img-1.jpg" alt="Продукт">
+            <div class="catalog__item-container">
+              <h4 class="catalog__item-title">
+                Sunset
+              </h4>
+              <p class="catalog__item-text">
+                Интернет-магазин с личным кабинетом
+              </p>
+              <a href="#" class="catalog__item-btn btn">10000 р.</a>
+            </div>
+          </li>
+          
+          <li class="catalog__item">
+            <div class="catalog__item-head"></div>
+            <img class="catalog__item-img" src="img/img-2.jpg" alt="Продукт">
+            <div class="catalog__item-container">
+              <h4 class="catalog__item-title">
+                Sunset
+              </h4>
+              <p class="catalog__item-text">
+                Интернет-магазин с личным кабинетом
+              </p>
+              <a href="#" class="catalog__item-btn btn">10000 р.</a>
+            </div>
+          </li>
+          
+          <li class="catalog__item">
+            <div class="catalog__item-head"></div>
+            <img class="catalog__item-img" src="img/img-3.jpg" alt="Продукт">
+            <div class="catalog__item-container">
+              <h4 class="catalog__item-title">
+                Sunset
+              </h4>
+              <p class="catalog__item-text">
+                Интернет-магазин с личным кабинетом
+              </p>
+              <a href="#" class="catalog__item-btn btn">10000 р.</a>
+            </div>
+          </li>
+          
+          <li class="catalog__item">
+            <div class="catalog__item-head"></div>
+            <img class="catalog__item-img" src="img/img-4.jpg" alt="Продукт">
+            <div class="catalog__item-container">
+              <h4 class="catalog__item-title">
+                Sunset
+              </h4>
+              <p class="catalog__item-text">
+                Интернет-магазин с личным кабинетом
+              </p>
+              <a href="#" class="catalog__item-btn btn">10000 р.</a>
+            </div>
+          </li>
+          
+          <li class="catalog__item">
+            <div class="catalog__item-head"></div>
+            <img class="catalog__item-img" src="img/img-5.jpg" alt="Продукт">
+            <div class="catalog__item-container">
+              <h4 class="catalog__item-title">
+                Sunset
+              </h4>
+              <p class="catalog__item-text">
+                Интернет-магазин с личным кабинетом
+              </p>
+              <a href="#" class="catalog__item-btn btn">10000 р.</a>
+            </div>
+          </li>
+          
+          <li class="catalog__item">
+            <div class="catalog__item-head"></div>
+            <img class="catalog__item-img" src="img/img-6.jpg" alt="Продукт">
+            <div class="catalog__item-container">
+              <h4 class="catalog__item-title">
+                Sunset
+              </h4>
+              <p class="catalog__item-text">
+                Интернет-магазин с личным кабинетом
+              </p>
+              <a href="#" class="catalog__item-btn btn">10000 р.</a>
+            </div>
+          </li>
+        </ul>
+
+        <div class="catalog__pagination">
+          <a href="#" class="catalog__pagination-link catalog__pagination-link--active btn">1</a>
+          <a href="#" class="catalog__pagination-link btn">2</a>
+          <a href="#" class="catalog__pagination-link btn">3</a>
+          <a href="#" class="catalog__pagination-link catalog__pagination-link--next btn">Следующая</a>
+        </div>
+      </div>
+    </div>
+    <div class="contacts">
+      <div class="contacts__map" id="map"></div>
+      <div class="contacts__info">
+        <h3 class="contacts__info-title title">
+          <b>NЁRDS</b> DESIGN STUDIO
+        </h3>
+        <div class="contacts__info-address">
+          350000, Краснодар, ул. Головатого, 100
+        </div>
+        <div class="contacts__info-tel">
+          тел. +7 (861) 275-75-75
+        </div>
+        <a href="#" class="contacts__info-btn btn">
+          Напишите нам
+        </a>
+      </div>
+    </div>
+  </main>
+  <footer class="page-footer container clearfix">
+    <div class="social-links">
+      <a href="" class="social-link social-link--vk icon btn">Вконтакте</a>
+      <a href="" class="social-link social-link--fb icon btn">Facebook</a>
+      <a href="" class="social-link social-link--insta icon btn">Instagram</a>
+    </div>
+    <div class="footer__message">
+      <h2 class="footer__message-title title">
+        Давайте дружить, это выгодно!
+      </h2>
+      <p class="footer__message-text">
+        Скидка 10% для друзей из социальных сетей. 
+      </p>
+    </div>
+  </footer>
+
+  <div class="modal modal--closed">
+    <form action="#" class="modal__form form">
+      <div class="modal__row clearfix">
+        <div class="modal__col">
+          <label class="form__label" for="client-name">Ваше имя</label>
+          <input class="form__input" id="client-name" type="text" placeholder="Представьтесь, пожалуйста">
+        </div>
+
+        <div class="modal__col">
+          <label class="form__label" for="client-email">Ваш e-mail</label>
+          <input class="form__input" id="client-email" type="text" placeholder="Для отправки ответа">
+        </div>
+      </div>
+
+      <label class="form__label" for="client-email">Тема письма</label>
+      <textarea class="form__input form__input--textarea" name="" id="" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+
+      <div class="modal__row modal__row--btns">
+        <div class="modal__col"> 
+          <input class="modal__btn btn" type="submit" value="Отправить">
+        </div>
+        <div class="modal__col">
+          <a href="#" class="modal__btn modal__btn--cancel btn">Отмена</a>
+        </div>
+      </div>
+    </form>
+  </div>
+  
+  <script src="js/jquery-1.12.4.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/main.js"></script>
+  <script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCBW8UUXbyOVrLiv1ieD1ElcD7-9I_QrfQ&callback=initMap">
+  </script>
+</body>
+</html>
