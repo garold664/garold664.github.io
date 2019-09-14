@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>HTML-Верстальщик: Нияз Мухаметзянов</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,500&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+</head>
+<body>
+  <header class="page-header">   
+    <div class="page-header__wrapper container clearfix">
+      <div class="page-header__brand">
+        <h2>
+          Нияз Мухаметзянов
+        </h2>
+      </div>
+      <nav class="page-header__nav" id="nav">
+        <ul class="page-header__nav-list clearfix">
+          <li class="page-header__nav-item">
+            <a href="#info" class="page-header__nav-link">
+              Обо мне
+            </a>
+          </li>
+          <li class="page-header__nav-item">
+            <a href="#portfolio" class="page-header__nav-link">
+              Портфолио
+            </a>
+          </li>
+          <li class="page-header__nav-item">
+            <a href="#skills" class="page-header__nav-link">
+              Навыки
+            </a>
+          </li>
+          <li class="page-header__nav-item">
+            <a href="#contacts" class="page-header__nav-link">
+              Контакты
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="page-main">
+    <section class="info section" id="info">
+      <div class="info__wrapper container">
+        <h2 class="info__title title">
+          Обо мне
+        </h2>
+        <p class="info__text">
+          Начинающий HTML-верстальщик. Прошел курсы "Продвинутый HTML и CSS" в <a class="link" href="https://htmlacademy.ru/" target="_blank">HTML Academy</a>. 
+        </p>
+      </div>
+    </section>
+
+    <section class="portfolio section clearfix" id="portfolio">
+      <div class="portfolio__wrapper container">
+        <h2 class="portfolio__title title">
+          Мои работы
+        </h2>
+        <a href="/portfolio/nerds/index.html" class="portfolio__link link" target="_blank">
+          <div class="portfolio__link-text">Учебный макет "Nerds"</div>
+          <img src="img/nerds-index.jpg" alt="Учебный макет "Nerds"">
+        </a>
+        
+        <a href="/portfolio/pink/index.html" class="portfolio__link link" target="_blank">
+          <div class="portfolio__link-text">Учебный макет "Pink"</div>
+          <img src="img/pink-index-desktop.jpg" alt="Учебный макет Mishka">
+        </a>
+        
+        <a href="/portfolio/mishka/index.html" class="portfolio__link link" target="_blank">
+          <div class="portfolio__link-text">Учебный макет "Mishka"</div>
+          <img src="img/mishka-index-desktop.jpg" alt="Учебный макет Mishka">
+        </a>
+      </div>
+    </section>
+
+    <section class="skills section" id="skills">
+      <div class="skills__wrapper container">
+        <h2 class="skills__title title">Навыки</h2>
+          <ul class="skills__list">
+            <li class="skills__item">HTML5</li>
+            <li class="skills__item">CSS3</li>
+            <li class="skills__item">LESS</li>
+            <li class="skills__item">JavaScript на базовом уровне</li>
+            <li class="skills__item">jQuery на базовом уровне</li>
+            <li class="skills__item">Git</li>
+            <li class="skills__item">Gulp</li>
+          </ul>
+      </div>
+    </section>
+
+    <section class="contacts section" id="contacts">
+      <div class="contacts__wrapper container">
+        <h2 class="contacts__title title">Контакты</h2>
+        <div class="contacts__content">
+          <a href="https://tatarstan.hh.ru/resume/7bd2fe35ff02f095eb0039ed1f6657587a5846" class="contacts__link link" target="_blank">Мое резюме на hh.ru</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <script src="js/ScrollMagic.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вязание на заказ</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body class="form-page">
+    <header class="page-header">
+      <div class="page-header__head-line">
+        <a href="#" class="page-header__nav-button page-header__nav-button--closed">Открыть/закрыть меню</a>
+        <nav class="page-header__nav page-header__nav--closed page-header__nav--nojs">
+          <ul class="page-header__nav-list">
+            <li class="page-header__nav-item page-header__nav-item--logo">
+              <a href="index.html" class="page-header__logo">
+                <picture>
+                  <source media="(min-width:1150px)" srcset="img/logo-desktop.svg 1x">
+                  <source media="(min-width:768px)" srcset="img/logo-tablet.svg 1x">
+                  <img src="img/logo-mobile.svg" alt="Mishka">
+                </picture>
+              </a>
+            </li>
+            <li class="page-header__nav-item page-header__nav-item--catalog">
+              <a href="catalog.html" class="page-header__nav-link page-header__nav-link--catalog link">
+                Каталог товаров
+              </a>
+            </li>
+            <li class="page-header__nav-item page-header__nav-item--form">
+              <a href="form.html" class="page-header__nav-link link">
+                Вязание на заказ
+              </a>
+            </li>
+            <li class="page-header__nav-item page-header__nav-item--search">
+              <a href="#" class="page-header__nav-link page-header__nav-link--search link">
+                Поиск по сайту
+              </a>
+            </li>
+            <li class="page-header__nav-item page-header__nav-item--cart">
+              <a href="#" class="page-header__nav-link page-header__nav-link--cart link">
+                Корзина: <span class="cart">пока пуста</span>
+              </a>
+            </li>
+            <li class="page-header__nav-item">
+              <a href="#" class="page-header__nav-link link">
+                Новые поступления
+              </a>
+            </li>
+            <li class="page-header__nav-item">
+              <a href="#" class="page-header__nav-link link">
+                Распродажа
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="page-header__container">
+        <h1 class="page-header__title title">
+          Вязание на заказ
+        </h1>
+      </div>
+    </header>
+    <main class="page-main">
+      <div class="page-main__announce">
+        Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+      </div>
+      <form action="#" class="form" id="order-form">
+        <section class="form__section form__section--type">
+          <div class="form__section-wrapper">
+            <h2 class="form__section-title">
+              <span class="form__section-title-inner">Тип</span>
+            </h2>
+            <div class="form__elements">
+              <input class="input-radio" type="radio" name="type" id="type-radio-1"  checked="checked">
+              <label class="label-radio" for="type-radio-1"><span>Аксессуар для интерьера</span></label>
+
+              <input class="input-radio" type="radio" name="type" id="type-radio-2" >
+              <label class="label-radio" for="type-radio-2">Детская игрушка</label>
+            </div>
+          </div>
+        </section>
+
+        <section class="form__section form__section--color">
+          <div class="form__section-wrapper">
+            <h2 class="form__section-title">
+              <span class="form__section-title-inner">Цвет</span>
+
+            </h2>
+            <div class="form__elements">
+              <input class="input-checkbox" type="checkbox" name="type" id="color-white" checked="checked">
+              <label class="label-checkbox" for="color-white">Белый</label>
+
+              <input class="input-checkbox" type="checkbox" name="type" id="color-grey" checked="checked">
+              <label class="label-checkbox" for="color-grey">Серый</label>
+
+              <input class="input-checkbox" type="checkbox" name="type" id="color-tiff" >
+              <label class="label-checkbox" for="color-tiff">&laquo;Тиффани&raquo;</label>
+
+              <input class="input-checkbox" type="checkbox" name="type" id="color-black" >
+              <label class="label-checkbox" for="color-black">Черный</label>
+
+              <input class="input-checkbox" type="checkbox" name="type" id="color-pink" >
+              <label class="label-checkbox" for="color-pink">Розовый</label>
+
+              <input class="input-checkbox" type="checkbox" name="type" id="color-orange" >
+              <label class="label-checkbox" for="color-orange">Оранжевый</label>
+            </div>
+          </div>
+        </section>
+
+        <section class="form__section form__section--fullname">
+          <div class="form__section-wrapper">
+            <h2 class="form__section-title">
+              <span class="form__section-title-inner">ФИО</span>
+            </h2>
+            <div class="form__elements">
+              <div class="form__field-group">
+                <label class="form__label-text" for="fullname-name">Имя: </label>
+                <input class="form__input-text" type="text" id="fullname-name" placeholder="Введите ваше имя" required>
+              </div>
+
+              <div class="form__field-group">
+                <label class="form__label-text" for="fullname-surname">Фамилия: </label>
+                <input class="form__input-text" type="text" id="fullname-surname" placeholder="Укажите фамилию" required>
+              </div>
+
+              <div class="form__field-group">
+                <label class="form__label-text" for="fullname-patronymic">Отчество: </label>
+                <input class="form__input-text" type="text" id="fullname-patronymic" placeholder="Отчество, если желаете" required>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="form__section form__section--tel">
+          <div class="form__section-wrapper">
+            <h2 class="form__section-title">
+              <span class="form__section-title-inner">Тел</span>
+            </h2>
+            <div class="form__elements">
+              <input class="form__input-text" type="text" id="tel" placeholder="+7 XXX XX XX" required>
+            </div>
+          </div>
+        </section>
+
+        <section class="form__section form__section--tel form__section--email">
+          <div class="form__section-wrapper">
+            <h2 class="form__section-title">
+              <span class="form__section-title-inner">E-mail</span>
+            </h2>
+            <div class="form__elements">
+              <input class="form__input-text" type="text" id="tel" placeholder="Ваш" required>
+            </div>
+          </div>
+        </section>
+
+        <section class="form__section form__section--extra">
+          <div class="form__section-wrapper">
+            <h2 class="form__section-title">
+              <span class="form__section-title-inner">Доп</span>
+            </h2>
+            <div class="form__elements">
+              <textarea class="form__input-textarea" id="tel" placeholder="Опишите все ваши пожелания к заказу" rows="10" cols="40" placeholder="Опишите все ваши пожелания к заказу" required></textarea>
+            </div>
+          </div>
+        </section>
+
+        <div class="form__footer">
+          <p class="form__note">
+            Все поля обязательны для заполнения
+          </p>
+          <button class="form__submit-btn btn" id="submit-btn">Отправить заказ</button>
+        </div>
+
+      </form>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <a href="index.html" class="page-footer__logo"></a>
+        <div class="page-footer__social">
+          <a href="#" class="social-link social-link--instagram">Instagram</a>
+          <a href="#" class="social-link social-link--facebook">Facebook</a>
+          <a href="#" class="social-link social-link--twitter">Twitter</a>
+        </div>
+        <div class="page-footer__copyright">
+          Разработано
+          <a href="#" class="page-footer__copyright-link link">HTML Академия</a>
+        </div>
+      </div>
+    </footer>
+    <script src="js/common.js"></script>
+    <script src="js/picturefill.min.js"></script>
+  </body>
+</html>

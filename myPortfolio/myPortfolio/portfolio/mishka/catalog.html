@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Academy: Мишка - Каталог товаров</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=tr_TR" type="text/javascript"></script>
+  </head>
+  <body class="catalog-page form-page">
+    <header class="page-header">
+      <div class="page-header__head-line">
+        <a href="#" class="page-header__nav-button page-header__nav-button--closed">Открыть/закрыть меню</a>
+        <nav class="page-header__nav page-header__nav--closed page-header__nav--nojs">
+          <ul class="page-header__nav-list">
+            <li class="page-header__nav-item page-header__nav-item--logo">
+              <a href="index.html" class="page-header__logo">
+                <picture>
+                  <source media="(min-width:1150px)" srcset="img/logo-desktop.svg 1x">
+                  <source media="(min-width:768px)" srcset="img/logo-tablet.svg 1x">
+                  <img src="img/logo-mobile.svg" alt="Mishka">
+                </picture>
+              </a>
+            </li>
+            <li class="page-header__nav-item page-header__nav-item--catalog">
+              <a href="catalog.html" class="page-header__nav-link page-header__nav-link--catalog link">
+                Каталог товаров
+              </a>
+            </li>
+            <li class="page-header__nav-item page-header__nav-item--form">
+              <a href="form.html" class="page-header__nav-link link">
+                Вязание на заказ
+              </a>
+            </li>
+            <li class="page-header__nav-item page-header__nav-item--search">
+              <a href="#" class="page-header__nav-link page-header__nav-link--search link">
+                Поиск по сайту
+              </a>
+            </li>
+            <li class="page-header__nav-item page-header__nav-item--cart">
+              <a href="#" class="page-header__nav-link page-header__nav-link--cart link">
+                Корзина: <span class="cart">пока пуста</span>
+              </a>
+            </li>
+            <li class="page-header__nav-item">
+              <a href="#" class="page-header__nav-link link">
+                Новые поступления
+              </a>
+            </li>
+            <li class="page-header__nav-item">
+              <a href="#" class="page-header__nav-link link">
+                Распродажа
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="page-header__container">
+        <h1 class="page-header__title title">
+          Каталог товаров
+        </h1>
+      </div>
+    </header>
+    <main class="page-main page-main--catalog">
+      <div class="page-main__products">
+        <figure class="product-item">
+          <picture>
+            <source media="(min-width:1150px)" srcset="img/photo-1-desktop@1x.jpg 1x">
+            <source media="(min-width:768px)" srcset="img/photo-1-tablet@1x.jpg 1x">
+            <img class="product-item__pic" src="img/photo-1-mobile@1x.jpg" alt="Зайчик-попрыгайчик">
+          </picture>
+          <figcaption class="product-item__caption">
+            <h3 class="product-item__title title">
+              <a class="link" href="#">Зайчик-попрыгайчик</a>
+            </h3>
+            <div class="product-item__description">
+              Рост 30 см, вес 200 г
+            </div>
+            <div class="product-item__price">
+              <span>1 200 руб.</span>
+              <a href="#" class="product-item__buy">Купить</a>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="product-item">
+          <picture>
+            <source media="(min-width:1150px)" srcset="img/photo-2-desktop@1x.jpg 1x">
+            <source media="(min-width:768px)" srcset="img/photo-2-tablet@1x.jpg 1x">
+            <img class="product-item__pic" src="img/photo-2-mobile@1x.jpg" alt="Зайчик-попрыгайчик">
+          </picture>
+          <figcaption class="product-item__caption">
+            <h3 class="product-item__title title">
+              <a class="link" href="#">Корзинка для белья</a>
+            </h3>
+            <div class="product-item__description">
+              Диаметр 15 см, высота 10 см
+            </div>
+            <div class="product-item__price">
+              <span>690 руб.</span>
+              <a href="#" class="product-item__buy">Купить</a>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="product-item">
+          <picture>
+            <source media="(min-width:1150px)" srcset="img/photo-3-desktop@1x.jpg 1x">
+            <source media="(min-width:768px)" srcset="img/photo-3-tablet@1x.jpg 1x">
+            <img class="product-item__pic" src="img/photo-3-mobile@1x.jpg" alt="Зайчик-попрыгайчик">
+          </picture>
+          <figcaption class="product-item__caption">
+            <h3 class="product-item__title title">
+              <a class="link" href="#">Большая корзинка для игрушек</a>
+            </h3>
+            <div class="product-item__description">
+              Диаметр 30 см, высота 30 см
+            </div>
+            <div class="product-item__price">
+              <span>1 500 руб.</span>
+              <a href="#" class="product-item__buy">Купить</a>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+
+      <figure class="production">
+        <figcaption class="production__caption">
+          Процесс производства
+        </figcaption>
+        <div class="production__media">
+          <picture>
+            <source media="(min-width:1150px)" srcset="img/video-desktop@1x.jpg 1x">
+            <source media="(min-width:768px)" srcset="img/video-tablet@1x.jpg 1x">
+            <img class="production__media-pic" src="img/video-mobile@1x.jpg" alt="Процесс производства">
+          </picture>
+          <a class="production__media-play link" href="#">Запустить видео</a>
+        </div>
+        <footer class="production__description">
+          По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+          <a class="production__btn btn" href="#">Сделать заказ</a>
+        </footer>
+      </figure>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <a href="index.html" class="page-footer__logo"></a>
+        <div class="page-footer__social">
+          <a href="#" class="social-link social-link--instagram">Instagram</a>
+          <a href="#" class="social-link social-link--facebook">Facebook</a>
+          <a href="#" class="social-link social-link--twitter">Twitter</a>
+        </div>
+        <div class="page-footer__copyright">
+          Разработано
+          <a href="#" class="page-footer__copyright-link link">HTML Академия</a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal modal--cart modal--closed">
+      <div class="modal__wrapper">
+        <h2 class="modal__title title">
+          Добавить в корзину
+        </h2>
+        <p class="modal__text">
+          Выберите размер:
+        </p>
+        <div class="modal__tools">
+            <input class="input-radio" type="radio" id="size-s" name="size" value="size-s">
+            <label class="label-radio label-radio--btn" for="size-s">S</label>
+            <input class="input-radio" type="radio" id="size-m" name="size" value="size-m">
+            <label class="label-radio label-radio--btn" for="size-m">M</label>
+            <input class="input-radio" type="radio" id="size-l" name="size" value="size-l">
+            <label class="label-radio label-radio--btn" for="size-l">L</label>
+        </div>
+        <a class="modal__btn btn" href="#">Добавить</a>
+      </div>
+    </div>
+    <script src="js/common.js"></script>
+    <script src="js/picturefill.min.js"></script>
+  </body>
+</html>
