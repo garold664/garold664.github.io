@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Font Face Observer</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="node_modules/fontfaceobserver/fontfaceobserver.js"></script>
+  <script>
+    var opensansLight = new FontFaceObserver('Open Sans', {
+      weight: 300
+    });
+
+    var opensans = new FontFaceObserver('Open Sans', {
+      weight: 400
+    });
+
+    var opensansBold = new FontFaceObserver('Open Sans', {
+      weight: 700
+    });
+
+    opensansLight.load().then(function () {
+      console.log('Light Font is available');
+    }, function () {
+      console.log('Light Font is not available');
+    });
+    opensans.load().then(function () {
+      console.log('Font is available');
+    }, function () {
+      console.log('Font is not available');
+    });
+    opensansBold.load().then(function () {
+      console.log('Bold Font is available');
+    }, function () {
+      console.log('Bold Font is not available');
+    });
+  </script>
+</head>
+<body>
+  <article>
+    <h1>My text</h1>
+    <p>
+      <span>Debitis veritatis esse aut iusto nobis assumenda est, obcaecati illo totam, quisquam modi nam ducimus aspernatur expedita voluptas qui dicta animi ratione ad eum, fugit, incidunt accusantium necessitatibus earum. Natus.</span>
+      <span>Consequatur nemo commodi cumque cupiditate eveniet accusamus perspiciatis laborum impedit modi dolorum, expedita? Saepe deserunt repellat sapiente numquam! Maxime nostrum beatae, placeat aperiam! Ducimus tempore esse nostrum, maxime minima expedita.</span>
+      <span>Ab qui dignissimos aut nisi sequi earum possimus voluptate beatae fuga praesentium ut vitae architecto, deserunt quos quisquam eos recusandae doloremque nam dolorum, odio ullam! Accusantium velit quasi totam ab.</span>
+      <span>Voluptate nemo molestiae in, mollitia sint iusto iure nulla possimus labore eius, minus cum est veniam cupiditate et itaque libero ducimus aliquam nam aperiam nihil. Officiis deleniti repudiandae voluptatem culpa.</span>
+      <span>Tenetur natus voluptas unde molestiae voluptatem laudantium vitae fugiat odio, assumenda commodi dicta dolorum earum repudiandae, ad ipsum sit eveniet maxime, illum doloremque rem quis perferendis officia, veniam eligendi. Quos.</span>
+      <span>Earum voluptas, ut tenetur amet rerum iusto in consequatur hic id asperiores? Officiis impedit perspiciatis, blanditiis, molestiae nostrum hic ut at, maiores, est perferendis corrupti soluta excepturi vel animi ipsam.</span>
+    </p>
+
+    <img src="img/wallp.jpg" alt="Wallpaper" width="500">
+  </article>
+
+  <div>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, culpa, magni. Consequuntur commodi pariatur nulla, itaque temporibus nesciunt reiciendis id nemo ex sequi quo accusantium, dolor. Voluptas necessitatibus quos ipsam.
+  </div>
+</body>
+</html>
