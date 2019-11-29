@@ -8,40 +8,38 @@
 <body class="catalog-page no-js">
   <header class="page-header">
     <div class="page-header__container">
-      <a class="logo" href="index.html"><img src="img/icon-logo.svg" alt="DEVICE"></a>
-
+      <a class="logo" href="index.html">
+        <img src="img/icon-logo.svg" alt="Логотип интернет-магазина DEVICE" width="163" heigth="35">
+      </a>
       <div class="page-header__row">
         <form class="page-header__search" action="#" method="GET">
           <label class="page-header__search-icon" for="search-input">
             <span class="visuallyhidden">Поиск по сайту</span>
           </label>
-          <input class="page-header__search-input" id="search-input" name="search-input" type="text" placeholder="Поиск по сайту">
+          <input class="page-header__search-input" id="search-input" name="search-input" type="search" placeholder="Поиск по сайту">
           <button class="page-header__search-submit" type="submit">
             Найти
           </button>
         </form>
-
         <ul class="page-header__user-nav user-nav">
           <li class="user-nav__item user-nav__item--user">
-            <a class="user-nav__link" href="#">
+            <a class="user-nav__link user-nav__link--user" href="#">
               Валентин Петухов
             </a>
             <a class="user-nav__link user-nav__link--logout" href="#">Выйти</a>
           </li>
-          <li class="user-nav__item user-nav__item--compare">
-            <a class="user-nav__link" href="#">
+          <li class="user-nav__item">
+            <a class="user-nav__link user-nav__link--compare" href="#">
               Сравнить
             </a>
           </li>
-          <li class="user-nav__item user-nav__item--cart" >
-            <a class="user-nav__link" href="#">
+          <li class="user-nav__item">
+            <a class="user-nav__link user-nav__link--cart" href="#">
               Корзина
             </a>
           </li>
         </ul>
-
       </div> <!-- end of .page-header__row -->
-
       <nav class="page-nav">
         <ul class="page-nav__list">
           <li class="page-nav__item page-nav__item--dropdown">
@@ -76,16 +74,10 @@
           <li class="page-nav__item">
             <a class="page-nav__link" href="#">Контакты</a>
           </li>
-
         </ul>
       </nav>
-
     </div> <!-- end of .page-header__container -->
-
   </header>
-
-
-
   <main class="main">
     <div class="main__container">
       <h1 class="main__title">Моноподы для селфи</h1>
@@ -107,78 +99,63 @@
         </li>
       </ul>
     </div>
-
     <section class="catalog">
       <h2 class="catalog__title visuallyhidden">Каталог товаров</h2>
       <div class="catalog__container">
         <div class="catalog__col catalog__col--filter">
           <form class="filter" action="#" method="POST">
             <h3 class="catalog__subtitle">Фильтр:</h3>
-
             <fieldset class="filter__set">
               <legend class="filter__legend">Стоимость</legend>
               <div class="filter__range range">
-
-                <div class="range__slider">
-                  <div class="range__touch-left">
-                    <div class="range__touch-circle">
-                      <span class="range__touch-span"></span>
-                    </div>
-                    <span class="range__touch-left-value">от 0</span>
-                  </div>
-                  <div class="range__touch-right">
-                    <div class="range__touch-circle">
-                      <span class="range__touch-span"></span>
-                    </div>
-                    <span class="range__touch-right-value">до 5000</span>
-                  </div>
-                  <div class="range__line">
-                    <span class="range__line-span"></span>
-                  </div>
+                <div class="range__touch-left">
+                  <button class="range__touch-circle" type="button">
+                    <span class="visuallyhidden">Ползунок нижней границы сладера стоимости</span>
+                  </button>
+                  <label class="range__touch-left-value">
+                    от
+                    <input class="range__touch-left-input" value="0" type="text">
+                  </label>
                 </div>
-
-                <!-- <div id="result">Min: 0 Max: 140</div> -->
-
+                <div class="range__touch-right">
+                  <button class="range__touch-circle" type="button">
+                    <span class="visuallyhidden">Ползунок верхней границы сладера стоимости</span>
+                  </button>
+                  <label class="range__touch-right-value">
+                    до
+                    <input class="range__touch-right-input" value="5000" type="text">
+                  </label>
+                </div>
+                <div class="range__line">
+                  <span class="range__line-span"></span>
+                </div>
               </div> <!-- end of .filter__range -->
             </fieldset>
-
             <fieldset class="filter__set">
               <legend class="filter__legend">Цвет</legend>
               <input class="filter__checkbox" type="checkbox" name="color" id="black" checked>
               <label class="filter__label filter__label--checkbox" for="black">Черный</label>
-
               <input class="filter__checkbox" type="checkbox" name="color" id="white">
               <label class="filter__label filter__label--checkbox" for="white">Белый</label>
-
               <input class="filter__checkbox" type="checkbox" name="color" id="blue" checked>
               <label class="filter__label filter__label--checkbox" for="blue">Синий</label>
-
               <input class="filter__checkbox" type="checkbox" name="color" id="red" checked>
               <label class="filter__label filter__label--checkbox" for="red">Красный</label>
-
               <input class="filter__checkbox" type="checkbox" name="color" id="pink">
               <label class="filter__label filter__label--checkbox" for="pink">Розовый</label>
-
             </fieldset>
-
             <fieldset class="filter__set">
               <legend class="filter__legend">Bluetooth</legend>
-
               <input class="filter__radio" type="radio" name="bluetooth" id="bluetooth-yes" checked>
               <label class="filter__label filter__label--radio" for="bluetooth-yes">Есть</label>
-
               <input class="filter__radio" type="radio" name="bluetooth" id="bluetooth-no">
               <label class="filter__label filter__label--radio" for="bluetooth-no">Нет</label>
-
             </fieldset>
-
             <button class="filter__submit btn" type="submit">
               Показать
             </button>
-
           </form>
         </div> <!-- end  of .catalog__col -->
-
         <div class="catalog__col catalog__col--sort">
           <div class="catalog__sort">
             <h3 class="catalog__subtitle">Сортировка:</h3>
@@ -193,7 +170,6 @@
                 <a class="catalog__sort-link" href="#">По популярности</a>
               </li>
             </ul>
-
             <div class="catalog__sort-dir">
               <a class="catalog__sort-arrow catalog__sort-arrow--up" href="#">
                 <span class="visuallyhidden">По возростанию</span>
@@ -202,76 +178,77 @@
                 <span class="visuallyhidden">По убыванию</span>
               </a>
             </div>
-
           </div> <!-- end of .catalog__sort -->
-
           <ul class="catalog__list">
             <li class="catalog__item">
               <figure class="catalog__fig">
                 <div class="catalog__fig-wrap">
                   <img class="catalog__fig-img" src="img/selfie-stick-1.jpg" alt="Любительская селфи-палка" width="360" height="380">
                   <div class="catalog__fig-hover">
-                    <button class="catalog__fig-buybtn btn">В корзину</button>
-                    <button class="catalog__fig-btn">Добавить к сравнению</button>
+                    <a class="catalog__fig-buybtn btn" href="#">В корзину</a>
+                    <a class="catalog__fig-btn" href="#">Добавить к сравнению</a>
                   </div>
                 </div>
                 <figcaption class="catalog__fig-caption">
-                  <h3 class="catalog__fig-title"><a href="#" class="catalog__fig-link">Любительская селфи-палка</a></h3>
+                  <h3 class="catalog__fig-title">
+                    <a href="#" class="catalog__fig-link">Любительская селфи-палка</a>
+                  </h3>
                   <div class="catalog__fig-price">500 руб.</div>
                 </figcaption>
               </figure>
             </li>
-
             <li class="catalog__item">
               <figure class="catalog__fig">
                 <div class="catalog__fig-wrap">
                   <img class="catalog__fig-img" src="img/selfie-stick-2.jpg" alt="Профессиональная селфи-палка" width="360" height="380">
                   <div class="catalog__fig-hover">
-                    <button class="catalog__fig-buybtn btn">В корзину</button>
-                    <button class="catalog__fig-btn">Добавить к сравнению</button>
+                    <a class="catalog__fig-buybtn btn" href="#">В корзину</a>
+                    <a class="catalog__fig-btn" href="#">Добавить к сравнению</a>
                   </div>
                 </div>
                 <figcaption class="catalog__fig-caption">
-                  <h3 class="catalog__fig-title"><a href="#" class="catalog__fig-link">Профессиональная <br> селфи-палка</a></h3>
+                  <h3 class="catalog__fig-title">
+                    <a href="#" class="catalog__fig-link">Профессиональная <br> селфи-палка</a>
+                  </h3>
                   <div class="catalog__fig-price">1 500 руб.</div>
                 </figcaption>
               </figure>
             </li>
-
             <li class="catalog__item">
               <figure class="catalog__fig">
                 <div class="catalog__fig-wrap">
                   <img class="catalog__fig-img" src="img/selfie-stick-3.jpg" alt="Непотопляемая селфи-палка" width="360" height="380">
                   <div class="catalog__fig-hover">
-                    <button class="catalog__fig-buybtn btn">В корзину</button>
-                    <button class="catalog__fig-btn">Добавить к сравнению</button>
+                    <a class="catalog__fig-buybtn btn" href="#">В корзину</a>
+                    <a class="catalog__fig-btn" href="#">Добавить к сравнению</a>
                   </div>
                 </div>
                 <figcaption class="catalog__fig-caption">
-                  <h3 class="catalog__fig-title"><a href="#" class="catalog__fig-link">Непотопляемая селфи-палка</a></h3>
+                  <h3 class="catalog__fig-title">
+                    <a href="#" class="catalog__fig-link">Непотопляемая селфи-палка</a>
+                  </h3>
                   <div class="catalog__fig-price">2 500 руб.</div>
                 </figcaption>
               </figure>
             </li>
-
             <li class="catalog__item">
               <figure class="catalog__fig catalog__fig--new">
                 <div class="catalog__fig-wrap">
                   <img class="catalog__fig-img" src="img/selfie-stick-4.jpg" alt="Селфи палка &laquo;Следуй за мной&raquo;" width="360" height="380">
                   <div class="catalog__fig-hover">
-                    <button class="catalog__fig-buybtn btn">В корзину</button>
-                    <button class="catalog__fig-btn">Добавить к сравнению</button>
+                    <a class="catalog__fig-buybtn btn" href="#">В корзину</a>
+                    <a class="catalog__fig-btn" href="#">Добавить к сравнению</a>
                   </div>
                 </div>
                 <figcaption class="catalog__fig-caption">
-                  <h3 class="catalog__fig-title"><a href="#" class="catalog__fig-link">Селфи-палка &laquo;Следуй за мной&raquo;</a></h3>
+                  <h3 class="catalog__fig-title">
+                    <a href="#" class="catalog__fig-link">Селфи-палка &laquo;Следуй за мной&raquo;</a>
+                  </h3>
                   <div class="catalog__fig-price">4 900 руб.</div>
                 </figcaption>
               </figure>
             </li>
-
           </ul>
-
           <div class="catalog__pages">
             <a class="catalog__pages-dir" href="#">Назад</a>
             <ul class="catalog__pages-list">
@@ -287,40 +264,34 @@
             </ul>
             <a class="catalog__pages-dir" href="#">Вперед</a>
           </div>
-
         </div>
       </div>
     </section> <!-- end of .catalog -->
   </main>
-
-
-
-
-
   <footer class="page-footer">
     <div class="page-footer__container">
       <div class="page-footer__row page-footer__row--user-nav">
-        <a class="logo"><img src="img/icon-logo-yellow.svg" alt="DEVICE"></a>
-
+        <a class="logo" href="index.html">
+          <img src="img/icon-logo-yellow.svg" alt="Логотип интернет-магазина DEVICE" width="163" heigth="35">
+        </a>
         <ul class="page-header__user-nav user-nav">
           <li class="user-nav__item user-nav__item--user">
-            <a class="user-nav__link" href="#">
+            <a class="user-nav__link user-nav__link--user" href="#">
               Валентин Петухов
             </a>
             <a class="user-nav__link user-nav__link--logout" href="#">Выйти</a>
           </li>
-          <li class="user-nav__item user-nav__item--compare">
-            <a class="user-nav__link" href="#">
+          <li class="user-nav__item">
+            <a class="user-nav__link user-nav__link--compare" href="#">
               Сравнить
             </a>
           </li>
-          <li class="user-nav__item user-nav__item--cart" >
-            <a class="user-nav__link" href="#">
+          <li class="user-nav__item">
+            <a class="user-nav__link user-nav__link--cart" href="#">
               Корзина
             </a>
           </li>
         </ul>
-
       </div> <!-- end of .page-footer__row -->
       <div class="page-footer__row page-footer__row--info">
         <div class="page-footer__address">
@@ -342,7 +313,6 @@
         </div>
       </div> <!-- end of .page-footer__row -->
       <div class="page-footer__row page-footer__row--socials">
-        <span class="page-footer__bar"></span>
         <ul class="page-footer__socials">
           <li class="page-footer__socials-item">
             <a class="page-footer__socials-link page-footer__socials-link--facebook" href="#">
@@ -360,8 +330,8 @@
             </a>
           </li>
         </ul>
-        <a class="page-footer__madein-link" href="#">
-          <span class="visuallyhidden">HTML Academy</span>
+        <a class="page-footer__madein-link" href="https://htmlacademy.ru/intensive/htmlcss">
+          <img src="img/icon-htmlacademy.svg" alt="HTML Academy" width="27" height="35">
         </a>
       </div> <!-- end of .page-footer__row -->
     </div>

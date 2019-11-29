@@ -1,5 +1,5 @@
-document.body.classList.remove('no-js');
-
+var body = document.body;
+body.classList.remove('no-js');
 
 // services Slider
 var servicesNav = document.querySelector('.services__nav');
@@ -27,7 +27,6 @@ servicesNav.addEventListener('click', function (evt) {
 
 });
 
-
 // Popup
 
 var openPopupBtn = document.querySelector('#open-popup');
@@ -36,7 +35,6 @@ var form = popup.querySelector('.popup__form');
 var userName = form.querySelector('[name=user-name');
 var userEmail = form.querySelector('[name=user-email');
 var closePopupBtn = popup.querySelector('.popup__close-btn');
-
 
 var isStorageSupport = true;
 var storage = '';
@@ -49,6 +47,7 @@ try {
 
 var closePopupHandler = function(popup) {
   if (popup.classList.contains('popup--show')) {
+
     popup.classList.remove('popup--show');
     popup.classList.remove('popup--invalid');
   }
@@ -56,13 +55,18 @@ var closePopupHandler = function(popup) {
 
 openPopupBtn.addEventListener('click', function (evt) {
   evt.preventDefault();
+
   popup.classList.add('popup--show');
 
   if (storage) {
     userName.value = storage;
-    userEmail.focus();
+    setTimeout(function() {
+      userEmail.focus();
+    }, 250);
   } else {
-    userName.focus();
+    setTimeout(function() {
+      userName.focus();
+    }, 250);
   }
 });
 
@@ -84,7 +88,6 @@ window.addEventListener('keydown', function (evt) {
 });
 
 form.addEventListener('submit', function (evt) {
-  console.log('submit');
   if (!userName.value || !userEmail.value) {
     evt.preventDefault();
     popup.classList.add('popup--invalid');
@@ -95,10 +98,8 @@ form.addEventListener('submit', function (evt) {
 
 // map
 
-
 var openMapPopupBtn = document.querySelector('#open-map-popup');
 var mapPopup = document.querySelector('#map-popup');
-
 
 openMapPopupBtn.addEventListener('click', function (evt) {
   evt.preventDefault();
@@ -114,4 +115,12 @@ mapPopup.addEventListener('click', function (evt) {
     closePopupHandler(mapPopup);
   }
 
+});
+
+
+window.addEventListener('keydown', function (evt) {
+  if (evt.keyCode === 27)  {
+    evt.preventDefault();
+    closePopupHandler(mapPopup);
+  }
 });
