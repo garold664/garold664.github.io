@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Команда</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <link type="image/png" href="img/favicon.png" rel="icon">
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700|PT+Sans:400,700|Roboto+Slab&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
+  <script src="js/jquery-1.12.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/picturefill.min.js"></script>
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body class="command">
+  <header class="page-header">
+    <div class="page-header__headline">
+      <div class="page-header__container page-header__container--menu">
+        <div class="page-header__wrapper clearfix">
+          <a class="logo overlay" href="main-page.html">
+            <picture>
+              <source srcset="img/logo.png" media="(min-width: 1200px)">
+              <source srcset="img/logo.png" media="(min-width: 992px)">
+              <source srcset="img/logo.png" media="(min-width: 768px)">
+              <img src="img/logo-320.png" alt="Футбольный клуб &laquo;КАМАЗ&raquo;">
+            </picture>
+            <span class="overlay__block"></span>
+          </a>
+          <div class="page-header__buttons">
+            <ul class="page-header__mobile-menu page-header__mobile-menu--closed">
+              <li class="page-header__mobile-menu-item">
+                <a class="page-header__mobile-menu-link" href="#">
+                  Магазин
+                </a>
+              </li>
+              <li class="page-header__mobile-menu-item">
+                <a class="page-header__mobile-menu-link" href="#">
+                  Академия
+                </a>
+              </li>
+              <li class="page-header__mobile-menu-item">
+                <a class="page-header__mobile-menu-link" href="#">
+                  Партнерам
+                </a>
+              </li>
+            </ul>
+            <a class="nav-button nav-button--menu" data-toggle="page-header__mobile-menu" href="#">
+              <span class="visuallyhidden">Раскрыть меню</span>
+            </a>
+            <div class="page-header__search page-header__search--closed">
+              <a class="nav-button nav-button--search page-header__search-btn" data-toggle="page-header__search" href="#">
+                <span class="visuallyhidden">Поиск</span>
+              </a>
+              <div class="page-header__search-wrapper">
+                <input class="page-header__search-input" type="text">
+              </div>
+            </div>
+            <div class="page-header__flags page-header__flags--closed">
+              <a class="nav-button nav-button--flag page-header__flags-btn" data-toggle="page-header__flags" href="#">
+              </a>
+              <div class="page-header__flags-list">
+                <a class="page-header__flags-link" href="#">
+                  <span class="visuallyhidden">use</span>
+                </a>
+                <a class="page-header__flags-link" href="#">
+                  <span class="visuallyhidden">use</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <ul class="page-header__user-menu">
+          <li class="page-header__user-menu-item">
+            <a class="page-header__user-menu-link" href="#">
+              Войти
+            </a>
+          </li>
+          <li class="page-header__user-menu-item">
+            <a class="page-header__user-menu-link" href="#">
+              Зарегистрироваться
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="page-header__menu-wrapper">
+      <div class="page-header__container">
+        <ul class="page-header__menu">
+          <li class="page-header__menu-item">
+            <a class="page-header__menu-link" href="news.html">
+              Новости
+            </a>
+          </li>
+          <li class="page-header__menu-item">
+            <a class="page-header__menu-link" href="matches.html">
+              Матчи
+            </a>
+          </li>
+          <li class="page-header__menu-item">
+            <a class="page-header__menu-link" href="media-video.html">
+              Медиа
+            </a>
+          </li>
+          <li class="page-header__menu-item hidden-xs">
+            <a class="page-header__menu-link page-header__menu-link--active" >
+              Команда
+            </a>
+          </li>
+          <li class="page-header__menu-item hidden-xs">
+            <a class="page-header__menu-link" href="club.html">
+              Клуб
+            </a>
+          </li>
+          <li class="page-header__menu-item hidden-xs hidden-sm">
+            <a class="page-header__menu-link" href="#">
+              Фан-зона
+            </a>
+          </li>
+          <li class="page-header__menu-item hidden-xs hidden-sm">
+            <a class="page-header__menu-link" href="#">
+              Билеты
+            </a>
+          </li>
+        </ul>
+        <button class="page-header__menu-btn dropdown-btn" data-toggle="page-header__dropdown">
+          Ещё
+        </button>
+        <ul class="page-header__dropdown page-header__dropdown--closed">
+          <li class="page-header__dropdown-item hidden">
+            <a class="page-header__dropdown-link" href="news.html">
+              Новости
+            </a>
+          </li>
+          <li class="page-header__dropdown-item hidden">
+            <a class="page-header__dropdown-link" href="matches.html">
+              Матчи
+            </a>
+          </li>
+          <li class="page-header__dropdown-item hidden">
+            <a class="page-header__dropdown-link" href="media-video.html">
+              Медиа
+            </a>
+          </li>
+          <li class="page-header__dropdown-item visible-xs-block">
+            <a class="page-header__dropdown-link" href="command.html">
+              Команда
+            </a>
+          </li>
+          <li class="page-header__dropdown-item visible-xs-block">
+            <a class="page-header__dropdown-link" href="club.html">
+              Клуб
+            </a>
+          </li>
+          <li class="page-header__dropdown-item">
+            <a class="page-header__dropdown-link" href="#">
+              Фан-зона
+            </a>
+          </li>
+          <li class="page-header__dropdown-item">
+            <a class="page-header__dropdown-link" href="#">
+              Билеты
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="page-header__title">
+      <div class="page-header__container">
+        <div class="page-header__title-inner">
+          Команда
+        </div>
+      </div>
+    </div>
+    <nav class="nav">
+     <div class="page-header__container">
+       <ul class="nav__list nav__list--closed">
+          <li class="nav__item">
+            <a class="nav__link nav__link--active">
+              Основной состав
+            </a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">
+              Молодежный состав
+            </a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">
+              Академия
+            </a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">
+              Тренерский штаб
+            </a>
+          </li>
+        </ul>
+        <button class="nav__btn" data-toggle="nav__list"><span>Ещё</span></button>
+     </div>
+    </nav>
+  </header>
+  <div class="page-container container">
+    <div class="row">
+      <main class="main main--command col-md-8">
+        <select class="main__select hidden-md hidden-lg" name="year" size="1">
+          <option value="bilding">2016/17</option>
+          <option value="bilding">2015/16</option>
+          <option value="bilding">2014/15</option>
+          <option value="bilding">2013/14</option>
+          <option value="bilding">2012/13</option>
+        </select>
+        <section class="command__wrapper">
+          <h2 class="main__title command__title">
+            Вратари
+          </h2>
+          <div class="command__list">
+            <div class="row">
+              <div class="command__item col-sm-6">
+                <div class="command__item-pic">
+                  <picture>
+                    <source srcset="img/command-960-1.png" media="(min-width: 992px)">
+                    <source srcset="img/command-768-1.png" media="(min-width: 768px)">
+                    <img src="img/command-320.png" alt="Футбольный клуб &laquo;КАМАЗ&raquo;">
+                  </picture>
+                </div>
+                <div class="command__item-info">
+                  <a class="command__item-name" href="player-profile.html">
+                    Малашенко Анатолий Анатольевич
+                  </a>
+                  <div class="command__item-date">
+                    23.02.1994
+                  </div>
+                  <div class="command__item-nation">
+                    Россия
+                  </div>
+                </div>
+              </div>  <!--  command__item -->
+              <div class="command__item col-sm-6">
+                <div class="command__item-pic">
+                  <picture>
+                    <source srcset="img/command-960-2.png" media="(min-width: 992px)">
+                    <source srcset="img/command-768-2.png" media="(min-width: 768px)">
+                    <img src="img/command-320.png" alt="Футбольный клуб &laquo;КАМАЗ&raquo;">
+                  </picture>
+                </div>
+                <div class="command__item-info">
+                  <a class="command__item-name" href="player-profile.html">
+                    Ионин Валерий Игоревич
+                  </a>
+                  <div class="command__item-date">
+                    22.08.1997
+                  </div>
+                  <div class="command__item-nation">
+                    Россия
+                  </div>
+                </div>
+              </div>  <!--  command__item -->
+            </div>
+          </div>   <!--  command__list -->
+        </section> <!--  command__wrapper -->
+        <section class="command__wrapper">
+          <h2 class="main__title command__title">
+            Защитники
+          </h2>
+          <div class="command__list">
+            <div class="row">
+              <div class="command__item col-sm-6">
+                <div class="command__item-pic">
+                  <picture>
+                    <source srcset="img/command-960-3.png" media="(min-width: 992px)">
+                    <source srcset="img/command-768-3.png" media="(min-width: 768px)">
+                    <img src="img/command-320.png" alt="Футбольный клуб &laquo;КАМАЗ&raquo;">
+                  </picture>
+                </div>
+                <div class="command__item-info">
+                  <a class="command__item-name" href="player-profile.html">
+                    Мухаметзянов Евгений Рамилевич
+                  </a>
+                  <div class="command__item-date">
+                    24.06.1990
+                  </div>
+                  <div class="command__item-nation">
+                    Россия
+                  </div>
+                </div>
+              </div>  <!--  command__item -->
+              <div class="command__item col-sm-6">
+                <div class="command__item-pic">
+                  <picture>
+                    <source srcset="img/command-960-4.png" media="(min-width: 992px)">
+                    <source srcset="img/command-768-4.png" media="(min-width: 768px)">
+                    <img src="img/command-320.png" alt="Футбольный клуб &laquo;КАМАЗ&raquo;">
+                  </picture>
+                </div>
+                <div class="command__item-info">
+                  <a class="command__item-name" href="player-profile.html">
+                    Садыков Айзат Айратович
+                  </a>
+                  <div class="command__item-date">
+                    25.06.1993
+                  </div>
+                  <div class="command__item-nation">
+                    Россия
+                  </div>
+                </div>
+              </div>  <!--  command__item -->
+              <div class="command__item col-sm-6">
+                <div class="command__item-pic">
+                  <picture>
+                    <source srcset="img/command-960-5.png" media="(min-width: 992px)">
+                    <source srcset="img/command-768-5.png" media="(min-width: 768px)">
+                    <img src="img/command-320.png" alt="Футбольный клуб &laquo;КАМАЗ&raquo;">
+                  </picture>
+                </div>
+                <div class="command__item-info">
+                  <a class="command__item-name" href="player-profile.html">
+                    Теняев Александр Дмитриевич
+                  </a>
+                  <div class="command__item-date">
+                    11.03.1996
+                  </div>
+                  <div class="command__item-nation">
+                    Россия
+                  </div>
+                </div>
+              </div>  <!--  command__item -->
+              <div class="command__item col-sm-6">
+                <div class="command__item-pic">
+                  <picture>
+                    <source srcset="img/command-960-6.png" media="(min-width: 992px)">
+                    <source srcset="img/command-768-6.png" media="(min-width: 768px)">
+                    <img src="img/command-320.png" alt="Футбольный клуб &laquo;КАМАЗ&raquo;">
+                  </picture>
+                </div>
+                <div class="command__item-info">
+                  <a class="command__item-name" href="player-profile.html">
+                    Шайдуллин Артур Данисович
+                  </a>
+                  <div class="command__item-date">
+                    14.08.1997
+                  </div>
+                  <div class="command__item-nation">
+                    Россия
+                  </div>
+                </div>
+              </div>  <!--  command__item -->
+              <div class="command__item col-sm-6">
+                <div class="command__item-pic">
+                  <picture>
+                    <source srcset="img/command-960-3.png" media="(min-width: 992px)">
+                    <source srcset="img/command-768-3.png" media="(min-width: 768px)">
+                    <img src="img/command-320.png" alt="Футбольный клуб &laquo;КАМАЗ&raquo;">
+                  </picture>
+                </div>
+                <div class="command__item-info">
+                  <a class="command__item-name" href="player-profile.html">
+                    Мухаметзянов Евгений Рамилевич
+                  </a>
+                  <div class="command__item-date">
+                    24.06.1990
+                  </div>
+                  <div class="command__item-nation">
+                    Россия
+                  </div>
+                </div>
+              </div>  <!--  command__item -->
+              <div class="command__item col-sm-6">
+                <div class="command__item-pic">
+                  <picture>
+                    <source srcset="img/command-960-4.png" media="(min-width: 992px)">
+                    <source srcset="img/command-768-4.png" media="(min-width: 768px)">
+                    <img src="img/command-320.png" alt="Футбольный клуб &laquo;КАМАЗ&raquo;">
+                  </picture>
+                </div>
+                <div class="command__item-info">
+                  <a class="command__item-name" href="player-profile.html">
+                    Садыков Айзат Айратович
+                  </a>
+                  <div class="command__item-date">
+                    25.06.1993
+                  </div>
+                  <div class="command__item-nation">
+                    Россия
+                  </div>
+                </div>
+              </div>  <!--  command__item -->
+              <div class="command__item col-sm-6">
+                <div class="command__item-pic">
+                  <picture>
+                    <source srcset="img/command-960-5.png" media="(min-width: 992px)">
+                    <source srcset="img/command-768-5.png" media="(min-width: 768px)">
+                    <img src="img/command-320.png" alt="Футбольный клуб &laquo;КАМАЗ&raquo;">
+                  </picture>
+                </div>
+                <div class="command__item-info">
+                  <a class="command__item-name" href="player-profile.html">
+                    Теняев Александр Дмитриевич
+                  </a>
+                  <div class="command__item-date">
+                    11.03.1996
+                  </div>
+                  <div class="command__item-nation">
+                    Россия
+                  </div>
+                </div>
+              </div>  <!--  command__item -->
+              <div class="command__item col-sm-6">
+                <div class="command__item-pic">
+                  <picture>
+                    <source srcset="img/command-960-6.png" media="(min-width: 992px)">
+                    <source srcset="img/command-768-6.png" media="(min-width: 768px)">
+                    <img src="img/command-320.png" alt="Футбольный клуб &laquo;КАМАЗ&raquo;">
+                  </picture>
+                </div>
+                <div class="command__item-info">
+                  <a class="command__item-name" href="player-profile.html">
+                    Шайдуллин Артур Данисович
+                  </a>
+                  <div class="command__item-date">
+                    14.08.1997
+                  </div>
+                  <div class="command__item-nation">
+                    Россия
+                  </div>
+                </div>
+              </div>  <!--  command__item -->
+            </div>
+          </div>   <!--  command__list -->
+        </section> <!--  command__wrapper -->
+        <section class="command__wrapper">
+          <h2 class="main__title command__title">
+            Полузащитники
+          </h2>
+          <div class="command__list">
+            <div class="row">
+              <div class="command__item col-sm-6">
+                <div class="command__item-pic">
+                  <picture>
+                    <source srcset="img/command-960-3.png" media="(min-width: 992px)">
+                    <source srcset="img/command-768-3.png" media="(min-width: 768px)">
+                    <img src="img/command-320.png" alt="Футбольный клуб &laquo;КАМАЗ&raquo;">
+                  </picture>
+                </div>
+                <div class="command__item-info">
+                  <a class="command__item-name" href="player-profile.html">
+                    Мухаметзянов Евгений Рамилевич
+                  </a>
+                  <div class="command__item-date">
+                    24.06.1990
+                  </div>
+                  <div class="command__item-nation">
+                    Россия
+                  </div>
+                </div>
+              </div>  <!--  command__item -->
+              <div class="command__item col-sm-6">
+                <div class="command__item-pic">
+                  <picture>
+                    <source srcset="img/command-960-4.png" media="(min-width: 992px)">
+                    <source srcset="img/command-768-4.png" media="(min-width: 768px)">
+                    <img src="img/command-320.png" alt="Футбольный клуб &laquo;КАМАЗ&raquo;">
+                  </picture>
+                </div>
+                <div class="command__item-info">
+                  <a class="command__item-name" href="player-profile.html">
+                    Садыков Айзат Айратович
+                  </a>
+                  <div class="command__item-date">
+                    25.06.1993
+                  </div>
+                  <div class="command__item-nation">
+                    Россия
+                  </div>
+                </div>
+              </div>  <!--  command__item -->
+              <div class="command__item col-sm-6">
+                <div class="command__item-pic">
+                  <picture>
+                    <source srcset="img/command-960-5.png" media="(min-width: 992px)">
+                    <source srcset="img/command-768-5.png" media="(min-width: 768px)">
+                    <img src="img/command-320.png" alt="Футбольный клуб &laquo;КАМАЗ&raquo;">
+                  </picture>
+                </div>
+                <div class="command__item-info">
+                  <a class="command__item-name" href="player-profile.html">
+                    Теняев Александр Дмитриевич
+                  </a>
+                  <div class="command__item-date">
+                    11.03.1996
+                  </div>
+                  <div class="command__item-nation">
+                    Россия
+                  </div>
+                </div>
+              </div>  <!--  command__item -->
+              <div class="command__item col-sm-6">
+                <div class="command__item-pic">
+                  <picture>
+                    <source srcset="img/command-960-6.png" media="(min-width: 992px)">
+                    <source srcset="img/command-768-6.png" media="(min-width: 768px)">
+                    <img src="img/command-320.png" alt="Футбольный клуб &laquo;КАМАЗ&raquo;">
+                  </picture>
+                </div>
+                <div class="command__item-info">
+                  <a class="command__item-name" href="player-profile.html">
+                    Шайдуллин Артур Данисович
+                  </a>
+                  <div class="command__item-date">
+                    14.08.1997
+                  </div>
+                  <div class="command__item-nation">
+                    Россия
+                  </div>
+                </div>
+              </div>  <!--  command__item -->
+              <div class="command__item col-sm-6">
+                <div class="command__item-pic">
+                  <picture>
+                    <source srcset="img/command-960-3.png" media="(min-width: 992px)">
+                    <source srcset="img/command-768-3.png" media="(min-width: 768px)">
+                    <img src="img/command-320.png" alt="Футбольный клуб &laquo;КАМАЗ&raquo;">
+                  </picture>
+                </div>
+                <div class="command__item-info">
+                  <a class="command__item-name" href="player-profile.html">
+                    Мухаметзянов Евгений Рамилевич
+                  </a>
+                  <div class="command__item-date">
+                    24.06.1990
+                  </div>
+                  <div class="command__item-nation">
+                    Россия
+                  </div>
+                </div>
+              </div>  <!--  command__item -->
+              <div class="command__item col-sm-6">
+                <div class="command__item-pic">
+                  <picture>
+                    <source srcset="img/command-960-4.png" media="(min-width: 992px)">
+                    <source srcset="img/command-768-4.png" media="(min-width: 768px)">
+                    <img src="img/command-320.png" alt="Футбольный клуб &laquo;КАМАЗ&raquo;">
+                  </picture>
+                </div>
+                <div class="command__item-info">
+                  <a class="command__item-name" href="player-profile.html">
+                    Садыков Айзат Айратович
+                  </a>
+                  <div class="command__item-date">
+                    25.06.1993
+                  </div>
+                  <div class="command__item-nation">
+                    Россия
+                  </div>
+                </div>
+              </div>  <!--  command__item -->
+              <div class="command__item col-sm-6">
+                <div class="command__item-pic">
+                  <picture>
+                    <source srcset="img/command-960-5.png" media="(min-width: 992px)">
+                    <source srcset="img/command-768-5.png" media="(min-width: 768px)">
+                    <img src="img/command-320.png" alt="Футбольный клуб &laquo;КАМАЗ&raquo;">
+                  </picture>
+                </div>
+                <div class="command__item-info">
+                  <a class="command__item-name" href="player-profile.html">
+                    Теняев Александр Дмитриевич
+                  </a>
+                  <div class="command__item-date">
+                    11.03.1996
+                  </div>
+                  <div class="command__item-nation">
+                    Россия
+                  </div>
+                </div>
+              </div>  <!--  command__item -->
+              <div class="command__item col-sm-6">
+                <div class="command__item-pic">
+                  <picture>
+                    <source srcset="img/command-960-6.png" media="(min-width: 992px)">
+                    <source srcset="img/command-768-6.png" media="(min-width: 768px)">
+                    <img src="img/command-320.png" alt="Футбольный клуб &laquo;КАМАЗ&raquo;">
+                  </picture>
+                </div>
+                <div class="command__item-info">
+                  <a class="command__item-name" href="player-profile.html">
+                    Шайдуллин Артур Данисович
+                  </a>
+                  <div class="command__item-date">
+                    14.08.1997
+                  </div>
+                  <div class="command__item-nation">
+                    Россия
+                  </div>
+                </div>
+              </div>  <!--  command__item -->
+            </div>
+          </div>   <!--  command__list -->
+        </section> <!--  command__wrapper -->
+        <section class="command__wrapper">
+          <h2 class="main__title command__title">
+            Нападающие
+          </h2>
+          <div class="command__list">
+            <div class="row">
+              <div class="command__item col-sm-6">
+                <div class="command__item-pic">
+                  <picture>
+                    <source srcset="img/command-960-3.png" media="(min-width: 992px)">
+                    <source srcset="img/command-768-3.png" media="(min-width: 768px)">
+                    <img src="img/command-320.png" alt="Футбольный клуб &laquo;КАМАЗ&raquo;">
+                  </picture>
+                </div>
+                <div class="command__item-info">
+                  <a class="command__item-name" href="player-profile.html">
+                    Мухаметзянов Евгений Рамилевич
+                  </a>
+                  <div class="command__item-date">
+                    24.06.1990
+                  </div>
+                  <div class="command__item-nation">
+                    Россия
+                  </div>
+                </div>
+              </div>  <!--  command__item -->
+              <div class="command__item col-sm-6">
+                <div class="command__item-pic">
+                  <picture>
+                    <source srcset="img/command-960-4.png" media="(min-width: 992px)">
+                    <source srcset="img/command-768-4.png" media="(min-width: 768px)">
+                    <img src="img/command-320.png" alt="Футбольный клуб &laquo;КАМАЗ&raquo;">
+                  </picture>
+                </div>
+                <div class="command__item-info">
+                  <a class="command__item-name" href="player-profile.html">
+                    Садыков Айзат Айратович
+                  </a>
+                  <div class="command__item-date">
+                    25.06.1993
+                  </div>
+                  <div class="command__item-nation">
+                    Россия
+                  </div>
+                </div>
+              </div>  <!--  command__item -->
+              <div class="command__item col-sm-6">
+                <div class="command__item-pic">
+                  <picture>
+                    <source srcset="img/command-960-5.png" media="(min-width: 992px)">
+                    <source srcset="img/command-768-5.png" media="(min-width: 768px)">
+                    <img src="img/command-320.png" alt="Футбольный клуб &laquo;КАМАЗ&raquo;">
+                  </picture>
+                </div>
+                <div class="command__item-info">
+                  <a class="command__item-name" href="player-profile.html">
+                    Теняев Александр Дмитриевич
+                  </a>
+                  <div class="command__item-date">
+                    11.03.1996
+                  </div>
+                  <div class="command__item-nation">
+                    Россия
+                  </div>
+                </div>
+              </div>  <!--  command__item -->
+            </div>
+          </div>   <!--  command__list -->
+        </section> <!--  command__wrapper -->
+      </main>
+      <aside class="page-aside col-md-offset-1 col-md-3 visible-md visible-lg">
+        <section class="page-aside__poll">
+          <h2 class="page-aside__title">
+            <a href="#">Голосование</a>
+          </h2>
+          <div class="poll">
+            <div class="poll__title">
+              Игрок месяца?
+            </div>
+            <div class="poll__table-wrapper">
+              <table>
+                <tr>
+                  <td class="poll__pic"><img src="img/poll-1.png" alt></td>
+                  <td class="poll__name">Зарипов Раиль</td>
+                  <td class="poll__percent">80%</td>
+                </tr>
+                <tr>
+                  <td class="poll__pic"><img src="img/poll-2.png" alt></td>
+                  <td class="poll__name">Родионов Никита</td>
+                  <td class="poll__percent">15%</td>
+                </tr>
+                <tr>
+                  <td class="poll__pic"><img src="img/poll-3.png" alt></td>
+                  <td class="poll__name">Максимов Роман</td>
+                  <td class="poll__percent">3%</td>
+                </tr>
+                <tr>
+                  <td class="poll__pic"><img src="img/poll-4.png" alt></td>
+                  <td class="poll__name">Шинкаренко Александр</td>
+                  <td class="poll__percent">2%</td>
+                </tr>
+              </table>
+            </div>
+            <a class="link-btn" href="#">посмотреть результаты</a>
+          </div>
+        </section>
+        <section class="page-aside__birthday birthday">
+          <h2 class="page-aside__title">
+            <a href="#">Дни рождения</a>
+          </h2>
+          <figure class="birthday__fig">
+            <div class="carousel slide" id="birthday-slider" data-ride="carousel">
+              <div class="carousel-inner" role="listbox">
+                <div class="item birthday__tab active" data-switch="#birthday-caption1">
+                  <div class="birthday__pic">
+                    <img src="img/photo-birthday.png" alt="Клейменов Сергей Васильевич" height="207" width="166">
+                  </div>
+                </div>
+                <div class="item birthday__tab" data-switch="#birthday-caption2">
+                  <div class="birthday__pic">
+                    <img src="img/photo-birthday.png" alt="Клейменов Сергей Васильевич" height="207" width="166">
+                  </div>
+                </div>
+              </div>
+
+              <a class="left birthday__control carousel-control" data-slide="prev" href="#birthday-slider" role="button">
+                <span class="carousel__arrow carousel__arrow--left glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right birthday__control carousel-control" data-slide="next" href="#birthday-slider" role="button">
+                <span class="carousel__arrow carousel__arrow--right glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+
+            <figcaption class="birthday__figcaption">
+              <div class="birthday__panel" id="birthday-caption1">
+                <span class="birthday__date">22 ноября</span>
+                <span class="birthday__name">Клейменов Сергей Васильевич</span>
+              </div>
+              <div class="birthday__panel" id="birthday-caption2">
+                <span class="birthday__date">22 ноября</span>
+                <span class="birthday__name">Магдеев Наиль Гамбарович</span>
+              </div>
+            </figcaption>
+          </figure>
+        </section>
+      </aside>
+    </div>
+  </div>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper container">
+      <a class="logo logo--footer overlay" href="main-page.html">
+        <picture>
+          <source srcset="img/logo.png" media="(min-width: 1200px)">
+          <source srcset="img/logo.png" media="(min-width: 992px)">
+          <source srcset="img/logo.png" media="(min-width: 768px)">
+          <img src="img/logo-320.png" alt="Футбольный клуб &laquo;КАМАЗ&raquo;">
+        </picture>
+        <span class="overlay__block"></span>
+      </a>
+      <div class="page-footer__partners">
+        <h2 class="page-footer__partners-title">
+          Наши партнеры
+        </h2>
+        <div class="page-footer__partners-links">
+          <a class="page-footer__partners-link page-footer__partners-link--abb" href="http://new.abb.com/"><span class="visuallyhidden">Ак Барс Банк</span></a>
+          <a class="page-footer__partners-link page-footer__partners-link--kamaz" href="http://kamaz.ru/"><span class="visuallyhidden">Камаз</span></a>
+          <a class="page-footer__partners-link page-footer__partners-link--tvchelny" href="http://tvchelny.ru/"><span class="visuallyhidden">Челны-ТВ</span></a>
+        </div>
+      </div>
+      <ul class="page-footer__nav">
+        <li class="page-footer__nav-item">
+          <a class="page-footer__nav-link page-footer__nav-link--closed" data-toggle="page-footer__subnav" href="#">Новости</a>
+          <ul class="page-footer__subnav page-footer__subnav--closed">
+            <li class="page-footer__subnav-item">
+              <a class="page-footer__subnav-link" href="#">Новости клуба</a>
+            </li>
+            <li class="page-footer__subnav-item">
+              <a class="page-footer__subnav-link" href="#">Обзор прессы</a>
+            </li>
+            <li class="page-footer__subnav-item">
+              <a class="page-footer__subnav-link" href="#">РЦПФ</a>
+            </li>
+          </ul>
+        </li>
+        <li class="page-footer__nav-item">
+          <a class="page-footer__nav-link page-footer__nav-link--closed" data-toggle="page-footer__subnav" href="#">Матчи</a>
+          <ul class="page-footer__subnav page-footer__subnav--closed">
+            <li class="page-footer__subnav-item">
+              <a class="page-footer__subnav-link" href="#">Все матчи</a>
+            </li>
+            <li class="page-footer__subnav-item">
+              <a class="page-footer__subnav-link" href="#">Календарь</a>
+            </li>
+            <li class="page-footer__subnav-item">
+              <a class="page-footer__subnav-link" href="#">Турнирная таблица</a>
+            </li>
+          </ul>
+        </li>
+        <li class="page-footer__nav-item">
+          <a class="page-footer__nav-link page-footer__nav-link--closed" data-toggle="page-footer__subnav" href="#">Медиа</a>
+          <ul class="page-footer__subnav page-footer__subnav--closed">
+            <li class="page-footer__subnav-item">
+              <a class="page-footer__subnav-link" href="#">Видеогалерея</a>
+            </li>
+            <li class="page-footer__subnav-item">
+              <a class="page-footer__subnav-link" href="#">Фотогалерея</a>
+            </li>
+            <li class="page-footer__subnav-item">
+              <a class="page-footer__subnav-link" href="#">Программа на радио</a>
+            </li>
+            <li class="page-footer__subnav-item">
+              <a class="page-footer__subnav-link" href="#">Онлайн транляции</a>
+            </li>
+          </ul>
+        </li>
+        <li class="page-footer__nav-item">
+          <a class="page-footer__nav-link page-footer__nav-link--closed" data-toggle="page-footer__subnav" href="#">Команда</a>
+          <ul class="page-footer__subnav page-footer__subnav--closed">
+            <li class="page-footer__subnav-item">
+              <a class="page-footer__subnav-link" href="#">Основной состав</a>
+            </li>
+            <li class="page-footer__subnav-item">
+              <a class="page-footer__subnav-link" href="#">Молодежный состав</a>
+            </li>
+            <li class="page-footer__subnav-item">
+              <a class="page-footer__subnav-link" href="#">Академия</a>
+            </li>
+            <li class="page-footer__subnav-item">
+              <a class="page-footer__subnav-link" href="#">Тренерский штаб</a>
+            </li>
+          </ul>
+        </li>
+        <li class="page-footer__nav-item">
+          <a class="page-footer__nav-link page-footer__nav-link--closed" data-toggle="page-footer__subnav" href="#">Клуб</a>
+          <ul class="page-footer__subnav page-footer__subnav--closed">
+            <li class="page-footer__subnav-item">
+              <a class="page-footer__subnav-link" href="#">Администрация</a>
+            </li>
+            <li class="page-footer__subnav-item">
+              <a class="page-footer__subnav-link" href="#">Контакты</a>
+            </li>
+            <li class="page-footer__subnav-item">
+              <a class="page-footer__subnav-link" href="#">История</a>
+            </li>
+            <li class="page-footer__subnav-item">
+              <a class="page-footer__subnav-link" href="#">Вакансии</a>
+            </li>
+            <li class="page-footer__subnav-item">
+              <a class="page-footer__subnav-link" href="#">Партнеры и СМИ</a>
+            </li>
+          </ul>
+        </li>
+        <li class="page-footer__nav-item page-footer__nav-item--last">
+          <a class="page-footer__nav-link page-footer__nav-link--closed" data-toggle="page-footer__subnav" href="#">Фан-зона</a>
+          <ul class="page-footer__subnav page-footer__subnav--closed">
+            <li class="page-footer__subnav-item">
+              <a class="page-footer__subnav-link" href="#">Форум</a>
+            </li>
+            <li class="page-footer__subnav-item">
+              <a class="page-footer__subnav-link" href="#">Стань волонтером</a>
+            </li>
+            <li class="page-footer__subnav-item">
+              <a class="page-footer__subnav-link" href="#">Документы</a>
+            </li>
+            <li class="page-footer__subnav-item">
+              <a class="page-footer__subnav-link" href="#">Статьи</a>
+            </li>
+            <li class="page-footer__subnav-item">
+              <a class="page-footer__subnav-link" href="#">Конкурс прогнозов</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <div class="page-footer__bottom-line">
+         <div class="page-footer__social-links">
+           <a class="page-footer__social-link page-footer__social-link--ggplus" href="#">
+            <span class="visuallyhidden">Google Plus</span>
+           </a>
+           <a class="page-footer__social-link page-footer__social-link--tw" href="#">
+            <span class="visuallyhidden">Twitter</span>
+           </a>
+           <a class="page-footer__social-link page-footer__social-link--vk" href="#">
+            <span class="visuallyhidden">Вконтакте</span>
+           </a>
+           <a class="page-footer__social-link page-footer__social-link--mail" href="#">
+            <span class="visuallyhidden">Mail.ru</span>
+           </a>
+           <a class="page-footer__social-link page-footer__social-link--fb" href="#">
+            <span class="visuallyhidden">Facebook</span>
+           </a>
+         </div>
+         <div class="page-footer__map">
+           <a href="#">Карта сайта</a>
+         </div>
+         <div class="page-footer__copyright">
+           © 2002-2016 Футбольный клуб «КАМАЗ» Набережные Челны.
+         </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/common.js"></script>
+</body>
+</html>

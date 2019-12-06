@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Состав</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <link type="image/png" href="img/favicon.png" rel="icon">
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700|PT+Sans:400,700|Roboto+Slab&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
+  <script src="js/jquery-1.12.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/picturefill.min.js"></script>
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  <style>
+    .tabbedPanels {
+      width: 50%;
+      margin: 50px auto;
+    }
+    .tabs li {
+      float: left;
+      list-style-type: none;
+    }
+    .tabs a {
+      display: block;
+      text-decoration: none;
+      padding: 3px 5px;
+    }
+    .tabs a.active {
+      background-color: #fff;
+    }
+    .panelContainer {
+      clear: left;
+    }
+    .panel {
+      padding: 10px;
+      border: 2px solid #000;
+    }
+  </style>
+</head>
+<body class="matches-page sostav">
+  <div class="tabbedPanels">
+    <ul class="tabs">
+      <li>
+        <a class="active" href="#panel1">Описание товара</a>
+      </li>
+        <li>
+          <a href="#panel2">Технические характеристики</a>
+        </li>
+      <li>
+        <a href="#panel3">Информация о доставке</a>
+      </li>
+    </ul>
+    <div class="panelContainer">
+      <div class="panel" id="panel1">
+      AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Использовало, взгляд, над. Диких последний даже большой продолжил переписали семь возвращайся свою за коварных но курсивных, пустился грамматики вопрос рукописи.
+
+      </div>
+      <div class="panel" id="panel2">
+
+      JbbbbbbbbbbbbbbbbbbbbbbbbBBBBBBBBBBBBBBB
+        Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Предложения снова меня текст себя инициал продолжил грамматики собрал большого, коварный осталось силуэт, lorem, букв использовало! Парадигматическая о напоивший даль.
+
+      </div>
+      <div class="panel" id="panel3">
+        SAFDFFFFFFFFFFFFFFFFF
+        Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Меня знаках всеми вдали рот, буквенных маленький, переписали составитель они выйти безорфографичный заголовок его, использовало предложения ему. Запятой напоивший, домах?
+
+      </div>
+    </div>
+  </div>
+
+  <script src="js/common.js"></script>
+  <script>
+    $(".tabs a").click(function(evt) {
+      evt.preventDefault();
+      $this = $(this);
+      $(".panel").hide();
+      $(".tabs a.active").removeClass("active");
+      $this.addClass("active").blur();
+      var panel = $this.attr("href");
+      $(panel).slideDown(1000);
+    });
+    $(".tabs li:first a").click();
+  </script>
+</body>
+</html>

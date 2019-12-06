@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    .content {
+      background-color: #cfc;
+    }
+    .inner {
+      outline: 3px solid #fc0;
+      height: 1000px;
+      font-size: 46px;
+      line-height: 1.2;
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <a class="top-link" href="ajaxLoad2.html">Предыдущая страница</a>
+
+    <div class="inner" id="first-page">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Парадигматическая родного что, ручеек океана переписали предупредила одна силуэт строчка, коварный, проектах диких образ все. Бросил снова, живет власти свой!</div>
+
+    <a class="bottom-link" href="ajaxLoad2.html">Следующая страница</a>
+  </div>
+  <script src="js/libs.min.js"></script>
+  <script src="js/jquery-scrollto.js"></script>
+  <script>
+
+
+          // $('#first-page').scrollTo();
+    function scrollNavigator(evt) {
+
+      var $blockLink = $('.bottom-link');
+      var $body = $('body');
+
+      var diff =  Math.abs($('.content').get(0).getBoundingClientRect().bottom - $(window).height());
+      var isBottom = diff <= 10;
+
+      // var diffTop = Math.abs($('.content').get(0).getBoundingClientRect().top);
+      // var isTop = diffTop <= 10;
+      // console.log('diffTop = ' + diffTop);
+
+      console.log('diff= ' + diff);
+      console.log($.Events);
+      console.log($(window).height());
+      console.log($('.content').get(0).getBoundingClientRect().bottom);
+      if  (!isBottom) {
+        return;
+      }
+
+      $(window).off('scroll');
+
+      $('body').addClass('unload');
+      // setTimeout(function() {
+        var origin = window.location.origin;
+        var page = $blockLink.attr('href');
+        console.log(page);
+        var href = encodeURI(origin + '/' + page);
+        $('.content').wrap('<div class="past"></div>');
+        $('.past').after('<div class="next"></div>');
+        var content = href + ' > *:not(script, meta, title, style)';
+
+        $('.next').load(content);
+        console.log(content);
+
+        $('.past').animate({
+          height: 0
+        }, 1000, function() {
+          $(this).remove();
+        });
+
+        $('html, body').animate({
+          scrollTop: 0
+        }, 1000, function() {
+          $('.next > *').unwrap();
+          $(window).on('scroll', throttledScroll);
+        });
+
+
+
+          // window.location = href;
+      // }, 1000);
+
+        diff = 100;
+        isBottom = false;
+        console.log(diff);
+
+  }
+
+  var throttledScroll = throttle(scrollNavigator, 10)
+
+
+  $(window).on('scroll', throttledScroll);
+
+  function throttle(fn, delay) {
+        var lastCall = Date.now();
+
+        return function() {
+          var now = Date.now();
+
+          if ((now - lastCall) > delay) {
+            fn();
+            lastCall = now;
+          }
+        };
+      }
+
+      $('a').click(function(e){
+    e.preventDefault();
+
+    $('html, body').animate({
+        scrollTop: 0
+    });
+});
+  </script>
+</body>
+</html>

@@ -1,0 +1,1392 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Малашенко Анатолий Анатольевич</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <link type="image/png" href="img/favicon.png" rel="icon">
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700|PT+Sans:400,700|Roboto+Slab&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
+  <script src="js/jquery-1.12.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/picturefill.min.js"></script>
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body class="player-page">
+  <header class="page-header">
+    <div class="page-header__headline">
+      <div class="page-header__container page-header__container--menu">
+        <div class="page-header__wrapper clearfix">
+          <a class="logo overlay" href="main-page.html">
+            <picture>
+              <source srcset="img/logo.png" media="(min-width: 1200px)">
+              <source srcset="img/logo.png" media="(min-width: 992px)">
+              <source srcset="img/logo.png" media="(min-width: 768px)">
+              <img src="img/logo-320.png" alt="Футбольный клуб &laquo;КАМАЗ&raquo;">
+            </picture>
+            <span class="overlay__block"></span>
+          </a>
+          <div class="page-header__buttons">
+            <ul class="page-header__mobile-menu page-header__mobile-menu--closed">
+              <li class="page-header__mobile-menu-item">
+                <a class="page-header__mobile-menu-link" href="#">
+                  Магазин
+                </a>
+              </li>
+              <li class="page-header__mobile-menu-item">
+                <a class="page-header__mobile-menu-link" href="#">
+                  Академия
+                </a>
+              </li>
+              <li class="page-header__mobile-menu-item">
+                <a class="page-header__mobile-menu-link" href="#">
+                  Партнерам
+                </a>
+              </li>
+            </ul>
+            <a class="nav-button nav-button--menu" data-toggle="page-header__mobile-menu" href="#">
+              <span class="visuallyhidden">Раскрыть меню</span>
+            </a>
+            <div class="page-header__search page-header__search--closed">
+              <a class="nav-button nav-button--search page-header__search-btn" data-toggle="page-header__search" href="#">
+                <span class="visuallyhidden">Поиск</span>
+              </a>
+              <div class="page-header__search-wrapper">
+                <input class="page-header__search-input" type="text">
+              </div>
+            </div>
+            <div class="page-header__flags page-header__flags--closed">
+              <a class="nav-button nav-button--flag page-header__flags-btn" data-toggle="page-header__flags" href="#">
+              </a>
+              <div class="page-header__flags-list">
+                <a class="page-header__flags-link" href="#">
+                  <span class="visuallyhidden">use</span>
+                </a>
+                <a class="page-header__flags-link" href="#">
+                  <span class="visuallyhidden">use</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <ul class="page-header__user-menu">
+          <li class="page-header__user-menu-item">
+            <a class="page-header__user-menu-link" href="#">
+              Войти
+            </a>
+          </li>
+          <li class="page-header__user-menu-item">
+            <a class="page-header__user-menu-link" href="#">
+              Зарегистрироваться
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="page-header__menu-wrapper">
+      <div class="page-header__container">
+        <ul class="page-header__menu">
+          <li class="page-header__menu-item">
+            <a class="page-header__menu-link" href="news.html">
+              Новости
+            </a>
+          </li>
+          <li class="page-header__menu-item">
+            <a class="page-header__menu-link" href="matches.html">
+              Матчи
+            </a>
+          </li>
+          <li class="page-header__menu-item">
+            <a class="page-header__menu-link" href="media-video.html">
+              Медиа
+            </a>
+          </li>
+          <li class="page-header__menu-item hidden-xs">
+            <a class="page-header__menu-link page-header__menu-link--active" >
+              Команда
+            </a>
+          </li>
+          <li class="page-header__menu-item hidden-xs">
+            <a class="page-header__menu-link" href="club.html">
+              Клуб
+            </a>
+          </li>
+          <li class="page-header__menu-item hidden-xs hidden-sm">
+            <a class="page-header__menu-link" href="#">
+              Фан-зона
+            </a>
+          </li>
+          <li class="page-header__menu-item hidden-xs hidden-sm">
+            <a class="page-header__menu-link" href="#">
+              Билеты
+            </a>
+          </li>
+        </ul>
+        <button class="page-header__menu-btn dropdown-btn" data-toggle="page-header__dropdown">
+          Ещё
+        </button>
+        <ul class="page-header__dropdown page-header__dropdown--closed">
+          <li class="page-header__dropdown-item hidden">
+            <a class="page-header__dropdown-link" href="news.html">
+              Новости
+            </a>
+          </li>
+          <li class="page-header__dropdown-item hidden">
+            <a class="page-header__dropdown-link" href="matches.html">
+              Матчи
+            </a>
+          </li>
+          <li class="page-header__dropdown-item hidden">
+            <a class="page-header__dropdown-link" href="media-video.html">
+              Медиа
+            </a>
+          </li>
+          <li class="page-header__dropdown-item visible-xs-block">
+            <a class="page-header__dropdown-link" href="command.html">
+              Команда
+            </a>
+          </li>
+          <li class="page-header__dropdown-item visible-xs-block">
+            <a class="page-header__dropdown-link" href="club.html">
+              Клуб
+            </a>
+          </li>
+          <li class="page-header__dropdown-item">
+            <a class="page-header__dropdown-link" href="#">
+              Фан-зона
+            </a>
+          </li>
+          <li class="page-header__dropdown-item">
+            <a class="page-header__dropdown-link" href="#">
+              Билеты
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="page-header__title">
+      <div class="page-header__container">
+        <div class="page-header__title-inner">
+          Команда
+        </div>
+      </div>
+    </div>
+    <nav class="nav">
+     <div class="page-header__container">
+       <ul class="nav__list nav__list--closed">
+          <li class="nav__item">
+            <a class="nav__link nav__link--active">
+              Основной состав
+            </a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">
+              Молодежный состав
+            </a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">
+              Академия
+            </a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">
+              Тренерский штаб
+            </a>
+          </li>
+        </ul>
+        <button class="nav__btn" data-toggle="nav__list"><span>Ещё</span></button>
+     </div>
+    </nav>
+  </header>
+  <main class="main container">
+    <a class="main__go-back" href="#">
+      &lt; Вернуться назад
+    </a>
+    <div class="dropdown-select dropdown-select--closed">
+      <a class="dropdown-select__btn" data-toggle="dropdown-select" href="#">Малашенко А.</a>
+      <ul class="dropdown-select__list">
+        <li class="dropdown-select__item">
+          <a class="dropdown-select__link dropdown-select__link--active">
+            Ионин В.
+          </a>
+        </li>
+        <li class="dropdown-select__item">
+          <a class="dropdown-select__link" href="#">
+            Мухаметзянов Е.
+          </a>
+        </li>
+        <li class="dropdown-select__item">
+          <a class="dropdown-select__link" href="#">
+            Садыков А.
+          </a>
+        </li>
+        <li class="dropdown-select__item">
+          <a class="dropdown-select__link" href="#">
+            Теняев А.
+          </a>
+        </li>
+        <li class="dropdown-select__item">
+          <a class="dropdown-select__link" href="#">
+            Шайдуллин А.
+          </a>
+        </li>
+      </ul>
+    </div> <!-- end dropdown-select -->
+    <div class="row">
+      <section class="player-page__data-wrapper clearfix">
+        <div class="player-page__data col-sm-7">
+          <h2 class="player-page__data-title">
+            Малашенко Анатолий Анатольевич
+          </h2>
+          <h3 class="player-page__data-subtitle">
+            Вратарь
+          </h3>
+          <table class="player-page__data-table">
+            <tbody>
+              <tr>
+                <td class="player-page__data-termin">
+                  Дата рождения:
+                </td>
+                <td class="player-page__data-description">
+                  23.02.1994
+                </td>
+              </tr>
+              <tr>
+                <td class="player-page__data-termin">
+                  Гражданство:
+                </td>
+                <td class="player-page__data-description">
+                  Россия <span class="russia-icon"></span>
+                </td>
+              </tr>
+              <tr>
+                <td class="player-page__data-termin">
+                  Рост / Вес:
+                </td>
+                <td class="player-page__data-description">
+                  183см / 81кг
+                </td>
+              </tr>
+              <tr>
+                <td class="player-page__data-termin">
+                  Пред. клуб:
+                </td>
+                <td class="player-page__data-description">
+                  «Нефтехимик» Нижнекамск
+                </td>
+              </tr>
+              <tr>
+                <td class="player-page__data-termin">
+                  В команде «Камаз»:
+                </td>
+                <td class="player-page__data-description">
+                  с 2016 года
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="socials">
+            <b>Следить за Малашенко А:</b>
+            <div class="socials__list">
+              <a class="socials__link socials__link--tw" href="#">
+                <span class="visuallyhidden">
+                  Twitter
+                </span>
+              </a>
+              <a class="socials__link socials__link--vk" href="#">
+                <span class="visuallyhidden">
+                  Вконтакте
+                </span>
+              </a>
+              <a class="socials__link socials__link--fb" href="#">
+                <span class="visuallyhidden">
+                  Facebook
+                </span>
+              </a>
+            </div>
+          </div> <!-- end socials -->
+        </div> <!-- end player-page__data -->
+        <div class="player-page__plate"></div>
+        <div class="player-page__player-number"><span>01</span></div>
+        <div class="player-page__slider carousel slide" id="player-slider">
+          <div class="carousel-inner" role="listbox">
+            <div class="player-page__slider-pic item active" data-switch="player1.html">
+              <img src="img/player-photo-1-1170.png">
+            </div>
+            <div class="player-page__slider-pic item" data-switch="player2.html">
+              <img src="img/player-photo-2-1170.png">
+            </div>
+            <div class="player-page__slider-pic item" data-switch="player2.html">
+              <img src="img/player-photo-1-1170.png">
+            </div>
+          </div>
+          <a class="left carousel-control" data-slide="prev" href="#player-slider" role="button">
+            <span class="carousel__arrow carousel__arrow--left glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" data-slide="next" href="#player-slider" role="button">
+            <span class="carousel__arrow carousel__arrow--right glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+
+      </section> <!-- player-page__data-wrapper -->
+    </div>
+
+    <div class="player-page__sections">
+      <section class="player-page__section row">
+        <div class="player-page__section-wrapper col-sm-9 col-lg-7">
+          <h2 class="player-page__title">
+            Биография
+          </h2>
+          <p class="player-page__text">
+            Таким образом новая модель организационной деятельности в значительной степени обуславливает создание систем массового участия. С другой стороны консультация с широким активом позволяет оценить значение модели развития. Значимость этих проблем настолько очевидна, что постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач. Не следует, однако забывать, что реализация намеченных плановых заданий требуют от нас анализа дальнейших направлений развития.
+          </p>
+        </div>
+        <div class="player-page__banner col-sm-3">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/banner-4-1170.jpg">
+            <source media="(min-width: 992px)" srcset="img/banner-4-960.jpg">
+            <img src="img/banner-4-320.jpg">
+          </picture>
+        </div> <!-- player-page__banner -->
+      </section>
+      <section class="player-page__section player-page__section--stats">
+        <h2 class="player-page__title">
+          Статистика игрока
+        </h2>
+        <div class="main__select-wrapper">
+          <div class="dropdown-select dropdown-select--closed">
+            <a class="dropdown-select__btn" data-toggle="dropdown-select" href="#">Все турниры</a>
+            <ul class="dropdown-select__list">
+              <li class="dropdown-select__item">
+                <a class="dropdown-select__link dropdown-select__link--active">
+                  Все турниры
+                </a>
+              </li>
+              <li class="dropdown-select__item">
+                <a class="dropdown-select__link" href="#">
+                  Все турниры
+                </a>
+              </li>
+              <li class="dropdown-select__item">
+                <a class="dropdown-select__link" href="#">
+                  Все турниры
+                </a>
+              </li>
+              <li class="dropdown-select__item">
+                <a class="dropdown-select__link" href="#">
+                  Все турниры
+                </a>
+              </li>
+              <li class="dropdown-select__item">
+                <a class="dropdown-select__link" href="#">
+                  Все турниры
+                </a>
+              </li>
+            </ul>
+          </div>  <!-- end dropdown-select -->
+          <div class="dropdown-select dropdown-select--closed">
+            <a class="dropdown-select__btn" data-toggle="dropdown-select" href="#">2016/17</a>
+            <ul class="dropdown-select__list">
+              <li class="dropdown-select__item">
+                <a class="dropdown-select__link dropdown-select__link--active">
+                  2016/17
+                </a>
+              </li>
+              <li class="dropdown-select__item">
+                <a class="dropdown-select__link" href="#">
+                  2015/16
+                </a>
+              </li>
+              <li class="dropdown-select__item">
+                <a class="dropdown-select__link" href="#">
+                  2014/15
+                </a>
+              </li>
+              <li class="dropdown-select__item">
+                <a class="dropdown-select__link" href="#">
+                  2013/14
+                </a>
+              </li>
+              <li class="dropdown-select__item">
+                <a class="dropdown-select__link" href="#">
+                  2012/13
+                </a>
+              </li>
+            </ul>
+          </div> <!-- end dropdown-select -->
+        </div>   <!-- end main__select-wrapper -->
+        <div class="table tabbedPanel">
+
+          <nav class="nav">
+           <ul class="nav__list nav__list--closed tabs">
+              <li class="nav__item">
+                <a class="nav__link" href="#panel1">
+                  Общая
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#panel2">
+                  Сейвы
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#panel3">
+                  Передачи
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#panel4">
+                  Дисциплина
+                </a>
+              </li>
+            </ul>
+            <button class="nav__btn" data-toggle="nav__list"><span>Ещё</span></button>
+          </nav>
+          <div class="panelContainer">
+            <table class="panel" id="panel1">
+              <colgroup>
+                <col class="table__col-date">
+                <col class="table__col-match">
+                <col class="table__col-mat">
+                <col class="table__col-data">
+                <col class="table__col-data">
+                <col class="table__col-data">
+                <col class="table__col-data">
+                <col class="table__col-data">
+                <col class="table__col-data table__col-data--last">
+              </colgroup>
+              <thead>
+                <th>Дата</th>
+                <th>Матч</th>
+                <th class="hidden-xs">Мат</th>
+                <th class="hidden-xs">Мин</th>
+                <th class="hidden-xs">ИВО</th>
+                <th class="hidden-xs">ВЗ</th>
+                <th class="hidden-xs">БЗ</th>
+                <th class="hidden-xs">ПРОП</th>
+                <th class="hidden-xs">СМ</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="#row1" class="table__btn"></a>26.06.16</td>
+                  <td>КАМАЗ <span class="table__span-score">2 : 0</span> Носта</td>
+                  <td class="hidden-xs"></td>
+                  <td class="hidden-xs">44</td>
+                  <td class="hidden-xs">0</td>
+                  <td class="hidden-xs">4</td>
+                  <td class="hidden-xs">1</td>
+                  <td class="hidden-xs">0</td>
+                  <td class="hidden-xs">0</td>
+                </tr>
+                <tr class="table__mobile-block" id="row1">
+                  <td  colspan="9">
+                    <table>
+                      <tbody>
+                        <tr>
+                          <td>сыграно матчей</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>сыграно минут</td>
+                          <td>44</td>
+                        </tr>
+                        <tr>
+                          <td>игр в основе</td>
+                          <td>0</td>
+                        </tr>
+                        <tr>
+                          <td>вышел на замену</td>
+                          <td>4</td>
+                        </tr>
+                        <tr>
+                          <td>был заменен</td>
+                          <td>1</td>
+                        </tr>
+                        <tr>
+                          <td>пропущенные голы</td>
+                          <td>0</td>
+                        </tr>
+                        <tr>
+                          <td>сухие матчи</td>
+                          <td>0</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+                <tr class="table__row-active">
+                  <td><a href="#row2" class="table__btn"></a>26.06.16</td>
+                  <td>КАМАЗ <span class="table__span-score">2 : 0</span> Носта</td>
+                  <td class="hidden-xs"></td>
+                  <td class="hidden-xs">44</td>
+                  <td class="hidden-xs">0</td>
+                  <td class="hidden-xs">4</td>
+                  <td class="hidden-xs">1</td>
+                  <td class="hidden-xs">0</td>
+                  <td class="hidden-xs">0</td>
+                </tr>
+                <tr class="table__mobile-block" id="row2">
+                  <td  colspan="9">
+                    <table>
+                      <tbody>
+                        <tr>
+                          <td>сыграно матчей</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>сыграно минут</td>
+                          <td>44</td>
+                        </tr>
+                        <tr>
+                          <td>игр в основе</td>
+                          <td>0</td>
+                        </tr>
+                        <tr>
+                          <td>вышел на замену</td>
+                          <td>4</td>
+                        </tr>
+                        <tr>
+                          <td>был заменен</td>
+                          <td>1</td>
+                        </tr>
+                        <tr>
+                          <td>пропущенные голы</td>
+                          <td>0</td>
+                        </tr>
+                        <tr>
+                          <td>сухие матчи</td>
+                          <td>0</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td><a href="#row3" class="table__btn"></a>26.06.16</td>
+                  <td>КАМАЗ <span class="table__span-score">2 : 0</span> Носта</td>
+                  <td class="hidden-xs"></td>
+                  <td class="hidden-xs">44</td>
+                  <td class="hidden-xs">0</td>
+                  <td class="hidden-xs">4</td>
+                  <td class="hidden-xs">1</td>
+                  <td class="hidden-xs">0</td>
+                  <td class="hidden-xs">0</td>
+                </tr>
+                <tr class="table__mobile-block" id="row3">
+                  <td  colspan="9">
+                    <table>
+                      <tbody>
+                        <tr>
+                          <td>сыграно матчей</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>сыграно минут</td>
+                          <td>44</td>
+                        </tr>
+                        <tr>
+                          <td>игр в основе</td>
+                          <td>0</td>
+                        </tr>
+                        <tr>
+                          <td>вышел на замену</td>
+                          <td>4</td>
+                        </tr>
+                        <tr>
+                          <td>был заменен</td>
+                          <td>1</td>
+                        </tr>
+                        <tr>
+                          <td>пропущенные голы</td>
+                          <td>0</td>
+                        </tr>
+                        <tr>
+                          <td>сухие матчи</td>
+                          <td>0</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+                <tr class="table__row-active">
+                  <td><a href="#row4" class="table__btn"></a>26.06.16</td>
+                  <td>КАМАЗ <span class="table__span-score">2 : 0</span> Носта</td>
+                  <td class="hidden-xs"></td>
+                  <td class="hidden-xs">44</td>
+                  <td class="hidden-xs">0</td>
+                  <td class="hidden-xs">4</td>
+                  <td class="hidden-xs">1</td>
+                  <td class="hidden-xs">0</td>
+                  <td class="hidden-xs">0</td>
+                </tr>
+                <tr class="table__mobile-block" id="row4">
+                  <td  colspan="9">
+                    <table>
+                      <tbody>
+                        <tr>
+                          <td>сыграно матчей</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>сыграно минут</td>
+                          <td>44</td>
+                        </tr>
+                        <tr>
+                          <td>игр в основе</td>
+                          <td>0</td>
+                        </tr>
+                        <tr>
+                          <td>вышел на замену</td>
+                          <td>4</td>
+                        </tr>
+                        <tr>
+                          <td>был заменен</td>
+                          <td>1</td>
+                        </tr>
+                        <tr>
+                          <td>пропущенные голы</td>
+                          <td>0</td>
+                        </tr>
+                        <tr>
+                          <td>сухие матчи</td>
+                          <td>0</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td><a href="#row5" class="table__btn"></a>Всего</td>
+                  <td></td>
+                  <td class="hidden-xs">4</td>
+                  <td class="hidden-xs">176</td>
+                  <td class="hidden-xs">0</td>
+                  <td class="hidden-xs">16</td>
+                  <td class="hidden-xs">4</td>
+                  <td class="hidden-xs">0</td>
+                  <td class="hidden-xs">0</td>
+                </tr>
+                <tr class="table__mobile-block" id="row5">
+                  <td  colspan="9">
+                    <table>
+                      <tbody>
+                        <tr>
+                          <td>сыграно матчей</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>сыграно минут</td>
+                          <td>44</td>
+                        </tr>
+                        <tr>
+                          <td>игр в основе</td>
+                          <td>0</td>
+                        </tr>
+                        <tr>
+                          <td>вышел на замену</td>
+                          <td>4</td>
+                        </tr>
+                        <tr>
+                          <td>был заменен</td>
+                          <td>1</td>
+                        </tr>
+                        <tr>
+                          <td>пропущенные голы</td>
+                          <td>0</td>
+                        </tr>
+                        <tr>
+                          <td>сухие матчи</td>
+                          <td>0</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tfoot>
+            </table>
+            <table class="panel" id="panel2">
+              <colgroup>
+                <col class="table__col-date">
+                <col class="table__col-match">
+                <col class="table__col-mat">
+                <col class="table__col-data">
+                <col class="table__col-data">
+                <col class="table__col-data">
+                <col class="table__col-data">
+                <col class="table__col-data">
+                <col class="table__col-data table__col-data--last">
+              </colgroup>
+              <thead>
+                <th>Дата</th>
+                <th>Матч</th>
+                <th class="hidden-xs">Мат</th>
+                <th class="hidden-xs">Мин</th>
+                <th class="hidden-xs">ИВО</th>
+                <th class="hidden-xs">ВЗ</th>
+                <th class="hidden-xs">БЗ</th>
+                <th class="hidden-xs">ПРОП</th>
+                <th class="hidden-xs">СМ</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>26.06.16</td>
+                  <td>Носта <span class="table__span-score">0 : 2</span> Носта</td>
+                  <td class="hidden-xs"></td>
+                  <td class="hidden-xs">44</td>
+                  <td class="hidden-xs">0</td>
+                  <td class="hidden-xs">4</td>
+                  <td class="hidden-xs">1</td>
+                  <td class="hidden-xs">0</td>
+                  <td class="hidden-xs">0</td>
+                </tr>
+                <tr>
+                  <td>26.06.16</td>
+                  <td>КАМАЗ <span class="table__span-score">2 : 0</span> Носта</td>
+                  <td class="hidden-xs"></td>
+                  <td class="hidden-xs">44</td>
+                  <td class="hidden-xs">0</td>
+                  <td class="hidden-xs">4</td>
+                  <td class="hidden-xs">1</td>
+                  <td class="hidden-xs">0</td>
+                  <td class="hidden-xs">0</td>
+                </tr>
+                <tr>
+                  <td>26.06.16</td>
+                  <td>КАМАЗ <span class="table__span-score">2 : 0</span> Носта</td>
+                  <td class="hidden-xs"></td>
+                  <td class="hidden-xs">44</td>
+                  <td class="hidden-xs">0</td>
+                  <td class="hidden-xs">4</td>
+                  <td class="hidden-xs">1</td>
+                  <td class="hidden-xs">0</td>
+                  <td class="hidden-xs">0</td>
+                </tr>
+                <tr>
+                  <td>26.06.16</td>
+                  <td>КАМАЗ <span class="table__span-score">2 : 0</span> Носта</td>
+                  <td class="hidden-xs"></td>
+                  <td class="hidden-xs">44</td>
+                  <td class="hidden-xs">0</td>
+                  <td class="hidden-xs">4</td>
+                  <td class="hidden-xs">1</td>
+                  <td class="hidden-xs">0</td>
+                  <td class="hidden-xs">0</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td>Всего</td>
+                  <td></td>
+                  <td class="hidden-xs">4</td>
+                  <td class="hidden-xs">176</td>
+                  <td class="hidden-xs">0</td>
+                  <td class="hidden-xs">16</td>
+                  <td class="hidden-xs">4</td>
+                  <td class="hidden-xs">0</td>
+                  <td class="hidden-xs">0</td>
+                </tr>
+              </tfoot>
+            </table>
+
+          </div>
+          <div class="table__info clearfix hidden-xs">
+            <div class="table__info-item">
+              <span class="table__info-value">мат</span>
+              <span class="table__info-text">сыграно матчей</span>
+            </div>
+            <div class="table__info-item">
+              <span class="table__info-value">мин</span>
+              <span class="table__info-text">сыграно минут</span>
+            </div>
+            <div class="table__info-item">
+              <span class="table__info-value">иво</span>
+              <span class="table__info-text">игр в основе</span>
+            </div>
+            <div class="table__info-item">
+              <span class="table__info-value">вз</span>
+              <span class="table__info-text">вышел на замену</span>
+            </div>
+            <div class="table__info-item">
+              <span class="table__info-value">бз</span>
+              <span class="table__info-text">был заменен</span>
+            </div>
+            <div class="table__info-item">
+              <span class="table__info-value">проп</span>
+              <span class="table__info-text">пропущенные голы</span>
+            </div>
+            <div class="table__info-item">
+              <span class="table__info-value">см</span>
+              <span class="table__info-text">сухие матчи</span>
+            </div>
+          </div>
+        </div> <!-- end table -->
+      </section>
+      <section class="player-page__section">
+        <h2 class="player-page__title">
+          Фотографии
+        </h2>
+
+        <div class="media-page__wrapper row">
+          <div class="media-page__pic-container">
+            <div class="media-page__pic-wrapper">
+              <div class="media-page__pic">
+                <a href="#" class="overlay">
+                  <picture>
+                    <source srcset="img/gallery-photo-1170.jpg" media="(min-width: 1200px)">
+                    <source srcset="img/gallery-photo-960.jpg" media="(min-width: 992px)">
+                    <source srcset="img/gallery-photo-768.jpg" media="(min-width: 768px)">
+                    <img src="img/gallery-photo-320.jpg" alt="ФК КАМАЗ">
+                  </picture>
+                  <span class="overlay__block"></span>
+                </a>
+              </div>
+              <div class="media-page__pic-info">
+                <span class="media-page__pic-date"><span>03</span> ноя</span>
+                <a class="media-page__pic-link media-page__pic-link--photo" href="#"><span class="visuallyhidden">фото</span></a>
+              </div>
+            </div> <!-- end media-page__pic-wrapper -->
+            <a class="media-page__pic-footer" href="#">
+              Фотографии с матча Динамо-Кирова — КАМАЗ
+            </a>
+          </div>
+          <div class="media-page__pic-container">
+            <div class="media-page__pic-wrapper">
+              <div class="media-page__pic">
+                <a href="#" class="overlay">
+                  <picture>
+                    <source srcset="img/gallery-photo-1170.jpg" media="(min-width: 1200px)">
+                    <source srcset="img/gallery-photo-960.jpg" media="(min-width: 992px)">
+                    <source srcset="img/gallery-photo-768.jpg" media="(min-width: 768px)">
+                    <img src="img/gallery-photo-320.jpg" alt="ФК КАМАЗ">
+                  </picture>
+                  <span class="overlay__block"></span>
+                </a>
+              </div>
+              <div class="media-page__pic-info">
+                <span class="media-page__pic-date"><span>03</span> ноя</span>
+                <a class="media-page__pic-link media-page__pic-link--photo" href="#"><span class="visuallyhidden">фото</span></a>
+              </div>
+            </div> <!-- end media-page__pic-wrapper -->
+            <a class="media-page__pic-footer" href="#">
+              Фотографии с матча Динамо-Кирова — КАМАЗ
+            </a>
+          </div>
+          <div class="media-page__pic-container">
+            <div class="media-page__pic-wrapper">
+              <div class="media-page__pic">
+                <a href="#" class="overlay">
+                  <picture>
+                    <source srcset="img/gallery-photo-1170.jpg" media="(min-width: 1200px)">
+                    <source srcset="img/gallery-photo-960.jpg" media="(min-width: 992px)">
+                    <source srcset="img/gallery-photo-768.jpg" media="(min-width: 768px)">
+                    <img src="img/gallery-photo-320.jpg" alt="ФК КАМАЗ">
+                  </picture>
+                  <span class="overlay__block"></span>
+                </a>
+              </div>
+              <div class="media-page__pic-info">
+                <span class="media-page__pic-date"><span>03</span> ноя</span>
+                <a class="media-page__pic-link media-page__pic-link--photo" href="#"><span class="visuallyhidden">фото</span></a>
+              </div>
+            </div> <!-- end media-page__pic-wrapper -->
+            <a class="media-page__pic-footer" href="#">
+              Фотографии с матча Динамо-Кирова — КАМАЗ
+            </a>
+          </div>
+          <div class="media-page__pic-container">
+            <div class="media-page__pic-wrapper">
+              <div class="media-page__pic">
+                <a href="#" class="overlay">
+                  <picture>
+                    <source srcset="img/gallery-photo-1170.jpg" media="(min-width: 1200px)">
+                    <source srcset="img/gallery-photo-960.jpg" media="(min-width: 992px)">
+                    <source srcset="img/gallery-photo-768.jpg" media="(min-width: 768px)">
+                    <img src="img/gallery-photo-320.jpg" alt="ФК КАМАЗ">
+                  </picture>
+                  <span class="overlay__block"></span>
+                </a>
+              </div>
+              <div class="media-page__pic-info">
+                <span class="media-page__pic-date"><span>03</span> ноя</span>
+                <a class="media-page__pic-link media-page__pic-link--photo" href="#"><span class="visuallyhidden">фото</span></a>
+              </div>
+            </div> <!-- end media-page__pic-wrapper -->
+            <a class="media-page__pic-footer" href="#">
+              Фотографии с матча Динамо-Кирова — КАМАЗ
+            </a>
+          </div>
+          <div class="media-page__pic-container">
+            <div class="media-page__pic-wrapper">
+              <div class="media-page__pic">
+                <a href="#" class="overlay">
+                  <picture>
+                    <source srcset="img/gallery-photo-1170.jpg" media="(min-width: 1200px)">
+                    <source srcset="img/gallery-photo-960.jpg" media="(min-width: 992px)">
+                    <source srcset="img/gallery-photo-768.jpg" media="(min-width: 768px)">
+                    <img src="img/gallery-photo-320.jpg" alt="ФК КАМАЗ">
+                  </picture>
+                  <span class="overlay__block"></span>
+                </a>
+              </div>
+              <div class="media-page__pic-info">
+                <span class="media-page__pic-date"><span>03</span> ноя</span>
+                <a class="media-page__pic-link media-page__pic-link--photo" href="#"><span class="visuallyhidden">фото</span></a>
+              </div>
+            </div> <!-- end media-page__pic-wrapper -->
+            <a class="media-page__pic-footer" href="#">
+              Фотографии с матча Динамо-Кирова — КАМАЗ
+            </a>
+          </div>
+          <div class="media-page__pic-container">
+            <div class="media-page__pic-wrapper">
+              <div class="media-page__pic">
+                <a href="#" class="overlay">
+                  <picture>
+                    <source srcset="img/gallery-photo-1170.jpg" media="(min-width: 1200px)">
+                    <source srcset="img/gallery-photo-960.jpg" media="(min-width: 992px)">
+                    <source srcset="img/gallery-photo-768.jpg" media="(min-width: 768px)">
+                    <img src="img/gallery-photo-320.jpg" alt="ФК КАМАЗ">
+                  </picture>
+                  <span class="overlay__block"></span>
+                </a>
+              </div>
+              <div class="media-page__pic-info">
+                <span class="media-page__pic-date"><span>03</span> ноя</span>
+                <a class="media-page__pic-link media-page__pic-link--photo" href="#"><span class="visuallyhidden">фото</span></a>
+              </div>
+            </div> <!-- end media-page__pic-wrapper -->
+            <a class="media-page__pic-footer" href="#">
+              Фотографии с матча Динамо-Кирова — КАМАЗ
+            </a>
+          </div>
+          <div class="media-page__pic-container">
+            <div class="media-page__pic-wrapper">
+              <div class="media-page__pic">
+                <a href="#" class="overlay">
+                  <picture>
+                    <source srcset="img/gallery-photo-1170.jpg" media="(min-width: 1200px)">
+                    <source srcset="img/gallery-photo-960.jpg" media="(min-width: 992px)">
+                    <source srcset="img/gallery-photo-768.jpg" media="(min-width: 768px)">
+                    <img src="img/gallery-photo-320.jpg" alt="ФК КАМАЗ">
+                  </picture>
+                  <span class="overlay__block"></span>
+                </a>
+              </div>
+              <div class="media-page__pic-info">
+                <span class="media-page__pic-date"><span>03</span> ноя</span>
+                <a class="media-page__pic-link media-page__pic-link--photo" href="#"><span class="visuallyhidden">фото</span></a>
+              </div>
+            </div> <!-- end media-page__pic-wrapper -->
+            <a class="media-page__pic-footer" href="#">
+              Фотографии с матча Динамо-Кирова — КАМАЗ
+            </a>
+          </div>
+        </div> <!-- end media-page__wrapper -->
+      </section>
+      <section class="player-page__section">
+        <h2 class="player-page__title">
+          Видео
+        </h2>
+
+        <div class="media-page__wrapper row">
+          <div class="media-page__pic-container">
+            <div class="media-page__pic-wrapper">
+              <div class="media-page__pic">
+                <a href="#" class="overlay">
+                  <picture>
+                    <source srcset="img/media-photo-1170.jpg" media="(min-width: 1200px)">
+                    <source srcset="img/news-pic-4-960.jpg" media="(min-width: 992px)">
+                    <source srcset="img/media-photo-768.jpg" media="(min-width: 768px)">
+                    <img src="img/media-photo-320.jpg" alt="ФК КАМАЗ">
+                  </picture>
+                  <span class="overlay__block"></span>
+                </a>
+              </div>
+              <div class="media-page__pic-info">
+                <span class="media-page__pic-date"><span>03</span> ноя</span>
+                <a class="media-page__pic-link media-page__pic-link--photo" href="#"><span class="visuallyhidden">фото</span></a>
+              </div>
+            </div> <!-- end media-page__pic-wrapper -->
+            <a class="media-page__pic-footer" href="#">
+              Фотографии с матча Динамо-Кирова — КАМАЗ
+            </a>
+          </div>
+          <div class="media-page__pic-container">
+            <div class="media-page__pic-wrapper">
+              <div class="media-page__pic">
+                <a href="#" class="overlay">
+                  <picture>
+                    <source srcset="img/media-photo-1170.jpg" media="(min-width: 1200px)">
+                    <source srcset="img/news-pic-4-960.jpg" media="(min-width: 992px)">
+                    <source srcset="img/media-photo-768.jpg" media="(min-width: 768px)">
+                    <img src="img/media-photo-320.jpg" alt="ФК КАМАЗ">
+                  </picture>
+                  <span class="overlay__block"></span>
+                </a>
+              </div>
+              <div class="media-page__pic-info">
+                <span class="media-page__pic-date"><span>03</span> ноя</span>
+                <a class="media-page__pic-link media-page__pic-link--photo" href="#"><span class="visuallyhidden">фото</span></a>
+              </div>
+            </div> <!-- end media-page__pic-wrapper -->
+            <a class="media-page__pic-footer" href="#">
+              Фотографии с матча Динамо-Кирова — КАМАЗ
+            </a>
+          </div>
+          <div class="media-page__pic-container">
+            <div class="media-page__pic-wrapper">
+              <div class="media-page__pic">
+                <a href="#" class="overlay">
+                  <picture>
+                    <source srcset="img/media-photo-1170.jpg" media="(min-width: 1200px)">
+                    <source srcset="img/news-pic-4-960.jpg" media="(min-width: 992px)">
+                    <source srcset="img/media-photo-768.jpg" media="(min-width: 768px)">
+                    <img src="img/media-photo-320.jpg" alt="ФК КАМАЗ">
+                  </picture>
+                  <span class="overlay__block"></span>
+                </a>
+              </div>
+              <div class="media-page__pic-info">
+                <span class="media-page__pic-date"><span>03</span> ноя</span>
+                <a class="media-page__pic-link media-page__pic-link--photo" href="#"><span class="visuallyhidden">фото</span></a>
+              </div>
+            </div> <!-- end media-page__pic-wrapper -->
+            <a class="media-page__pic-footer" href="#">
+              Фотографии с матча Динамо-Кирова — КАМАЗ
+            </a>
+          </div>
+          <div class="media-page__pic-container">
+            <div class="media-page__pic-wrapper">
+              <div class="media-page__pic">
+                <a href="#" class="overlay">
+                  <picture>
+                    <source srcset="img/media-photo-1170.jpg" media="(min-width: 1200px)">
+                    <source srcset="img/news-pic-4-960.jpg" media="(min-width: 992px)">
+                    <source srcset="img/media-photo-768.jpg" media="(min-width: 768px)">
+                    <img src="img/media-photo-320.jpg" alt="ФК КАМАЗ">
+                  </picture>
+                  <span class="overlay__block"></span>
+                </a>
+              </div>
+              <div class="media-page__pic-info">
+                <span class="media-page__pic-date"><span>03</span> ноя</span>
+                <a class="media-page__pic-link media-page__pic-link--photo" href="#"><span class="visuallyhidden">фото</span></a>
+              </div>
+            </div> <!-- end media-page__pic-wrapper -->
+            <a class="media-page__pic-footer" href="#">
+              Фотографии с матча Динамо-Кирова — КАМАЗ
+            </a>
+          </div>
+          <div class="media-page__pic-container">
+            <div class="media-page__pic-wrapper">
+              <div class="media-page__pic">
+                <a href="#" class="overlay">
+                  <picture>
+                    <source srcset="img/media-photo-1170.jpg" media="(min-width: 1200px)">
+                    <source srcset="img/news-pic-4-960.jpg" media="(min-width: 992px)">
+                    <source srcset="img/media-photo-768.jpg" media="(min-width: 768px)">
+                    <img src="img/media-photo-320.jpg" alt="ФК КАМАЗ">
+                  </picture>
+                  <span class="overlay__block"></span>
+                </a>
+              </div>
+              <div class="media-page__pic-info">
+                <span class="media-page__pic-date"><span>03</span> ноя</span>
+                <a class="media-page__pic-link media-page__pic-link--photo" href="#"><span class="visuallyhidden">фото</span></a>
+              </div>
+            </div> <!-- end media-page__pic-wrapper -->
+            <a class="media-page__pic-footer" href="#">
+              Фотографии с матча Динамо-Кирова — КАМАЗ
+            </a>
+          </div>
+          <div class="media-page__pic-container">
+            <div class="media-page__pic-wrapper">
+              <div class="media-page__pic">
+                <a href="#" class="overlay">
+                  <picture>
+                    <source srcset="img/media-photo-1170.jpg" media="(min-width: 1200px)">
+                    <source srcset="img/news-pic-4-960.jpg" media="(min-width: 992px)">
+                    <source srcset="img/media-photo-768.jpg" media="(min-width: 768px)">
+                    <img src="img/media-photo-320.jpg" alt="ФК КАМАЗ">
+                  </picture>
+                  <span class="overlay__block"></span>
+                </a>
+              </div>
+              <div class="media-page__pic-info">
+                <span class="media-page__pic-date"><span>03</span> ноя</span>
+                <a class="media-page__pic-link media-page__pic-link--photo" href="#"><span class="visuallyhidden">фото</span></a>
+              </div>
+            </div> <!-- end media-page__pic-wrapper -->
+            <a class="media-page__pic-footer" href="#">
+              Фотографии с матча Динамо-Кирова — КАМАЗ
+            </a>
+          </div>
+          <div class="media-page__pic-container">
+            <div class="media-page__pic-wrapper">
+              <div class="media-page__pic">
+                <a href="#" class="overlay">
+                  <picture>
+                    <source srcset="img/media-photo-1170.jpg" media="(min-width: 1200px)">
+                    <source srcset="img/news-pic-4-960.jpg" media="(min-width: 992px)">
+                    <source srcset="img/media-photo-768.jpg" media="(min-width: 768px)">
+                    <img src="img/media-photo-320.jpg" alt="ФК КАМАЗ">
+                  </picture>
+                  <span class="overlay__block"></span>
+                </a>
+              </div>
+              <div class="media-page__pic-info">
+                <span class="media-page__pic-date"><span>03</span> ноя</span>
+                <a class="media-page__pic-link media-page__pic-link--photo" href="#"><span class="visuallyhidden">фото</span></a>
+              </div>
+            </div> <!-- end media-page__pic-wrapper -->
+            <a class="media-page__pic-footer" href="#">
+              Фотографии с матча Динамо-Кирова — КАМАЗ
+            </a>
+          </div>
+
+        </div> <!-- end media-page__wrapper -->
+      </section>
+      <section class="player-page__section">
+        <h2 class="player-page__title">
+          Новости
+        </h2>
+      <div class="news news--news-page row">
+        <div class="news__article col-sm-6 col-md-3">
+          <div class="news__pic-wrapper">
+            <div class="news__pic hidden-xs hidden-sm">
+             <a href="#" class="overlay">
+                <picture>
+                 <source srcset="img/news-pic-1-1170.jpg" media="(min-width: 1200px)">
+                 <img src="img/news-pic-1-960.jpg" alt="ФК КАМАЗ">
+               </picture>
+               <span class="overlay__block"></span>
+             </a>
+            </div>
+            <div class="news__pic-info">
+              <span class="news__pic-date"><span>23</span> ноя</span>
+              <a class="news__pic-link" href="#">Новости клуба</a>
+            </div>
+          </div>
+          <div class="news__content">
+            <a class="news__content-title" href="#">
+              Победа за «КАМАЗом»!
+            </a>
+          </div>
+        </div>   <!--  end .news__article -->
+        <div class="news__article col-sm-6 col-md-3">
+          <div class="news__pic-wrapper">
+            <div class="news__pic hidden-xs hidden-sm">
+              <a href="#" class="overlay">
+                <picture>
+                  <source srcset="img/news-pic-5-1170.jpg" media="(min-width: 1200px)">
+                  <img src="img/news-pic-5-960.jpg" alt="ФК КАМАЗ">
+                </picture>
+                <span class="overlay__block"></span>
+              </a>
+            </div>
+            <div class="news__pic-info">
+              <span class="news__pic-date"><span>23</span> ноя</span>
+              <a class="news__pic-link" href="#">Обзор прессы</a>
+              <a class="news__pic-link news__pic-link--tvchelny" href="#"><span class="visuallyhidden">Челны-ТВ</span></a>
+            </div>
+          </div>
+          <div class="news__content">
+            <a class="news__content-title" href="#">
+              ФК «КАМАЗ» выигрывает у «Носта»!
+            </a>
+          </div>
+        </div>   <!--  end .news__article -->
+        <div class="news__article col-sm-6 col-md-3">
+          <div class="news__pic-wrapper">
+            <div class="news__pic hidden-xs hidden-sm">
+              <a href="#" class="overlay">
+                <picture>
+                  <source srcset="img/news-pic-3-1170.jpg" media="(min-width: 1200px)">
+                  <img src="img/news-pic-3-960.jpg" alt="ФК КАМАЗ">
+                </picture>
+                <span class="overlay__block"></span>
+              </a>
+            </div>
+            <div class="news__pic-info">
+              <span class="news__pic-date"><span>24</span> ноя</span>
+              <a class="news__pic-link" href="#">Дни рождения</a>
+              <a class="news__pic-link" href="#"></a>
+            </div>
+          </div>
+          <div class="news__content">
+            <a class="news__content-title" href="#">
+              С днем рождения, Сергей Васильевич!
+            </a>
+          </div>
+        </div>   <!--  end .news__article -->
+      </div>    <!--  end .news -->
+      </section>
+    </div>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper container">
+      <a class="logo logo--footer overlay" href="main-page.html">
+        <picture>
+          <source srcset="img/logo.png" media="(min-width: 1200px)">
+          <source srcset="img/logo.png" media="(min-width: 992px)">
+          <source srcset="img/logo.png" media="(min-width: 768px)">
+          <img src="img/logo-320.png" alt="Футбольный клуб &laquo;КАМАЗ&raquo;">
+        </picture>
+        <span class="overlay__block"></span>
+      </a>
+      <div class="page-footer__partners">
+        <h2 class="page-footer__partners-title">
+          Наши партнеры
+        </h2>
+        <div class="page-footer__partners-links">
+          <a class="page-footer__partners-link page-footer__partners-link--abb" href="http://new.abb.com/"><span class="visuallyhidden">Ак Барс Банк</span></a>
+          <a class="page-footer__partners-link page-footer__partners-link--kamaz" href="http://kamaz.ru/"><span class="visuallyhidden">Камаз</span></a>
+          <a class="page-footer__partners-link page-footer__partners-link--tvchelny" href="http://tvchelny.ru/"><span class="visuallyhidden">Челны-ТВ</span></a>
+        </div>
+      </div>
+      <ul class="page-footer__nav">
+        <li class="page-footer__nav-item">
+          <a class="page-footer__nav-link page-footer__nav-link--closed" data-toggle="page-footer__subnav" href="#">Новости</a>
+          <ul class="page-footer__subnav page-footer__subnav--closed">
+            <li class="page-footer__subnav-item">
+              <a class="page-footer__subnav-link" href="#">Новости клуба</a>
+            </li>
+            <li class="page-footer__subnav-item">
+              <a class="page-footer__subnav-link" href="#">Обзор прессы</a>
+            </li>
+            <li class="page-footer__subnav-item">
+              <a class="page-footer__subnav-link" href="#">РЦПФ</a>
+            </li>
+          </ul>
+        </li>
+        <li class="page-footer__nav-item">
+          <a class="page-footer__nav-link page-footer__nav-link--closed" data-toggle="page-footer__subnav" href="#">Матчи</a>
+          <ul class="page-footer__subnav page-footer__subnav--closed">
+            <li class="page-footer__subnav-item">
+              <a class="page-footer__subnav-link" href="#">Все матчи</a>
+            </li>
+            <li class="page-footer__subnav-item">
+              <a class="page-footer__subnav-link" href="#">Календарь</a>
+            </li>
+            <li class="page-footer__subnav-item">
+              <a class="page-footer__subnav-link" href="#">Турнирная таблица</a>
+            </li>
+          </ul>
+        </li>
+        <li class="page-footer__nav-item">
+          <a class="page-footer__nav-link page-footer__nav-link--closed" data-toggle="page-footer__subnav" href="#">Медиа</a>
+          <ul class="page-footer__subnav page-footer__subnav--closed">
+            <li class="page-footer__subnav-item">
+              <a class="page-footer__subnav-link" href="#">Видеогалерея</a>
+            </li>
+            <li class="page-footer__subnav-item">
+              <a class="page-footer__subnav-link" href="#">Фотогалерея</a>
+            </li>
+            <li class="page-footer__subnav-item">
+              <a class="page-footer__subnav-link" href="#">Программа на радио</a>
+            </li>
+            <li class="page-footer__subnav-item">
+              <a class="page-footer__subnav-link" href="#">Онлайн транляции</a>
+            </li>
+          </ul>
+        </li>
+        <li class="page-footer__nav-item">
+          <a class="page-footer__nav-link page-footer__nav-link--closed" data-toggle="page-footer__subnav" href="#">Команда</a>
+          <ul class="page-footer__subnav page-footer__subnav--closed">
+            <li class="page-footer__subnav-item">
+              <a class="page-footer__subnav-link" href="#">Основной состав</a>
+            </li>
+            <li class="page-footer__subnav-item">
+              <a class="page-footer__subnav-link" href="#">Молодежный состав</a>
+            </li>
+            <li class="page-footer__subnav-item">
+              <a class="page-footer__subnav-link" href="#">Академия</a>
+            </li>
+            <li class="page-footer__subnav-item">
+              <a class="page-footer__subnav-link" href="#">Тренерский штаб</a>
+            </li>
+          </ul>
+        </li>
+        <li class="page-footer__nav-item">
+          <a class="page-footer__nav-link page-footer__nav-link--closed" data-toggle="page-footer__subnav" href="#">Клуб</a>
+          <ul class="page-footer__subnav page-footer__subnav--closed">
+            <li class="page-footer__subnav-item">
+              <a class="page-footer__subnav-link" href="#">Администрация</a>
+            </li>
+            <li class="page-footer__subnav-item">
+              <a class="page-footer__subnav-link" href="#">Контакты</a>
+            </li>
+            <li class="page-footer__subnav-item">
+              <a class="page-footer__subnav-link" href="#">История</a>
+            </li>
+            <li class="page-footer__subnav-item">
+              <a class="page-footer__subnav-link" href="#">Вакансии</a>
+            </li>
+            <li class="page-footer__subnav-item">
+              <a class="page-footer__subnav-link" href="#">Партнеры и СМИ</a>
+            </li>
+          </ul>
+        </li>
+        <li class="page-footer__nav-item page-footer__nav-item--last">
+          <a class="page-footer__nav-link page-footer__nav-link--closed" data-toggle="page-footer__subnav" href="#">Фан-зона</a>
+          <ul class="page-footer__subnav page-footer__subnav--closed">
+            <li class="page-footer__subnav-item">
+              <a class="page-footer__subnav-link" href="#">Форум</a>
+            </li>
+            <li class="page-footer__subnav-item">
+              <a class="page-footer__subnav-link" href="#">Стань волонтером</a>
+            </li>
+            <li class="page-footer__subnav-item">
+              <a class="page-footer__subnav-link" href="#">Документы</a>
+            </li>
+            <li class="page-footer__subnav-item">
+              <a class="page-footer__subnav-link" href="#">Статьи</a>
+            </li>
+            <li class="page-footer__subnav-item">
+              <a class="page-footer__subnav-link" href="#">Конкурс прогнозов</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <div class="page-footer__bottom-line">
+         <div class="page-footer__social-links">
+           <a class="page-footer__social-link page-footer__social-link--ggplus" href="#">
+            <span class="visuallyhidden">Google Plus</span>
+           </a>
+           <a class="page-footer__social-link page-footer__social-link--tw" href="#">
+            <span class="visuallyhidden">Twitter</span>
+           </a>
+           <a class="page-footer__social-link page-footer__social-link--vk" href="#">
+            <span class="visuallyhidden">Вконтакте</span>
+           </a>
+           <a class="page-footer__social-link page-footer__social-link--mail" href="#">
+            <span class="visuallyhidden">Mail.ru</span>
+           </a>
+           <a class="page-footer__social-link page-footer__social-link--fb" href="#">
+            <span class="visuallyhidden">Facebook</span>
+           </a>
+         </div>
+         <div class="page-footer__map">
+           <a href="#">Карта сайта</a>
+         </div>
+         <div class="page-footer__copyright">
+           © 2002-2016 Футбольный клуб «КАМАЗ» Набережные Челны.
+         </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/common.js"></script>
+</body>
+</html>

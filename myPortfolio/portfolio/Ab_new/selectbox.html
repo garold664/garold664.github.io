@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Agro24: Мониторинг</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <link type="image/ico" href="img/favicon.ico" rel="icon">
+  <link href="css/style.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700|Roboto:300,400,500,700" rel="stylesheet">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+</head>
+<body class="">
+
+
+
+
+  <main class="main inner-page inner-page--franchise">
+    <section class="contact-form">
+      <div class="contact-form__wrapper">
+        <div class="contact-form__inner">
+          <div class="contact-form__text">
+            <h2 class="contact-form__title">
+              Получите информацию <br> о Франшизе, которая дает стабильный доход
+            </h2>
+            <div class="contact-form__content">
+              <ul>
+                <li>
+                  Доход со своей сети поставщиков
+                </li>
+                <li>
+                  Комиссия с продажи готовых решений
+                </li>
+                <li>
+                  Поступления от агентов
+                </li>
+                <li>
+                  Заработок на торговле продуктами питания
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="contact-form__form">
+            <form class="form" id="contact-form">
+
+               <select id="tariff" name="tariff">
+                <option value="Выберите тариф" selected>Выберите тариф</option>
+                <option value="Уже выбран">Уже выбран</option>
+                <option value="Недоступно" disabled>Недоступно</option>
+                <option value="Обычный">Обычный</option>
+              </select>
+
+              <div class="contact-form__input-group">
+                <label class="label-text visuallyhidden" for="name"></label>
+                <input class="input-text" type="text" placeholder="Ваше имя" id="name" name="name">
+              </div>
+
+              <div class="contact-form__input-group">
+                <label class="label-text visuallyhidden" for="tel">Номер телефона, например</label>
+                <input class="input-text" type="tel" placeholder="Номер телефона, например" id="tel">
+              </div>
+
+              <div class="contact-form__input-group">
+                <label class="label-text visuallyhidden" for="inputEmail">Электронная почта, например</label>
+                <input class="input-text" type="email" placeholder="Электронная почта, например" id="inputEmail">
+              </div>
+
+              <div class="contact-form__input-group">
+                <input class="input-checkbox" type="checkbox" name="agreement" id="agreement" checked>
+                <label for="agreement" class="label-checkbox">
+                  Я даю согласие на обработку персональных данных и соглашаюсь с условиями <a href="#">договора-оферты и политикой конфиденциальности</a>
+                </label>
+              </div>
+
+              <input class="contact-form__btn btn" type="submit" value="Получить информацию">
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+
+  <script src="js/libs.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/selectBoxit.min.js"></script>
+  <script src="js/common.js"></script>
+
+</body>
+</html>
