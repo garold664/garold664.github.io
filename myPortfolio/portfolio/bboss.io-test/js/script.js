@@ -1,12 +1,14 @@
 'use strict';
 var navBtn = document.querySelector('.header__nav-btn');
-var nav = document.querySelector('.header__nav');
+var nav = document.querySelectorAll('.nav');
 var body = document.body;
 
-nav.style.transition = 'none';
+nav[0].style.transition = 'none';
+nav[1].style.transition = 'none';
 body.classList.remove('no-js');
 setTimeout(function () {
-  nav.style.transition = '';
+  nav[0].style.transition = '';
+  nav[1].style.transition = '';
 }, 300);
 
 navBtn.addEventListener('click', function (e) {
