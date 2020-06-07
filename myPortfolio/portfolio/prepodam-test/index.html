@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Преподам</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/montserrat-regular.woff2" as="font">
+  <link rel="preload" href="fonts/montserrat-medium.woff2" as="font">
+  <link rel="preload" href="fonts/montserrat-semibold.woff2" as="font">
+  <link rel="preload" href="fonts/montserrat-extrabold.woff2" as="font">
+  <link rel="preload" href="fonts/opensans-regular.woff2" as="font">
+</head>
+<body class="menu-closed no-js">
+  <header class="header">
+    <div class="header__container">
+      <div class="header__top">
+        <a class="header__logo logo" href="#">
+          <img class="logo__img" src="img/logo@1x.png" srcset="img/logo@1x.png 1x, img/logo@2x.png 2x" alt="Преподам">
+        </a>
+        <button class="nav-btn" type="button">
+          <span class="visually-hidden">Открыть/закрыть меню</span>
+          <span class="nav-btn__bar"></span>
+        </button>
+        <div class="header__top-wrap">
+          <div class="header__info">
+            <a class="header__info-city" href="#">Москва</a>
+            <a class="header__info-tel" href="tel:+78005623452">+7 800-562-3452</a>
+          </div>
+
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class=" nav__link" href="#">
+                  О проекте
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class=" nav__link" href="#">
+                  Онлайн-курсы
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class=" nav__link" href="#">
+                  Статьи
+                </a>
+              </li>
+            </ul>
+            <a class="nav__link nav__link--tutor btn" href="#">
+              Преподавателям
+            </a>
+            <ul class="nav__user-list">
+              <li class="nav__user-item">
+                <a class="nav__link nav__link--user" href="#">
+                  Регистрация
+                </a>
+              </li>
+              <li class="nav__user-item">
+                <a class="nav__link nav__link--user" href="#">
+                  Вход
+                </a>
+              </li>
+              <li class="nav__user-item nav__user-item--tutor">
+                <a class="nav__link nav__link--user nav__link--tutor btn" href="#">
+                  Преподавателям
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div> <!--  end of .header__top-wrap -->
+      </div> <!--  end of .header__top -->
+
+      <div class="header__content">
+        <h1 class="header__title">
+          <span class="visually-hidden">Преподам - </span><span class="header__title-highlight">Первая</span> образовательная онлайн-платформа, созданная преподами!
+        </h1>
+        <p class="header__text">
+          Описание уникального торгового предложения или же описание названия того или иного продукта, который на первом экран
+        </p>
+        <a class="header__btn btn" href="#">Зарегистрироваться</a>
+      </div> <!-- end of .header__content -->
+      <div class="header__scrolldown">
+        <div class="header__scrolldown-text">подробнее ниже</div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <a class="main__btn btn" href="#">199 преподавателей уже работает на сайте</a>
+    <section class="program">
+      <div class="program__container">
+        <h2 class="program__title">Выберите свою программу</h2>
+        <div class="program__list swiper-container">
+          <div class="program__list-wrap swiper-wrapper">
+            <div class="program__item swiper-slide">
+              <picture>
+                <source media="(min-width: 1310px)" srcset="img/pic-1-desktop@1x.jpg, img/pic-1-desktop@2x.jpg 2x">
+                <source media="(min-width: 982px)" srcset="img/pic-1-tablet@1x.jpg, img/pic-1-tablet@2x.jpg 2x">
+                <img class="program__item-img" src="img/pic-1-mobile@1x.jpg" srcset="img/pic-1-mobile@1x.jpg 1x, img/pic-1-mobile@2x.jpg 2x" alt="">
+              </picture>
+              <a class="program__link" href="#">
+                <div class="program__link-title">
+                  <div class="program__link-title-main">Школьная программ</div>
+                  <span class="program__link-title-common">Подробнее о программе</span>
+                </div>
+              </a>
+            </div>
+            <div class="program__item swiper-slide">
+              <picture>
+                <source media="(min-width: 1310px)" srcset="img/pic-2-desktop@1x.jpg, img/pic-2-desktop@2x.jpg 2x">
+                <source media="(min-width: 982px)" srcset="img/pic-2-tablet@1x.jpg, img/pic-2-tablet@2x.jpg 2x">
+                <img class="program__item-img" src="img/pic-2-mobile@1x.jpg" srcset="img/pic-2-mobile@1x.jpg 1x, img/pic-2-mobile@2x.jpg 2x" alt="">
+              </picture>
+              <a class="program__link" href="#">
+                <div class="program__link-title">
+                  <span class="program__link-title-main">Студенческая программа</span>
+                  <span class="program__link-title-common">Подробнее о программе</span>
+                </div>
+              </a>
+            </div>
+            <div class="program__item swiper-slide">
+              <picture>
+                <source media="(min-width: 1310px)" srcset="img/pic-3-desktop@1x.jpg, img/pic-3-desktop@2x.jpg 2x">
+                <source media="(min-width: 982px)" srcset="img/pic-3-tablet@1x.jpg, img/pic-3-tablet@2x.jpg 2x">
+                <img class="program__item-img" src="img/pic-3-mobile@1x.jpg" srcset="img/pic-3-mobile@1x.jpg 1x, img/pic-3-mobile@2x.jpg 2x" alt="">
+              </picture>
+              <a class="program__link" href="#">
+                <div class="program__link-title">
+                  <span class="program__link-title-main">Дополнительное образование</span>
+                  <span class="program__link-title-common">Подробнее о программе</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
